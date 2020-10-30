@@ -2,7 +2,7 @@
 $servername = "mysql-mavethee.alwaysdata.net";
 $username = "mavethee_marcin";
 $password = "H@slo24!";
-$dbname = "mavethee_marcin";
+$dbname = "mavethee_php-mitura-marcin";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
