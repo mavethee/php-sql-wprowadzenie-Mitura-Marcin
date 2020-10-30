@@ -17,14 +17,14 @@ require_once("connect.php");
 echo("<h1>Zadanie 1: Wyświetlenie pełnej listy pracowników:</h1>");
 $result=$conn->query("SELECT * FROM pracownicy");
 echo("<table borded=1>");
-echo("<th>id</th>");
+echo("<th>id_pracownicy</th>");
 echo("<th>imie</th>");
 echo("<th>dzial</th>");
 echo("<th>zarobki</th>");
 while($row=$result->fetch_assoc())
 {
 echo("<tr>");
-echo("<td>".$row["id"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
+echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
 echo("</tr>");
 }
 echo("</table>");
@@ -33,14 +33,14 @@ echo("</table>");
 echo("<h1>Zadanie 2: Wyświetlenie tylko kobiet listy pracowników:</h1>");
 $result=$conn->query("SELECT * FROM pracownicy WHERE imie LIKE '%a'");
 echo("<table borded=1>");
-echo("<th>id</th>");
+echo("<th>id_pracownicy</th>");
 echo("<th>imie</th>");
 echo("<th>dzial</th>");
 echo("<th>zarobki</th>");
 while($row=$result->fetch_assoc())
 {
 echo("<tr>");
-echo("<td>".$row["id"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
+echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
 echo("</tr>");
 }
 echo("</table>");
@@ -49,14 +49,14 @@ echo("</table>");
 echo("<h1>Zadanie 3: Kobiety z działu 1 i 4:</h1>");
 $result=$conn->query("SELECT * FROM pracownicy WHERE imie LIKE '%a' AND dzial=1 OR dzial=4");
 echo("<table borded=1>");
-echo("<th>id</th>");
+echo("<th>id_pracownicy</th>");
 echo("<th>imie</th>");
 echo("<th>dzial</th>");
 echo("<th>zarobki</th>");
 while($row=$result->fetch_assoc())
 {
 echo("<tr>");
-echo("<td>".$row["id"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
+echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
 echo("</tr>");
 }
 echo("</table>");
@@ -65,14 +65,14 @@ echo("</table>");
 echo("<h1>Zadanie 4: Kobiety zarabiające mniej niż 35 z działu 1 i 2:</h1>");
 $result=$conn->query("SELECT * FROM pracownicy WHERE imie LIKE '%a' AND (zarobki<35) AND (dzial=1 OR dzial=2)");
 echo("<table borded=1>");
-echo("<th>id</th>");
+echo("<th>id_pracownicy</th>");
 echo("<th>imie</th>");
 echo("<th>dzial</th>");
 echo("<th>zarobki</th>");
 while($row=$result->fetch_assoc())
 {
 echo("<tr>");
-echo("<td>".$row["id"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
+echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
 echo("</tr>");
 }
 echo("</table>");
@@ -81,14 +81,14 @@ echo("</table>");
 echo("<h1>Zadanie 5: Mężczyźni zarabiający mniej niż 30:</h1>");
 $result=$conn->query("SELECT * FROM pracownicy WHERE imie NOT LIKE '%a' AND (zarobki<30)");
 echo("<table borded=1>");
-echo("<th>id</th>");
+echo("<th>id_pracownicy</th>");
 echo("<th>imie</th>");
 echo("<th>dzial</th>");
 echo("<th>zarobki</th>");
 while($row=$result->fetch_assoc())
 {
 echo("<tr>");
-echo("<td>".$row["id"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
+echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
 echo("</tr>");
 }
 echo("</table>");
