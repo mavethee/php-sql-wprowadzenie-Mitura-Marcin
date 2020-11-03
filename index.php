@@ -71,9 +71,9 @@
       echo("<th>zarobki</th>");
       while($row=$result->fetch_assoc())
       {
-      echo("<tr>");
-      echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
-      echo("</tr>");
+        echo("<tr>");
+        echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
+        echo("</tr>");
       }
       echo("</table>");
 
@@ -87,9 +87,9 @@
       echo("<th>zarobki</th>");
       while($row=$result->fetch_assoc())
       {
-      echo("<tr>");
-      echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
-      echo("</tr>");
+        echo("<tr>");
+        echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
+        echo("</tr>");
       }
       echo("</table>");
 
@@ -101,9 +101,9 @@
       echo("<th>MOJA_SUMA</th>");
       while($row=$result->fetch_assoc())
       {
-      echo("<tr>");
-      echo("<td>".$row["dzial"]."</td><td>".$row["MOJA_SUMA"]."</td>");
-      echo("</tr>");
+        echo("<tr>");
+        echo("<td>".$row["dzial"]."</td><td>".$row["MOJA_SUMA"]."</td>");
+        echo("</tr>");
       }
       echo("</table>");
     ?>
