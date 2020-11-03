@@ -110,7 +110,7 @@
 
     //Zadanie 7: Połączenie dwóch tabel
     echo("<h1>Zadanie 7: Połączenie dwóch tabel</h1>");
-    $result=$conn->query("SELECT id_pracownicy, imie, dzial, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE id_org=dzial GROUP BY dzial");
+    $result=$conn->query("SELECT id_pracownicy, imie, dzial, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE id_org=dzial");
     echo("<table borded=1>");
     echo("<th>id_pracownicy</th>");
     echo("<th>imie</th>");
