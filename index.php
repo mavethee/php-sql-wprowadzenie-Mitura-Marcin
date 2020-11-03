@@ -107,6 +107,9 @@
         echo("</tr>");
       }
       echo("</table>");
+    
+    //Dodanie phpinfo() :D
+    phpinfo();
     ?>
   </body>
 </html>
