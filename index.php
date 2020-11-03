@@ -124,6 +124,21 @@
         echo("</tr>");
     }
     echo("</table>");
+
+    //Zadanie 8: Wyświetlenie średniej z połączonymi dwoma tabelami
+    echo("<h1>Zadanie 8: Wyświetlenie średniej zarobków z połączonymi dwoma tabelami</h1>");
+    $result=$conn->query("SELECT AVG(zarobki) AS Średnia_zarobków FROM pracownicy, organizacja WHERE id_org=dzial GROUP BY dzial");
+    echo("<table borded=1>");
+    echo("<th>dzial</th>");
+    echo("<th>nazwa_dzial</th>");
+    echo("<th>Średnia_zarobków</th>");
+    while($row=$result->fetch_assoc())
+    {
+        echo("<tr>");
+        echo("<td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td><td>".$row["Średnia_zarobków"]."</td>");
+        echo("</tr>");
+    }
+    echo("</table>");
     ?>
 </body>
 </html>
