@@ -106,9 +106,6 @@ echo("<td>".$row["dzial"]."</td><td>".$row["MOJA_SUMA"]."</td>");
 echo("</tr>");
 }
 echo("</table>");
-
-//phpinfo na koniec pliku
-echo(phpinfo());
 ?>
 </body>
 </html>
