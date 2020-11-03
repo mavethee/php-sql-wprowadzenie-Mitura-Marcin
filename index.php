@@ -127,7 +127,7 @@
 
     //Zadanie 8: Wyświetlenie średniej z połączonymi dwoma tabelami
     echo("<h1>Zadanie 8: Wyświetlenie średniej zarobków z połączonymi dwoma tabelami</h1>");
-    $result=$conn->query("SELECT AVG(zarobki) AS Średnia_zarobków FROM pracownicy, organizacja WHERE id_org=dzial GROUP BY dzial");
+    $result=$conn->query("SELECT dzial, nazwa_dzial, AVG(zarobki) AS Średnia_zarobków FROM pracownicy, organizacja WHERE id_org=dzial GROUP BY dzial");
     echo("<table borded=1>");
     echo("<th>dzial</th>");
     echo("<th>nazwa_dzial</th>");
