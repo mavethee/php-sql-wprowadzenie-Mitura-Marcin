@@ -120,7 +120,7 @@
     while($row=$result->fetch_assoc())
     {
         echo("<tr>");
-        echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["dzial"]."</td>");
+        echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td><td>".$row["zarobki"]."</td>");
         echo("</tr>");
     }
     echo("</table>");
