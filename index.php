@@ -8,7 +8,7 @@
     <div class="nav">
         Place for navigation and links
         <a href="Organizacja_i_pracownicy.php">Organizacja_i_pracownicy<a>;
-        <a href="Funkcje_agregujace.php">Funkcje_agregujące<a>;
+        <a href="Funkcje_agregujace.php">Funkcje_agregujace<a>;
     </div>
     <?php
     //Podpisanie pracy
