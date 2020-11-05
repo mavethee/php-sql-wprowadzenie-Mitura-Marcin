@@ -5,6 +5,11 @@
         <link rel="stylesheet" href="style.css">
     </head>
 <body>
+    <div class="nav">
+        Place for navigation and links
+        <a href="Organizacja_i_pracownicy.php">Organizacja_i_pracownicy<a>;
+        <a href="Funkcje_agregujace.php">Funkcje_agregujące<a>;
+    </div>
     <?php
     //Podpisanie pracy
     echo("<h1>Marcin Mitura</h1>");
