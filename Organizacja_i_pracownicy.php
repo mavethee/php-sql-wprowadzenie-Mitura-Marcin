@@ -42,7 +42,7 @@
         echo("</table>");
 
         //Zadanie 3: Wyświetlenie listy kobiet z nazwami działów
-        echo("<h1>ZZadanie 3: Wyświetlenie listy kobiet z nazwami działów</h1>");
+        echo("<h1>Zadanie 3: Wyświetlenie listy kobiet z nazwami działów</h1>");
         $result=$conn->query("SELECT imie, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE imie LIKE '%a' AND dzial=id_org");
         echo("<table borded=1>");
         echo("<th>imie</th>");

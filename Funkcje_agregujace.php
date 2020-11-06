@@ -38,7 +38,7 @@
         echo("</table>");
 
         //Zadanie 3: Wyświetlenie sumy zarobków mężczyzn pracujących w dziale 2 i 3:
-        echo("<h1>ZZadanie 3: Wyświetlenie sumy zarobków mężczyzn pracujących w dziale 2 i 3</h1>");
+        echo("<h1>Zadanie 3: Wyświetlenie sumy zarobków mężczyzn pracujących w dziale 2 i 3</h1>");
         $result=$conn->query("SELECT SUM(zarobki) AS Suma_zarobków_mężczyzn_pracujących_w_dziale_2_i_3 FROM pracownicy WHERE imie NOT LIKE '%a' and (dzial=2 OR dzial=3)");
         echo("<table borded=1>");
         echo("<th>Suma_zarobków_mężczyzn_pracujących_w_dziale_2_i_3</th>");
