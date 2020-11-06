@@ -6,6 +6,10 @@
     </head>
 <body>
     <?php
+
+    //Logowanie do serwera mySQL
+    require_once("connect.php");
+
     echo("Funkcje_agregujące.php");
         //Zadanie 1: Wyświetlenie sumy zarobków wszystkich pracowników
         echo("<h1>Zadanie 1: Wyświetlenie sumy zarobków wszystkich pracowników</h1>");

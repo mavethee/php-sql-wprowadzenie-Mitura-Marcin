@@ -6,6 +6,10 @@
     </head>
 <body>
     <?php
+
+    //Logowanie do serwera mySQL
+    require_once("connect.php");
+
     echo("Organizacja_i_pracownicy.php");
         //Zadanie 1: Wyświetlenie pełnej listy pracowników z nazwami działów
         echo("<h1>Zadanie 1: Wyświetlenie pełnej listy pracowników z nazwami działów</h1>");
