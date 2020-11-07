@@ -2,19 +2,13 @@ body
 {
     background-color: linen;
 }
-h1 
+
+h1, h2, h3 
 {
     color: orange;
 }
-h2 
+
+table, th, td 
 {
-    color: purple;
-}
-h3 
-{
-    color: red;
-}
-nav
-{
-    color: lightblue;
+    border: 1px solid black;
 }
