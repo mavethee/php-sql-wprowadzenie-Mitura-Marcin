@@ -9,6 +9,8 @@
         Place for navigation and links
         <a href="Organizacja_i_pracownicy.php">Organizacja_i_pracownicy<a>;
         <a href="Funkcje_agregujace.php">Funkcje_agregujące<a>;
+        <a href="Data_i_czas.php">Data_i_czas<a>;
+        <a href="index.php">Główny index<a>;
         <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Mitura-Marcin">GitHub<a>;
     </div>
         <?php
