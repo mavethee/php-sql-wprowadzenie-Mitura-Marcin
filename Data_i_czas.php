@@ -18,7 +18,7 @@
         //Logowanie do serwera mySQL
         require_once("connect.php");
 
-        echo("Funkcje_agregujące.php");
+        echo("Data_i_czas.php");
         //Zadanie 1: Wyświetl wiek poszczegolnych pracowników
         echo("<h1>Zadanie 1: Wyświetl wiek poszczegolnych pracowników</h1>");
         $result=$conn->query("SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS Wiek_poszczególnych_pracowników FROM pracownicy");
@@ -60,7 +60,7 @@
 
         //Zadanie 4: Suma lat pracowników z dzialu handel:
         echo("<h1>Zadanie 4: Suma lat pracowników z dzialu handel</h1>");
-        $result=$conn->query("SELECT SUM(YEAR(curdate())-YEAR(data_urodzenia)) AS Suma_lat_pracowników_z_dzialu_handel FROM pracownicy,działy WHERE dzial=id_org AND nazwa_dzial='handel'");
+        $result=$conn->query("SELECT SUM(YEAR(curdate())-YEAR(data_urodzenia)) AS Suma_lat_pracowników_z_dzialu_handel FROM pracownicy,organizacja WHERE dzial=id_org AND nazwa_dzial='handel'");
         echo("<table borded=1>");
         echo("<th>Suma_lat_pracowników_z_dzialu_handel</th>");
         while($row=$result->fetch_assoc())
