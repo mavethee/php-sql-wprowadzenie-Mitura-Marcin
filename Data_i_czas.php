@@ -72,7 +72,7 @@
         echo("</table>");
 
         //Zadanie 5: Wyświetl sumę lat kobiet:
-        echo("<h1>/Zadanie 5: Wyświetl sumę lat kobiet</h1>");
+        echo("<h1>Zadanie 5: Wyświetl sumę lat kobiet</h1>");
         $result=$conn->query("SELECT SUM(YEAR(curdate())-YEAR(data_urodzenia)) AS Suma_lat_kobiet FROM pracownicy WHERE imie LIKE '%a'");
         echo("<table borded=1>");
         echo("<th>Suma_lat_kobiet</th>");
