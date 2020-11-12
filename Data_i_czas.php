@@ -32,7 +32,7 @@
         while($row=$result->fetch_assoc())
         {
             echo("<tr>");
-            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]"</td><td>".$row["Wiek_poszczególnych_pracowników"]."</td>");
+            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["Wiek_poszczególnych_pracowników"]."</td>");
             echo("</tr>");
         }
         echo("</table>");
