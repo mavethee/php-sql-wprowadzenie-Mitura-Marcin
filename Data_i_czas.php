@@ -25,7 +25,7 @@
         echo("<table borded=1>");
         echo("<th>id_pracownicy</th>");
         echo("<th>imie</th>");
-        echo("<th>Data_urodzenia</th>");
+        echo("<th>data_urodzenia</th>");
         echo("<th>dzial</th>");
         echo("<th>zarobki</th>");
         echo("<th>Wiek_poszczególnych_pracowników</th>");
@@ -43,7 +43,7 @@
         echo("<table borded=1>");
         echo("<th>id_pracownicy</th>");
         echo("<th>imie</th>");
-        echo("<th>Data_urodzenia</th>");
+        echo("<th>data_urodzenia</th>");
         echo("<th>dzial</th>");
         echo("<th>zarobki</th>");
         echo("<th>Wiek_poszczególnych_pracowników_z_działu_serwisowego</th>");
