@@ -66,7 +66,7 @@
             echo("<td>".$row["Suma_lat_wszystkich_pracowników"]."</td>");
             echo("</tr>");
         }
-            echo("</table>");
+        echo("</table>");
 
         //Zadanie 4: Suma lat pracowników z dzialu handel:
         echo("<h1>Zadanie 4: Suma lat pracowników z dzialu handel</h1>");
