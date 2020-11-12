@@ -23,11 +23,16 @@
         echo("<h1>Zadanie 1: Wyświetl wiek poszczegolnych pracowników</h1>");
         $result=$conn->query("SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS Wiek_poszczególnych_pracowników FROM pracownicy");
         echo("<table borded=1>");
+        echo("<th>id_pracownicy</th>");
+        echo("<th>imie</th>");
+        echo("<th>Data_urodzenia</th>");
+        echo("<th>dzial</th>");
+        echo("<th>zarobki</th>");
         echo("<th>Wiek_poszczególnych_pracowników</th>");
         while($row=$result->fetch_assoc())
         {
             echo("<tr>");
-            echo("<td>".$row["Wiek_poszczególnych_pracowników"]."</td>");
+            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]"</td><td>".$row["Wiek_poszczególnych_pracowników"]."</td>");
             echo("</tr>");
         }
         echo("</table>");
@@ -36,11 +41,16 @@
         echo("<h1>Zadanie 2: Wyświetl wiek pracowników z działu serwisowego</h1>");
         $result=$conn->query("SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS Wiek_poszczególnych_pracowników_z_działu_serwisowego FROM pracownicy,organizacja WHERE dzial=id_org AND nazwa_dzial='serwis'");
         echo("<table borded=1>");
+        echo("<th>id_pracownicy</th>");
+        echo("<th>imie</th>");
+        echo("<th>Data_urodzenia</th>");
+        echo("<th>dzial</th>");
+        echo("<th>zarobki</th>");
         echo("<th>Wiek_poszczególnych_pracowników_z_działu_serwisowego</th>");
         while($row=$result->fetch_assoc())
         {
             echo("<tr>");
-            echo("<td>".$row["Wiek_poszczególnych_pracowników_z_działu_serwisowego"]."</td>");
+            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]"</td><td>".$row["Wiek_poszczególnych_pracowników_z_działu_serwisowego"]."</td>");
             echo("</tr>");
         }
         echo("</table>");
