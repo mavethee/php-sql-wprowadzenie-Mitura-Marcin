@@ -21,6 +21,7 @@
         echo("Data_i_czas.php");
         //Zadanie 1: Wyświetl wiek poszczegolnych pracowników
         echo("<h1>Zadanie 1: Wyświetl wiek poszczegolnych pracowników</h1>");
+        echo("<h2>Użyte zapytanie SQL: SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS Wiek_poszczególnych_pracowników FROM pracownicy</h2>");
         $result=$conn->query("SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS Wiek_poszczególnych_pracowników FROM pracownicy");
         echo("<table borded=1>");
         echo("<th>id_pracownicy</th>");
@@ -39,6 +40,7 @@
 
         //Zadanie 2: Wyświetl wiek pracowników z działu serwisowego:
         echo("<h1>Zadanie 2: Wyświetl wiek pracowników z działu serwisowego</h1>");
+        echo("<h2>Użyte zapytanie SQL: SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS Wiek_poszczególnych_pracowników_z_działu_serwisowego FROM pracownicy,organizacja WHERE dzial=id_org AND nazwa_dzial='serwis'</h2>");
         $result=$conn->query("SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS Wiek_poszczególnych_pracowników_z_działu_serwisowego FROM pracownicy,organizacja WHERE dzial=id_org AND nazwa_dzial='serwis'");
         echo("<table borded=1>");
         echo("<th>id_pracownicy</th>");
@@ -57,6 +59,7 @@
 
         //Zadanie 3: Wyświetlenie sumy lat wszystkich pracowników:
         echo("<h1>Zadanie 3: Wyświetlenie sumy lat wszystkich pracowników</h1>");
+        echo("<h2>Użyte zapytanie SQL: SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS Suma_lat_wszystkich_pracowników FROM pracownicy</h2>");
         $result=$conn->query("SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS Suma_lat_wszystkich_pracowników FROM pracownicy");
         echo("<table borded=1>");
         echo("<th>Suma_lat_wszystkich_pracowników</th>");
@@ -70,6 +73,7 @@
 
         //Zadanie 4: Suma lat pracowników z dzialu handel:
         echo("<h1>Zadanie 4: Suma lat pracowników z dzialu handel</h1>");
+        echo("<h2>Użyte zapytanie SQL: SELECT SUM(YEAR(curdate())-YEAR(data_urodzenia)) AS Suma_lat_pracowników_z_dzialu_handel FROM pracownicy,organizacja WHERE dzial=id_org AND nazwa_dzial='handel'</h2>");
         $result=$conn->query("SELECT SUM(YEAR(curdate())-YEAR(data_urodzenia)) AS Suma_lat_pracowników_z_dzialu_handel FROM pracownicy,organizacja WHERE dzial=id_org AND nazwa_dzial='handel'");
         echo("<table borded=1>");
         echo("<th>Suma_lat_pracowników_z_dzialu_handel</th>");
@@ -83,6 +87,7 @@
 
         //Zadanie 5: Wyświetl sumę lat kobiet:
         echo("<h1>Zadanie 5: Wyświetl sumę lat kobiet</h1>");
+        echo("<h2>Użyte zapytanie SQL: SELECT SUM(YEAR(curdate())-YEAR(data_urodzenia)) AS Suma_lat_kobiet FROM pracownicy WHERE imie LIKE '%a'</h2>");
         $result=$conn->query("SELECT SUM(YEAR(curdate())-YEAR(data_urodzenia)) AS Suma_lat_kobiet FROM pracownicy WHERE imie LIKE '%a'");
         echo("<table borded=1>");
         echo("<th>Suma_lat_kobiet</th>");
