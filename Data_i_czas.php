@@ -103,9 +103,9 @@
         echo("</table>");
 
         //Zadanie 6: Wyświetl sumę lat mężczyzn:
-        echo("<h1>Zadanie 5: Wyświetl sumę lat mężczyzn</h1>");
+        echo("<h1>Zadanie 6: Wyświetl sumę lat mężczyzn</h1>");
         echo("<h2>Użyte zapytanie SQL: SELECT SUM(YEAR(curdate())-YEAR(data_urodzenia)) AS Suma_lat_mężczyzn FROM pracownicy WHERE imie NOT LIKE '%a'</h2>");
-        $result=$conn->query("SELECT SUM(YEAR(curdate())-YEAR(data_urodzenia)) AS Suma_lat_meżczyzn FROM pracownicy WHERE imie NOT LIKE '%a'");
+        $result=$conn->query("SELECT SUM(YEAR(curdate())-YEAR(data_urodzenia)) AS Suma_lat_meżczyzn FROM pracownicy WHERE imie NOT LIKE '%a' ");
         echo("<table borded=1>");
         echo("<th>Suma_lat_mężczyzn</th>");
         while($row=$result->fetch_assoc())
