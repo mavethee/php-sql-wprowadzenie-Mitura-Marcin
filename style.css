@@ -13,7 +13,41 @@ table, th, td
     border: 1px solid black;
 }
 
-div
+.nav{
+    display:flex;
+    justify-content: space-around;
+    width:90vw;
+    background:pink;
+    height: 30px;
+}
+
+.link
 {
-    border: 1px solid black;
+    text-decoration: none;
+    padding:1rem;
+    background:lightpink;
+    color:blue;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+}
+
+.link:hover{background-color:gray;}
+
+.item
+{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav1
+{
+    display:flex;
+    justify-content: center;
+    width: 9,5%;
+    height: 30px;
+    background:black;
+    position:absolute;
+    left:5%;
 }
