@@ -100,8 +100,8 @@
 
         //Zadanie 5: Wyświetlenie mężczyzn posortowanych rosnąco po nazwie działu, a następnie po wysokości zarobków:
         echo("<h1>Zadanie 5: Wyświetlenie mężczyzn posortowanych rosnąco po nazwie działu, a następnie po wysokości zarobków</h1>");
-        echo("<h2>Użyte zapytanie SQL: SELECT * FROM pracownicy,organizacja WHERE id_org=dzial AND imie NOT LIKE '%a' ORDER  nazwa_dzial ASC, zarobki ASC</h2>");
-        $result=$conn->query("SELECT * FROM pracownicy,organizacja WHERE id_org=dzial AND imie NOT LIKE '%a' ORDER  nazwa_dzial ASC, zarobki ASC");
+        echo("<h2>Użyte zapytanie SQL: SELECT * FROM pracownicy,organizacja WHERE id_org=dzial AND imie NOT LIKE '%a' ORDER BY  nazwa_dzial ASC, zarobki ASC</h2>");
+        $result=$conn->query("SELECT * FROM pracownicy,organizacja WHERE id_org=dzial AND imie NOT LIKE '%a' ORDER BY  nazwa_dzial ASC, zarobki ASC");
         echo("<table borded=1>");
         echo("<th>id_pracownicy</th>");
         echo("<th>imie</th>");
