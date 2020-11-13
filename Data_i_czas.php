@@ -164,19 +164,19 @@
         echo("</table>");
 
         //Zadanie 10: Wyświetl najmłodszych pracowników z działu handel i serwis (nazwa_dział, wiek):
-        //echo("<h1>Zadanie 10: Wyświetl najmłodszych pracowników z działu handel i serwis (nazwa_dział, wiek)</h1>");
-        //echo("<h2>Użyte zapytanie SQL: SELECT nazwa_dzial, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS wiek FROM pracownicy,organizacja WHERE id_org=dzial AND nazwa_dzial=handel OR nazwa_dzial=serwis GROUP BY dzial</h2>");
-        //$result=$conn->query("SELECT nazwa_dzial, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS wiek FROM pracownicy,organizacja WHERE id_org=dzial AND (nazwa_dzial=handel OR nazwa_dzial=serwis) GROUP BY dzial");
-        //echo("<table borded=1>");
-        //echo("<th>nazwa_dzial</th>");
-        //echo("<th>wiek</th>");
-        //while($row=$result->fetch_assoc())
-        //{
-            //echo("<tr>");
-            //echo("<td>".$row["nazwa_dzial"]."</td><td>".$row["wiek"]."</td>");
-            //echo("</tr>");
-        //}
-        //echo("</table>");
+        echo("<h1>Zadanie 10: Wyświetl najmłodszych pracowników z działu handel i serwis (nazwa_dział, wiek)</h1>");
+        echo("<h2>Użyte zapytanie SQL: SELECT nazwa_dzial, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS wiek FROM pracownicy,organizacja WHERE id_org=dzial AND nazwa_dzial=handel OR nazwa_dzial=serwis GROUP BY dzial</h2>");
+        $result=$conn->query("SELECT nazwa_dzial, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS wiek FROM pracownicy,organizacja WHERE id_org=dzial AND (nazwa_dzial=handel OR nazwa_dzial=serwis) GROUP BY dzial");
+        echo("<table borded=1>");
+        echo("<th>nazwa_dzial</th>");
+        echo("<th>wiek</th>");
+        while($row=$result->fetch_assoc())
+        {
+            echo("<tr>");
+            echo("<td>".$row["nazwa_dzial"]."</td><td>".$row["wiek"]."</td>");
+            echo("</tr>");
+        }
+        echo("</table>");
 
         //Zadanie 11: Wyświetl najmłodszych pracowników z działu handel i serwis (imie, nazwa_dział, wiek):
         echo("<h1>Zadanie 11: Wyświetl najmłodszych pracowników z działu handel i serwis (nazwa_dział, wiek)</h1>");
