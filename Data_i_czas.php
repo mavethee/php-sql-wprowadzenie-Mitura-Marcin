@@ -165,8 +165,8 @@
 
         //Zadanie 10: Wyświetl najmłodszych pracowników z działu handel i serwis (nazwa_dział, wiek):
         echo("<h1>Zadanie 10: Wyświetl najmłodszych pracowników z działu handel i serwis (nazwa_dział, wiek)</h1>");
-        echo("<h2>Użyte zapytanie SQL: SELECT nazwa_dzial, MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS wiek FROM pracownicy,organizacja WHERE id_org=dzial AND nazwa_dzial=handel OR nazwa_dzial=serwis GROUP BY dzial</h2>");
-        $result=$conn->query("SELECT MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) as min, nazwa_dzial from pracownicy, organizacja WHERE id_org=dzial and (nazwa_dzial='handel' OR nazwa_dzial='serwis') GROUP BY dzial");
+        echo("<h2>Użyte zapytanie SQL: SELECT MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek, nazwa_dzial from pracownicy, organizacja WHERE id_org=dzial and (nazwa_dzial='handel' OR nazwa_dzial='serwis') GROUP BY dzial</h2>");
+        $result=$conn->query("SELECT MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek, nazwa_dzial from pracownicy, organizacja WHERE id_org=dzial and (nazwa_dzial='handel' OR nazwa_dzial='serwis') GROUP BY dzial");
         echo("<table borded=1>");
         echo("<th>nazwa_dzial</th>");
         echo("<th>wiek</th>");
