@@ -40,27 +40,8 @@
         }
         echo("</table>");
 
-        //Zadanie 2: Wypisz dzisiejszą nazwę dnia po polsku (np. poniedziałek)
-        echo("<h1>Zadanie 2: Wypisz dzisiejszą nazwę dnia po polsku (np. poniedziałek)</h1>");
-        echo("<h2>Użyte zapytanie SQL: SELECT *, DATE_FORMAT(data_urodzenia,'%W-%M-%Y') FROM pracownicy</h2>");
-        $sql1 = "SET lc_time_names = 'pl_PL'";
-        $sql2 = "SELECT DATE_FORMAT(CURDATE(), '%W') AS Dzisiejsza_data";
-        echo("<table borded=1>");
-        echo("<th>id_pracownicy</th>");
-        echo("<th>imie</th>");
-        echo("<th>data_urodzenia</th>");
-        echo("<th>dzial</th>");
-        echo("<th>zarobki</th>");
-        while($row=$sql2->fetch_assoc())
-        {
-            echo("<tr>");
-            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
-            echo("</tr>");
-        }
-        echo("</table>");
-
-        //Zadanie 3: Wyświetl nazwy miesięcy w dacie urodzenia
-        echo("<h1>Zadanie 3: Wyświetl nazwy dni w dacie urodzenia</h1>");
+        //Zadanie 2: Wyświetl nazwy miesięcy w dacie urodzenia
+        echo("<h1>Zadanie 2: Wyświetl nazwy dni w dacie urodzenia</h1>");
         echo("<h2>Użyte zapytanie SQL: SELECT *, DATE_FORMAT(data_urodzenia,'%W-%M-%Y') FROM pracownicy</h2>");
         $result=$conn->query("SELECT *, DATE_FORMAT(data_urodzenia,'%W-%M-%Y') FROM pracownicy");
         echo("<table borded=1>");
@@ -77,8 +58,8 @@
         }
         echo("</table>");
 
-        //Zadanie 4: Wyświetl obecną, dokładną godzinę z dokładnością do milisekund:
-        echo("<h1>Zadanie 4: Wyświetl obecną, dokładną godzinę z dokładnością do milisekund</h1>");
+        //Zadanie 3: Wyświetl obecną, dokładną godzinę z dokładnością do milisekund:
+        echo("<h1>Zadanie 3: Wyświetl obecną, dokładną godzinę z dokładnością do milisekund</h1>");
         echo("<h2>Użyte zapytanie SQL: SELECT curtime(4) AS Aktualna_godzina FROM pracownicy</h2>");
         $result=$conn->query("SELECT curtime(4) AS Aktualna_godzina FROM pracownicy");
         echo("<table borded=1>");
