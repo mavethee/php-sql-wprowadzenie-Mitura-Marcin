@@ -60,8 +60,8 @@
 
         //Zadanie 3: Wyświetl obecną, dokładną godzinę z dokładnością do milisekund:
         echo("<h1>Zadanie 3: Wyświetl obecną, dokładną godzinę z dokładnością do milisekund</h1>");
-        echo("<h2>Użyte zapytanie SQL: SELECT curtime(4) AS Aktualna_godzina FROM pracownicy</h2>");
-        $result=$conn->query("SELECT curtime(4) AS Aktualna_godzina FROM pracownicy");
+        echo("<h2>Użyte zapytanie SQL: SELECT curtime(4) AS Aktualna_godzina</h2>");
+        $result=$conn->query("SELECT curtime(4) AS Aktualna_godzina");
         echo("<table borded=1>");
         echo("<th>Aktualna_godzina</th>");
         while($row=$result->fetch_assoc())
