@@ -105,7 +105,7 @@
         //Zadanie 6: Wyświetl sumę lat mężczyzn:
         echo("<h1>Zadanie 6: Wyświetl sumę lat mężczyzn</h1>");
         echo("<h2>Użyte zapytanie SQL: SELECT SUM(YEAR(curdate())-YEAR(data_urodzenia)) AS Suma_lat_mężczyzn FROM pracownicy WHERE imie NOT LIKE '%a'</h2>");
-        $result=$conn->query("SELECT SUM(YEAR(curdate())-YEAR(data_urodzenia)) AS Suma_lat_meżczyzn FROM pracownicy WHERE imie NOT LIKE '%a' ");
+        $result=$conn->query("SELECT SUM(YEAR(curdate())-YEAR(data_urodzenia)) AS Suma_lat_mężczyzn FROM pracownicy WHERE imie NOT LIKE '%a' ");
         echo("<table borded=1>");
         echo("<th>Suma_lat_mężczyzn</th>");
         while($row=$result->fetch_assoc())
@@ -179,7 +179,7 @@
         echo("</table>");
 
         //Zadanie 11: Wyświetl najmłodszych pracowników z działu handel i serwis (imie, nazwa_dział, wiek):
-        echo("<h1>Zadanie 11: Wyświetl najmłodszych pracowników z działu handel i serwis (nazwa_dział, wiek)</h1>");
+        echo("<h1>Zadanie 11: Wyświetl najmłodszych pracowników z działu handel i serwis (imie, nazwa_dział, wiek)</h1>");
         echo("<h2>Użyte zapytanie SQL: SELECT MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS wiek, imie, nazwa_dzial FROM pracownicy,organizacja WHERE id_org=dzial AND nazwa_dzial=handel OR nazwa_dzial=serwis GROUP BY dzial</h2>");
         $result=$conn->query("SELECT MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS wiek, imie, nazwa_dzial FROM pracownicy,organizacja WHERE id_org=dzial AND (nazwa_dzial='handel' OR nazwa_dzial='serwis') GROUP BY dzial");
         echo("<table borded=1>");
