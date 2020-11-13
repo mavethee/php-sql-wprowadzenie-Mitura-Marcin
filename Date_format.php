@@ -44,7 +44,7 @@
         echo("<h1>Zadanie 2: Wypisz dzisiejszą nazwę dnia po polsku (np. poniedziałek)</h1>");
         echo("<h2>Użyte zapytanie SQL: SELECT *, DATE_FORMAT(data_urodzenia,'%W-%M-%Y') FROM pracownicy</h2>");
         $sql1 = "SET lc_time_names = 'pl_PL'";
-        $sql2 = "SELECT DATE_FORMAT(CURDATE(), '%W')as data":
+        $sql2 = "SELECT DATE_FORMAT(CURDATE(), '%W') AS Dzisiejsza_data";
         echo("<table borded=1>");
         echo("<th>id_pracownicy</th>");
         echo("<th>imie</th>");
