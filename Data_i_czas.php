@@ -14,7 +14,10 @@
         <a href="Funkcje_agregujace.php">Funkcje_agregujące<a>;
         <a href="Data_i_czas.php">Data_i_czas<a>;
         <a href="Date_format.php">Formatowanie_dat<a>;
-        <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Mitura-Marcin">GitHub<a>;
+        <a href="formularz.html">Formularz<a>;
+        <a href="https://projekt-testowy-mavethee.herokuapp.com/">Testowanko<a>;
+        <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Mitura-Marcin">GitHub - PHP<a>;
+        <a href="https://github.com/mavethee/projekt_testowy">GitHub - Testowanko<a>;
     </div>
         <?php
 

@@ -2,8 +2,9 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-    </head>
+        <meta name="viewport" content="width=device-width">
+        <title>Prosty Formuarz</title>
+      </head>
 <body>
     <div class="nav">
         Place for navigation and links
@@ -14,20 +15,20 @@
         <a href="Funkcje_agregujace.php">Funkcje_agregujące<a>;
         <a href="Data_i_czas.php">Data_i_czas<a>;
         <a href="Date_format.php">Formatowanie_dat<a>;
+        <a href="formularz.html">Formularz<a>;
         <a href="https://projekt-testowy-mavethee.herokuapp.com/">Testowanko<a>;
         <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Mitura-Marcin">GitHub - PHP<a>;
         <a href="https://github.com/mavethee/projekt_testowy">GitHub - Testowanko<a>;
     </div>
-    <?php
-        include("connect.php");
-        echo("<li> imie: ".$_POST['firstname']."</li>");
-        echo("<li> nazwisko: ".$_POST['name']."</li>");
-        echo("<li> numer tel: ".$_POST['phone']."</li>");
-        echo("<li> miasto: ".$_POST['city']."</li>");
-        echo("<li> kod pocztowy: ".$_POST['postcode']."</li>");
 
-        $sql="INSERT INTO 'pracownicy'('id', 'imie', 'dzial', 'zarobki', 'data_urodzenia') VALUES (null,'józef',2,23,'2001-10-23')";
-        $conn->query($sql);
-    ?>
+    <form action="strona.php" method="POST">
+        <input type="text" name="firstname"></br>
+        <input type="text" name="lastname"></br>
+        <input type="text" name="city"></br>
+        <input type="text" name="phone"></br>
+        <input type="text" name="poscode"></br>
+        <input type="submit" value="wyślij do strona.php">
+        <input type="submit" value="wyślij do strona.php">
+    </form>
 </body>
 </html>
