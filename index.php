@@ -19,7 +19,7 @@
         <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Mitura-Marcin">GitHub - PHP<a>;
         <a href="https://github.com/mavethee/projekt_testowy">GitHub - Testowanko<a>;
     </div>
-        <form action="page.php" method="POST">
+        <form action="strona.php" method="POST">
             <input type="text" name="name">
             <input type="submit" value="send">
         </form>
