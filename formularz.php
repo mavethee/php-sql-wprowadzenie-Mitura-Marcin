@@ -3,11 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
-        <title>Formuarz</title>
+        <title>Formularz</title>
         <link rel="stylesheet" href="style.css">
       </head>
 <body>
-    <div class="nav">
+<div class="nav">
         Place for navigation and links
         <a href="index.php">Główny index<a>;
         <a href="Organizacja_i_pracownicy.php">Organizacja_i_pracownicy<a>;
@@ -21,13 +21,25 @@
         <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Mitura-Marcin">GitHub - PHP<a>;
         <a href="https://github.com/mavethee/projekt_testowy">GitHub - Testowanko<a>;
     </div>
+        <?php
+            //Logowanie do serwera mySQL:
+            require_once("connect.php");
 
-    <form action="formularz.php" method="POST">
-        <input type="text" name="firstname" placeholder="Imię"></br>
-        <input type="number" name="shift" placeholder="Dział"></br>
-        <input type="number" name="salary" placeholder="Zarobki"></br>
-        <input type="date" name="date_of_birth" placeholder="Data urodzenia"></br>
-        <input type="submit" value="wyślij do strona.php">
-    </form>
+            //Zapytanie Insert w $SQL:
+            $sql = sprintf("INSERT INTO pracownicy('imie', 'dzial', 'zarobki', 'data_urodzenia') VALUES(%s,%s,%s,%s)", $_POST['imie'], $_POST['dzial'], $_POST['zarobki'], $_POST['data_urodzenia']);
+
+            if ($conn->query($sql) === TRUE)
+            {
+                echo "New record created successfully";
+            }
+            
+            //Informacja o ewentualnych błędach:
+            else 
+            {
+                echo "Error: " . $sql . "<br>" . $conn->error;
+            }
+            $conn->close();
+
+        ?>
 </body>
 </html>
