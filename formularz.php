@@ -26,7 +26,7 @@
             require_once("connect.php");
 
             //Zapytanie Insert w $SQL:
-            $sql = sprintf("INSERT INTO pracownicy(`imie`, `dzial`, `zarobki`, `data_urodzenia`) VALUES(%s,%s,%s,%s)", $_POST['imie'], $_POST['dzial'], $_POST['zarobki'], $_POST['data_urodzenia']);
+            $sql = sprintf("INSERT INTO pracownicy(imie, dzial, zarobki, data_urodzenia) VALUES(%s,%s,%s,%s), $_POST['imie'], $_POST['dzial'], $_POST['zarobki'], $_POST['data_urodzenia']");
 
             if ($conn->query($sql) === TRUE)
             {
