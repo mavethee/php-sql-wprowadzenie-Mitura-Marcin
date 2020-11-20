@@ -8,7 +8,6 @@
       </head>
 <body>
     <div class="nav">
-        Place for navigation and links
         <a href="index.php">Główny index<a>;
         <a href="Organizacja_i_pracownicy.php">Organizacja_i_pracownicy<a>;
         <a href="Sortowanie.php">Sortowanie<a>;
