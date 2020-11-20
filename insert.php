@@ -31,7 +31,7 @@
         $sql = ("INSERT INTO pracownicy (NULL, imie, dzial, zarobki) VALUES (NULL,'Balbina', 4, 86,'1999-05-21'");
 
         //Zapytanie Insert w $SQL z próbą uzyskania danych od użytkownika:
-        $sql = sprintf("INSERT INTO pracownicy('imie', 'dzial', 'zarobki', 'data_urodzenia') VALUES(%s,%s,%s,%s)", $_POST['imie'], $_POST['dzial'], $_POST['zarobki'], $_POST['data_urodzenia']);
+        $sql = sprintf("INSERT INTO pracownicy('imie', 'dzial', 'zarobki', 'data_urodzenia') VALUES(%s,%s,%s,%s)", $_POST['firstname'], $_POST['shift'], $_POST['salary'], $_POST['date_of_birth']);
 
         if ($conn->query($sql) === TRUE)
         {
