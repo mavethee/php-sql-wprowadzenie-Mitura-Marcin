@@ -22,6 +22,13 @@
         <a href="https://github.com/mavethee/projekt_testowy">GitHub - Testowanko<a>;
     </div>
         <?php
+            //Informacje o stronie:
+            echo("jesteś na stronie.php");
+            echo("<h2> Imie:".$_POST["imie"]."</h2>");
+            echo("<h2> Dział:".$_POST["dzial"]."</h2>");
+            echo("<h2> Zarobki:".$_POST["zarobki"]."</h2>");
+            echo("<h2> Data Urodzenia:".$_POST["data_urodzenia"]."</h2>");
+
             //Logowanie do serwera mySQL:
             require_once("connect.php");
 
