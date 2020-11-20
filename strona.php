@@ -28,10 +28,10 @@
 
             //Informacje o stronie:
             echo("Jesteś na stronie.php");
-            echo("<li> Imie:".$_POST["firstname"]."</li>");
-            echo("<li> Dział:".$_POST["shift"]."</li>");
-            echo("<li> Zarobki:".$_POST["salary"]."</li>");
-            echo("<li> Data Urodzenia:".$_POST["date_of_birth"]."</li>");
+            echo("<h2> Imie: ".$_POST["firstname"]."</h2>");
+            echo("<h2> Dział: ".$_POST["shift"]."</h2>");
+            echo("<h2> Zarobki: ".$_POST["salary"]."</h2>");
+            echo("<h2> Data urodzenia: ".$_POST["date_of_birth"]."</h2>");
 
         ?>
 </body>
