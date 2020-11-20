@@ -37,8 +37,11 @@
             //Przykład zapytania Insert w $SQL:
             $sql = ("INSERT INTO pracownicy (id_pracownicy, imie, dzial, zarobki, data_urodzenia) VALUES (NULL,'Ksawery', 3, 36,'1995-10-21')");
 
-            //Zapytanie Insert w $SQL z próbą uzyskania danych od użytkownika: - NIE DZIAŁA ;-;
-            //$sql = ("INSERT INTO pracownicy (id_pracownicy,imie, dzial, zarobki, data_urodzenia) VALUES(NULL, $_POST["firstname"], $_POST["shift"], $_POST["salary"], $_POST["date_of_birth"]");
+            //Zapytanie Insert w $SQL z próbą uzyskania danych od użytkownika:
+            $sql = ("INSERT INTO pracownicy (id_pracownicy,imie, dzial, zarobki, data_urodzenia) VALUES (NULL,'".$_POST['firstname']."', ".$_POST['shift'].", ".$_POST['salary'].",'".$_POST['date_of_birth']."')");
+            
+            //Wyświetlenie tabeli:
+            echo "<h2>". $sql;
 
             //Informacja o sukcesie:
             if ($conn->query($sql) === TRUE)
