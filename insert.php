@@ -22,7 +22,13 @@
         <a href="https://github.com/mavethee/projekt_testowy">GitHub - Testowanko<a>;
     </div>
         <?php
+
+            //Informacje o stronie:
             echo("<br>Jesteś w insert.php</br>");
+            echo("<h2> Imie: ".$_POST["firstname"]."</h2>");
+            echo("<h2> Dział: ".$_POST["shift"]."</h2>");
+            echo("<h2> Zarobki: ".$_POST["salary"]."</h2>");
+            echo("<h2> Data urodzenia: ".$_POST["date_of_birth"]."</h2>");
 
             //Logowanie do serwera mySQL:
             require_once("connect.php");
