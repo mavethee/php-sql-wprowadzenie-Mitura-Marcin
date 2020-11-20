@@ -22,7 +22,7 @@
         <a href="https://github.com/mavethee/projekt_testowy">GitHub - Testowanko<a>;
     </div>
         <?php
-        echo("Jesteś w insert.php");
+        echo("<br>Jesteś w insert.php</br>");
 
         //Logowanie do serwera mySQL
         require_once("connect.php");
