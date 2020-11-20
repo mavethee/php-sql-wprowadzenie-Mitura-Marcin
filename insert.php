@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
-        <title>Formularz</title>
+        <title>Insert</title>
         <link rel="stylesheet" href="style.css">
       </head>
 <body>
-<div class="nav">
+    <div class="nav">
         Place for navigation and links
         <a href="index.php">Główny index<a>;
         <a href="Organizacja_i_pracownicy.php">Organizacja_i_pracownicy<a>;
@@ -22,17 +22,28 @@
         <a href="https://github.com/mavethee/projekt_testowy">GitHub - Testowanko<a>;
     </div>
         <?php
+        echo("Jesteś w insert.php");
 
-            //Logowanie do serwera mySQL:
-            require_once("connect.php");
+        //Logowanie do serwera mySQL
+        require_once("connect.php");
 
-            //Informacje o stronie:
-            echo("Jesteś na stronie.php");
-            echo("<li> Imie:".$_POST["imie"]."</li>");
-            echo("<li> Dział:".$_POST["dzial"]."</li>");
-            echo("<li> Zarobki:".$_POST["zarobki"]."</li>");
-            echo("<li> Data Urodzenia:".$_POST["data_urodzenia"]."</li>");
+        //Przykład zapytania Insert w $SQL:
+        $sql = ("INSERT INTO pracownicy (NULL, imie, dzial, zarobki) VALUES (NULL,'Balbina', 4, 86,'1999-05-21'");
 
+        //Zapytanie Insert w $SQL z próbą uzyskania danych od użytkownika:
+        $sql = sprintf("INSERT INTO pracownicy('imie', 'dzial', 'zarobki', 'data_urodzenia') VALUES(%s,%s,%s,%s)", $_POST['imie'], $_POST['dzial'], $_POST['zarobki'], $_POST['data_urodzenia']);
+
+        if ($conn->query($sql) === TRUE)
+        {
+            echo "New record created successfully";
+        }
+                    
+        //Informacja o ewentualnych błędach:
+        else 
+        {
+            echo "Error: " . $sql . "<br>" . $conn->error;
+        }
+        $conn->close();
         ?>
 </body>
 </html>
