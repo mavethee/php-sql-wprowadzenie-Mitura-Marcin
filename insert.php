@@ -46,7 +46,7 @@
             //Informacja o sukcesie:
             if ($conn->query($sql) === TRUE)
             {
-                echo "New record created successfully";
+                echo "<br>New record created successfully<br>";
             }
                         
             //Informacja o ewentualnych błędach:
