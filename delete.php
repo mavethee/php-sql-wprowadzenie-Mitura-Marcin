@@ -26,10 +26,6 @@
             //Informacje o stronie:
             echo("<br>Jesteś w w delete.php</br>");
             echo("<h2> ID: ".$_POST["id_employee"]."</h2>");
-            echo("<h2> Imie: ".$_POST["firstname"]."</h2>");
-            echo("<h2> Dział: ".$_POST["shift"]."</h2>");
-            echo("<h2> Zarobki: ".$_POST["salary"]."</h2>");
-            echo("<h2> Data urodzenia: ".$_POST["date_of_birth"]."</h2>");
 
             //Logowanie do serwera mySQL:
             require_once("connect.php");
@@ -38,7 +34,7 @@
             $sql = ("DELETE FROM pracownicy (id_pracownicy, imie, dzial, zarobki, data_urodzenia) VALUES (NULL,'Ksawery', 3, 36,'1995-10-21')");
 
             //Zapytanie DELETE w $SQL z próbą uzyskania danych od użytkownika:
-            $sql = ("DELETE FROM pracownicy (id_pracownicy,imie, dzial, zarobki, data_urodzenia) VALUES ('".$_POST['id_employee']."','".$_POST['firstname']."', ".$_POST['shift'].", ".$_POST['salary'].",'".$_POST['date_of_birth']."')");
+            $sql = ("DELETE FROM pracownicy (id_pracownicy,imie, dzial, zarobki, data_urodzenia) VALUES ('".$_POST['id_employee']."')");
             
             //Wyświetlenie tabeli:
             echo "<h2>". $sql;
