@@ -3,7 +3,7 @@
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
-        <title>Dodawanie pracownika</title>
+        <title>Usuwanie pracownika</title>
         <link rel="stylesheet" href="style.css">
       </head>
 <body>
@@ -15,8 +15,8 @@
         <a href="Funkcje_agregujace.php">Funkcje_agregujące<a>;
         <a href="Data_i_czas.php">Data_i_czas<a>;
         <a href="Date_format.php">Formatowanie_dat<a>;
-        <a href="formularz.html">Formularz<a>;
-        <a href="daneDoBazy.html">Formularz Insert<a>;
+        <a href="formularz.html">Formularz - Strona.php<a>;
+        <a href="daneDoBazy.html">Formularz - daneDoBazy.html<a>;
         <a href="https://projekt-testowy-mavethee.herokuapp.com/">Testowanko<a>;
         <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Mitura-Marcin">GitHub - PHP<a>;
         <a href="https://github.com/mavethee/projekt_testowy">GitHub - Testowanko<a>;
@@ -24,7 +24,8 @@
         <?php
 
             //Informacje o stronie:
-            echo("<br>Jesteś w insert.php</br>");
+            echo("<br>Jesteś w w delete.php</br>");
+            echo("<h2> ID: ".$_POST["id_employee"]."</h2>");
             echo("<h2> Imie: ".$_POST["firstname"]."</h2>");
             echo("<h2> Dział: ".$_POST["shift"]."</h2>");
             echo("<h2> Zarobki: ".$_POST["salary"]."</h2>");
@@ -33,11 +34,11 @@
             //Logowanie do serwera mySQL:
             require_once("connect.php");
 
-            //Przykład zapytanie INSERT w $SQL:
-            $sql = ("INSERT INTO pracownicy (id_pracownicy, imie, dzial, zarobki, data_urodzenia) VALUES (NULL,'Ksawery', 3, 36,'1995-10-21')");
+            //Przykład zapytanie DELETE w $SQL:
+            $sql = ("DELETE FROM pracownicy (id_pracownicy, imie, dzial, zarobki, data_urodzenia) VALUES (NULL,'Ksawery', 3, 36,'1995-10-21')");
 
-            //Zapytanie INSERT w $SQL z próbą uzyskania danych od użytkownika:
-            $sql = ("INSERT INTO pracownicy (id_pracownicy,imie, dzial, zarobki, data_urodzenia) VALUES (NULL,'".$_POST['firstname']."', ".$_POST['shift'].", ".$_POST['salary'].",'".$_POST['date_of_birth']."')");
+            //Zapytanie DELETE w $SQL z próbą uzyskania danych od użytkownika:
+            $sql = ("DELETE FROM pracownicy (id_pracownicy,imie, dzial, zarobki, data_urodzenia) VALUES ('".$_POST['id_employee']."','".$_POST['firstname']."', ".$_POST['shift'].", ".$_POST['salary'].",'".$_POST['date_of_birth']."')");
             
             //Wyświetlenie tabeli:
             echo "<h2>". $sql;
@@ -45,7 +46,7 @@
             //Informacja o sukcesie:
             if ($conn->query($sql) === TRUE)
             {
-                echo "<br>New record created successfully<br>";
+                echo "<br>Record deleted successfully<br>";
             }
                         
             //Informacja o ewentualnych błędach:
