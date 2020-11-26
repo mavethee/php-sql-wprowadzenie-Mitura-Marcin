@@ -29,7 +29,7 @@
         echo("<h1>Zadanie 1: Wyświetl dwóch najlepiej zarabiających pracowników z działu 4</h1>");
         echo("<h2>Użyte zapytanie SQL: SELECT * FROM pracownicy,organizacja WHERE dzial = id_org and dzial= 4 ORDER BY zarobki ASC LIMIT 2</h2>");
         $result=$conn->query("SELECT * FROM pracownicy,organizacja WHERE dzial = id_org and dzial= 4 ORDER BY zarobki ASC LIMIT 2");
-        echo("<table borded=1>");
+        echo("<table border=1>");
         echo("<th>id_pracownicy</th>");
         echo("<th>imie</th>");
         echo("<th>data_urodzenia</th>");
@@ -48,7 +48,7 @@
         echo("<h1>Zadanie 2: Wyświetl trzy najlepiej zarabiające kobiety z działu 4 i 2</h1>");
         echo("<h2>Użyte zapytanie SQL: SELECT * FROM pracownicy,organizacja WHERE dzial = id_org AND imie LIKE '%a' AND dzial=4 LIMIT 3</h2>");
         $result=$conn->query("SELECT * FROM pracownicy,organizacja WHERE dzial = id_org AND imie LIKE '%a' AND dzial=4 LIMIT 3");
-        echo("<table borded=1>");
+        echo("<table border=1>");
         echo("<th>id_pracownicy</th>");
         echo("<th>imie</th>");
         echo("<th>data_urodzenia</th>");
@@ -67,7 +67,7 @@
         echo("<h1>Zadanie 3: Wyświetlenie najstarszego pracownika</h1>");
         echo("<h2>Użyte zapytanie SQL: SELECT * FROM pracownicy,organizacja WHERE dzial = id_org and dzial= 4 ORDER BY data_urodzenia ASC LIMIT 1</h2>");
         $result=$conn->query("SELECT * FROM pracownicy,organizacja WHERE dzial = id_org and dzial= 4 ORDER BY data_urodzenia ASC LIMIT 1");
-        echo("<table borded=1>");
+        echo("<table border=1>");
         echo("<th>id_pracownicy</th>");
         echo("<th>imie</th>");
         echo("<th>data_urodzenia</th>");
