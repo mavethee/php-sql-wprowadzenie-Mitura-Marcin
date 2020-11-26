@@ -31,7 +31,7 @@
             require_once("connect.php");
 
             //Zapytanie DELETE w $SQL z próbą uzyskania danych od użytkownika:
-            $sql = ("DELETE FROM pracownicy (id_pracownicy) VALUES ('".$_POST['id_employee']."')");
+            $sql = ("DELETE FROM pracownicy where id_pracownicy='".$_POST['id_employee']."'");
             
             //Wyświetlenie tabeli:
             echo "<h2>". $sql;
