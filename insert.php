@@ -54,6 +54,23 @@
                 echo "Error: " . $sql . "<br>" . $conn->error;
             }
             $conn->close();
+
+            //Wyświetlenie tabelki jako podgląd przy dodawaniu pracowników
+            echo("<h1>Wyświetlenie tabelki jako podgląd przy dodawaniu pracowników (F5 po wprowadzeniu zmian)</h1>");
+            echo("<h2>Użyte zapytanie SQL: SELECT * FROM pracownicy</h2>");
+            $result=$conn->query("SELECT * FROM pracownicy");
+            echo("<table borded=1>");
+            echo("<th>id_pracownicy</th>");
+            echo("<th>imie</th>");
+            echo("<th>dzial</th>");
+            echo("<th>zarobki</th>");
+            while($row=$result->fetch_assoc())
+            {
+                echo("<tr>");
+                echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
+                echo("</tr>");
+            }
+            echo("</table>");
         ?>
 </body>
 </html>
