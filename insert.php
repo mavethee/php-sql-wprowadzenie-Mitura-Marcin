@@ -33,9 +33,6 @@
             //Logowanie do serwera mySQL:
             require_once("connect.php");
 
-            //Przykład zapytanie INSERT w $SQL:
-            $sql = ("INSERT INTO pracownicy (id_pracownicy, imie, dzial, zarobki, data_urodzenia) VALUES (NULL,'Ksawery', 3, 36,'1995-10-21')");
-
             //Zapytanie INSERT w $SQL z próbą uzyskania danych od użytkownika:
             $sql = ("INSERT INTO pracownicy (id_pracownicy,imie, dzial, zarobki, data_urodzenia) VALUES (NULL,'".$_POST['firstname']."', ".$_POST['shift'].", ".$_POST['salary'].",'".$_POST['date_of_birth']."')");
             

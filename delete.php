@@ -30,11 +30,8 @@
             //Logowanie do serwera mySQL:
             require_once("connect.php");
 
-            //Przykład zapytanie DELETE w $SQL:
-            $sql = ("DELETE FROM pracownicy (id_pracownicy, imie, dzial, zarobki, data_urodzenia) VALUES (NULL,'Ksawery', 3, 36,'1995-10-21')");
-
             //Zapytanie DELETE w $SQL z próbą uzyskania danych od użytkownika:
-            $sql = ("DELETE FROM pracownicy (id_pracownicy,imie, dzial, zarobki, data_urodzenia) VALUES ('".$_POST['id_employee']."')");
+            $sql = ("DELETE FROM pracownicy (id_pracownicy) VALUES ('".$_POST['id_employee']."')");
             
             //Wyświetlenie tabeli:
             echo "<h2>". $sql;
