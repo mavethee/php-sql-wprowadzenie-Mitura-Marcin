@@ -40,7 +40,6 @@
             if ($conn->query($sql) === TRUE)
             {
                 echo "<br>Record deleted successfully<br>";
-                    header('Location: http://www.example.com/');
             }
                         
             //Informacja o ewentualnych błędach:
