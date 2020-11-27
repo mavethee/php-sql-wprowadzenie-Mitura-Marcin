@@ -68,6 +68,8 @@
                 echo("</tr>");
             }
             echo("</table>");
+
+            $conn->close();
         ?>
 </body>
 </html>

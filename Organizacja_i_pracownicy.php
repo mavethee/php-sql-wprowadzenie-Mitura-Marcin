@@ -29,7 +29,7 @@
         echo("<h1>Zadanie 1: Wyświetlenie pełnej listy pracowników z nazwami działów</h1>");
         echo("<h2>Użyte zapytanie SQL: SELECT imie, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org</h2>");
         $result=$conn->query("SELECT imie, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org");
-        echo("<table borded=1>");
+        echo("<table border=1>");
         echo("<th>imie</th>");
         echo("<th>dzial</th>");
         echo("<th>nazwa_dzial</th>");
@@ -45,7 +45,7 @@
         echo("<h1>Zadanie 2: Wyświetlenie pracowników tylko z działu 1 i 4</h1>");
         echo("<h2>Użyte zapytanie SQL: SELECT imie, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE (dzial=1 or dzial=4) AND dzial=id_org</h2>");
         $result=$conn->query("SELECT imie, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE (dzial=1 or dzial=4) AND dzial=id_org");
-        echo("<table borded=1>");
+        echo("<table border=1>");
         echo("<th>imie</th>");
         echo("<th>dzial</th>");
         echo("<th>nazwa_dzial</th>");
@@ -61,7 +61,7 @@
         echo("<h1>Zadanie 3: Wyświetlenie listy kobiet z nazwami działów</h1>");
         echo("<h2>Użyte zapytanie SQL: SELECT imie, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE imie LIKE '%a' AND dzial=id_org</h2>");
         $result=$conn->query("SELECT imie, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE imie LIKE '%a' AND dzial=id_org");
-        echo("<table borded=1>");
+        echo("<table border=1>");
         echo("<th>imie</th>");
         echo("<th>dzial</th>");
         echo("<th>nazwa_dzial</th>");
@@ -77,7 +77,7 @@
         echo("<h1>Zadanie 4: Wyświetlenie listy mężczyzn z nazwami działów</h1>");
         echo("<h2>Użyte zapytanie SQL: SELECT imie, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE imie NOT LIKE '%a' AND dzial=id_org</h2>");
         $result=$conn->query("SELECT imie, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE imie NOT LIKE '%a' AND dzial=id_org");
-        echo("<table borded=1>");
+        echo("<table border=1>");
         echo("<th>imie</th>");
         echo("<th>dzial</th>");
         echo("<th>nazwa_dzial</th>");
@@ -93,7 +93,7 @@
         echo("<h1>Zadanie 5: Wyświetlenie pracowników tylko z działu 2 i 3</h1>");
         echo("<h2>Użyte zapytanie SQL: SELECT imie, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE (dzial=2 OR dzial=3) AND dzial=id_org GROUP BY dzial</h2>");
         $result=$conn->query("SELECT imie, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE (dzial=2 OR dzial=3) AND dzial=id_org GROUP BY dzial");
-        echo("<table borded=1>");
+        echo("<table border=1>");
         echo("<th>imie</th>");
         echo("<th>dzial</th>");
         echo("<th>nazwa_dzial</th>");

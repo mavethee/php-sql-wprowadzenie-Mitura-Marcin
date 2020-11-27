@@ -47,7 +47,6 @@
             {
                 echo "Error: " . $sql . "<br>" . $conn->error;
             }
-            $conn->close();
 
             //Wyświetlenie tabelki jako podgląd przy usuwaniu pracowników
             echo("<h1>Wyświetlenie tabelki jako podgląd przy usuwaniu pracowników (F5 po wprowadzeniu zmian)</h1>");
@@ -66,6 +65,8 @@
                 echo("</tr>");
             }
             echo("</table>");
+
+            $conn->close();
         ?>
 </body>
 </html>
