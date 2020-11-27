@@ -53,10 +53,19 @@
             echo("<th>imie</th>");
             echo("<th>dzial</th>");
             echo("<th>zarobki</th>");
+            echo("<th>Usuń pracownika</th>");
             while($row=$result->fetch_assoc())
             {
                 echo("<tr>");
-                echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
+                echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>
+                <td>
+                <form action='delete.php' method='POST'>
+                       <input type='number' name='id' value='".$row['id_pracownicy']."'></br>
+                       <input type='submit' value='Usuń pracownika'>
+                </form>
+                </td>
+                ");
+                echo("</tr>");
                 echo("</tr>");
             }
             echo("</table>");
