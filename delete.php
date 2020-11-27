@@ -22,13 +22,6 @@
         <a href="https://github.com/mavethee/projekt_testowy">GitHub - Testowanko</a>
     </div>
         <?php
-            //Debugging:
-            echo "server<br/>";
-            print_r($_SERVER);
-            echo "post<br/>";
-            print_r($_POST);
-            echo "get<br/>";
-            print_r($_GET);
 
             //Informacje o stronie:
             echo("<br>Jesteś w w delete.php</br>");
