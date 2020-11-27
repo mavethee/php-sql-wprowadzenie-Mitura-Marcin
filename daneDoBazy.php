@@ -61,7 +61,7 @@
                 <td>
                 <form action='delete.php' method='POST'>
                        <input type='number' name='id' value='".$row['id_pracownicy']."' hidden></br>
-                       <input type='submit' value='X'>
+                       <input type='submit' value='Usuń'>
                 </form>
                 </td>
                 ");
