@@ -50,7 +50,6 @@
             {
                 echo "Error: " . $sql . "<br>" . $conn->error;
             }
-            $conn->close();
 
             //Wyświetlenie tabelki jako podgląd przy dodawaniu pracowników
             echo("<h1>Wyświetlenie tabelki jako podgląd przy dodawaniu pracowników (F5 po wprowadzeniu zmian)</h1>");
