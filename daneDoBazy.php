@@ -45,7 +45,7 @@
             require_once("connect.php");
 
             //Wyświetlenie tabelki jako podgląd przy dodawaniu/usuwaniu pracowników
-            echo("<h1>Wyświetlenie tabelki jako podgląd przy dodawaniu/usuwaniu pracowników (F5 po wprowadzeniu zmian)</h1>");
+            echo("<h1>Wyświetlenie tabelki jako podgląd przy dodawaniu/usuwaniu pracowników</h1>");
             echo("<h2>Użyte zapytanie SQL: SELECT * FROM pracownicy</h2>");
             $result=$conn->query("SELECT * FROM pracownicy");
             echo("<table border=1>");
