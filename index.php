@@ -30,7 +30,7 @@
                 echo("<h1 class='Student_number'>Numer 22</h1>");
 
                 //Informacje o stronie:
-                echo("<h4><br>Jesteś w głównym indexie!</br></h4>");
+                echo("<h1 class='page_info'><br>Jesteś w głównym indexie!</br></h1>");
 
                 //Logowanie do serwera mySQL:
                 require_once("connect.php");

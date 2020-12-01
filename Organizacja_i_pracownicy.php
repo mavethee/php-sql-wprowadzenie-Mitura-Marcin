@@ -24,7 +24,7 @@
     </div>
         <?php
             //Informacja o stronie:
-            echo("<h4><br>Jesteś na Organizacja_i_pracownicy.php</h4></br>");
+            echo("<h1 class='page_info'><br>Jesteś na Organizacja_i_pracownicy.php</h1></br>");
 
             //Logowanie do serwera mySQL
             require_once("connect.php");

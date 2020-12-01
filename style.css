@@ -7,6 +7,15 @@ body /*used as styling for whole body in page*/
     background-size: cover;
 }
 
+.page_info
+{
+    align-items:center;
+    text-shadow: 5px 5px 5px black;
+    color: white;
+    margin: auto;
+
+}
+
 .SQL_excercise /*used as styling for excerceses' and 'Used SQL function'*/
 {
     text-shadow: 5px 5px 5px black;

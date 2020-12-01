@@ -25,7 +25,7 @@
         <?php
 
         //Informacja o stronie:
-        echo("<h4><br>Jesteś na Date_format.php</h4></br>");
+        echo("<h1 class='page_info'><br>Jesteś na Date_format.php</h1></br>");
 
         //Logowanie do serwera mySQL
         require_once("connect.php");
