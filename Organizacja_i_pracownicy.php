@@ -47,7 +47,7 @@
             echo("</table>");
 
             //Zadanie 2: Wyświetlenie pracowników tylko z działu 1 i 4:
-            $sql=("SELECT imie, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE (dzial=1 or dzial=4) AND dzial=id_org");
+            $sql=("SELECT imie, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE (dzial=1 OR dzial=4) AND dzial=id_org");
             echo("<h1>Zadanie 2: Wyświetlenie pracowników tylko z działu 1 i 4</h1>");
             echo("<h2>Użyte zapytanie SQL:".$sql."</h2>");
             $result=$conn->query($sql);

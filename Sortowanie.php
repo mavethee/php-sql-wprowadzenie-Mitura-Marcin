@@ -91,7 +91,7 @@
             echo("</table>");
 
             //Zadanie 4: Wyświetlenie kobiet z działu 1 i 3 posortowanych rosnąco po zarobkach:
-            $sql=("SELECT * FROM pracownicy,organizacja WHERE id_org=dzial AND imie LIKE '%a' AND (dzial = 1 OR dzial=3) ORDER BY zarobki ASC");
+            $sql=("SELECT * FROM pracownicy,organizacja WHERE id_org=dzial AND imie LIKE '%a' AND (dzial=1 OR dzial=3) ORDER BY zarobki ASC");
             echo("<h1>Zadanie 4: Wyświetlenie kobiet z działu 1 i 3 posortowanych rosnąco po zarobkach</h1>");
             echo("<h2>Użyte zapytanie SQL:".$sql."</h2>");
             $result=$conn->query($sql);
