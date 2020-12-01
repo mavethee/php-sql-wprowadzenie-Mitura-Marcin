@@ -18,18 +18,23 @@ body /*used as styling for whole body in page*/
     margin: auto;
 }
 
-.current_time
+
+.link
 {
-    font-family: helvetica;
-    background-color: rgb(53, 53, 53);
-    color: rgb(255, 255, 255);
-    border: 2px solid #1a1a1a;
-    padding: 10px 20px;
-    display: inline-block;
-    position: fixed;
-    top: 0;
-    right: 10;
-    font-size: 20px;
+    text-decoration: none;
+	height: 50px;
+	width: 220px;	
+    background-color: rgb(0, 0, 0, 0.4);
+    color:white;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    border-radius: 11px;
+}
+
+.link:hover 
+{
+    background-color: rgb(255, 255, 255, 0.3);
 }
 
 .Student_name, .Student_class_and_group, .Student_number  /*used as styling of student info in index.php*/
