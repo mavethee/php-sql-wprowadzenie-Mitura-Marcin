@@ -26,7 +26,6 @@
             <?php
                 //Podpisanie pracy:
                 echo("<h1 class='Student_name'><br>Marcin Mitura</br></h1>");
-                echo("<h1 class='Student_name'><br>Test bo nie wytrzymie zaraz</br></h1>");
                 echo("<h1 class='Student_class_and_group'><br>Klasa 2Ti, grupa 1</br></h1>");
                 echo("<h1 class='Student_number'><br>Numer 22</br></h1>");
 

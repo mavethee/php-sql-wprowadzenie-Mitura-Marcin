@@ -7,6 +7,28 @@ body /*used as styling for whole body in page*/
     background-size: cover;
 }
 
+.nav /*used as nav links button styling*/
+{
+    display:block;
+    float:center;
+    justify-content: center;
+    width:90vw;
+    background:pink;
+    height: 30px;
+    margin: auto;
+}
+
+.Student_name, .Student_class_and_group, .Student_number  /*used as styling of student info in index.php*/
+{
+    align-items:center;
+    text-shadow: 5px 5px 5px black;
+    color: white;
+    margin: auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
 .page_info
 {
     align-items:center;
@@ -26,31 +48,9 @@ body /*used as styling for whole body in page*/
     margin-left: 20px;
 }
 
-.Student_name, .Student_class_and_group, .Student_number  /*used as styling of student info in index.php*/
-{
-    align-items:center;
-    text-shadow: 5px 5px 5px black;
-    color: white;
-    margin: auto;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-}
-
 table, th, td /*used as styling for SQL tables in PHP*/
 {
     border: 1px solid black;
-}
-
-.nav /*used as nav links button styling*/
-{
-    display:block;
-    float:left;
-    justify-content: center;
-    width:90vw;
-    background:pink;
-    height: 30px;
-    margin: auto;
 }
 
 .form_dDB_delete_button /*used as SQL delete button styling in daneDoBazy.php*/
