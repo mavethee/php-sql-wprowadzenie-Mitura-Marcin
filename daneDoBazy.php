@@ -23,6 +23,11 @@
         <a href="https://github.com/mavethee/projekt_testowy">GitHub - Testowanko</a>
     </div>
 
+        <?php
+            //Informacja o stronie:
+            echo("<h4><br>Jesteś na daneDoBazy.php</h4></br>");
+        ?>
+
     <h2>Dodanie pracownika:</h2>
 
     <form action="insert.php" method="POST">
@@ -41,9 +46,6 @@
     </form>
 
         <?php
-
-            //Informacja o stronie:
-            echo("<h4><br>Jesteś na daneDoBazy.php</h4></br>");
 
             //Logowanie do serwera mySQL:
             require_once("connect.php");
