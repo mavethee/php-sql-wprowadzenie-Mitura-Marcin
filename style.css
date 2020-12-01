@@ -43,42 +43,12 @@ table, th, td /*used as styling for SQL tables in PHP*/
 
 .nav /*used as nav links button styling*/
 {
-    display:flex;
-    justify-content: space-around;
+    display:block;
+    float:left;
+    justify-content: center;
     width:90vw;
     background:pink;
     height: 30px;
-}
-
-.nav1 /*used as nav links button styling*/
-{
-    display:flex;
-    justify-content: center;
-    width: 9,5%;
-    height: 30px;
-    background:black;
-    position:absolute;
-    left:5%;
-}
-
-.link
-{
-    text-decoration: none;
-    padding:1rem;
-    background:lightpink;
-    color:blue;
-    align-items: center;
-    justify-content: center;
-    display:flex;
-}
-
-.link:hover{background-color:gray;}
-
-.item
-{
-    display:flex;
-    align-items: center;
-    flex-direction: column;
 }
 
 .form_dDB_delete_button /*used as SQL delete button styling in daneDoBazy.php*/
