@@ -25,7 +25,7 @@
         <?php
 
             //Informacje o stronie:
-            echo("<h1 class='page_info'><br>Jesteś na insert.php</br></h4>");
+            echo("<h1 class='page_info'><br>Jesteś na insert.php</br></h1>");
 
             //Wyświetlenie wysłanych danych przez użytkownika:
             echo("<h1 class=SQL_excercise> Imie: ".$_POST["firstname"]."</h1>");

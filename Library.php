@@ -25,7 +25,7 @@
             <?php
 
                 //Informacja o stronie:
-                echo("<h4><br>Jesteś na Library.php</h1></br>");
+                echo("<h1><br>Jesteś na Library.php</h1></br>");
 
                 //Logowanie do serwera mySQL:
                 require_once("connect.php");
