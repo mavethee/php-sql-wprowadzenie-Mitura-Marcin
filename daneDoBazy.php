@@ -25,7 +25,7 @@
 
         <?php
             //Informacja o stronie:
-            echo("<h1 class='page_info'><br>Jesteś na daneDoBazy.php</h1></br>");
+            echo("<h1 class='page_info'><br>Jesteś w daneDoBazy.php</h1></br>");
         ?>
 
     <h1 class=SQL_excercise>Dodanie pracownika:</h1>

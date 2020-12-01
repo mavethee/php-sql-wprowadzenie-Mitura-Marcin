@@ -25,7 +25,7 @@
         <?php
 
             //Informacja o stronie:
-            echo("<h1 class='page_info'><br>Jesteś na Limit.php</h1></br>");
+            echo("<h1 class='page_info'><br>Jesteś w Limit.php</h1></br>");
 
             //Logowanie do serwera mySQL:
             require_once("connect.php");
