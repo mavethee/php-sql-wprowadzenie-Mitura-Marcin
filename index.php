@@ -7,6 +7,16 @@
         <link rel="stylesheet" href="style.css">
     </head>
 <body>
+    <div id="current_time"></div>
+        <script>
+            function getTime(){
+            return (new Date()).toLocaleTimeString();
+            }
+            document.getElementById('czas').innerHTML = getTime();
+            setInterval(function(){
+            document.getElementById('czas').innerHTML = getTime();
+            }, 1000);
+        </script>
     <div class="nav">
             <a href="index.php">Główny index</a>
             <a href="Organizacja_i_pracownicy.php">Organizacja_i_pracownicy</a>

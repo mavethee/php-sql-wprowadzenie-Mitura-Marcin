@@ -18,6 +18,20 @@ body /*used as styling for whole body in page*/
     margin: auto;
 }
 
+.current_time
+{
+    font-family: helvetica;
+    background-color: rgba(53, 53, 53, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid #1a1a1a;
+    padding: 10px 20px;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    right: 10;
+    font-size: 20px;
+}
+
 .Student_name, .Student_class_and_group, .Student_number  /*used as styling of student info in index.php*/
 {
     align-items:center;
