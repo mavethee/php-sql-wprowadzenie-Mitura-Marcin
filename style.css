@@ -16,7 +16,7 @@ body /*used as styling for whole body in page*/
 }
 
 
-.link /*used as nav links button styling*/
+.link /*used as nav links styling*/
 {
     text-decoration: none;
 	height: 50px;
@@ -29,7 +29,7 @@ body /*used as styling for whole body in page*/
     border-radius: 11px;
 }
 
-.link:hover 
+.link:hover /*used as nav links hover styling*/
 {
     background-color: rgb(255, 255, 255, 0.3);
 }
