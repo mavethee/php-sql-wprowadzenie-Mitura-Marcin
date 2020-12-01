@@ -51,7 +51,7 @@
             //Wyświetlenie tabelki jako podgląd przy dodawaniu/usuwaniu pracowników:
             $sql=("SELECT * FROM pracownicy");
             echo("<h1>Wyświetlenie tabelki jako podgląd przy dodawaniu/usuwaniu pracowników</h1>");
-            echo("<h2>Użyte zapytanie SQL:".$sql."</h2>");
+            echo("<h2>Użyte zapytanie SQL: ".$sql."</h2>");
             $result=$conn->query("$sql");
             echo("<table border=1>");
             echo("<th>id_pracownicy</th>");
