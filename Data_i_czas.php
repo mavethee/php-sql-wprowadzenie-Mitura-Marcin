@@ -32,7 +32,7 @@
 
         //Zadanie 1: Wyświetl wiek poszczegolnych pracowników:
         $sql=("SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS Wiek_poszczególnych_pracowników FROM pracownicy");
-        echo("<h1 class=SQL_table>Zadanie 1: Wyświetl wiek poszczegolnych pracowników</h1>");
+        echo("<h1 class=SQL_excercise>Zadanie 1: Wyświetl wiek poszczegolnych pracowników</h1>");
         echo("</h1>Użyte zapytanie SQL: ".$sql."</h1>");
         $result=$conn->query("$sql");
         echo("<table border=1>");
@@ -52,7 +52,7 @@
 
         //Zadanie 2: Wyświetl wiek pracowników z działu serwisowego:
         $sql=("SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS Wiek_poszczególnych_pracowników_z_działu_serwisowego FROM pracownicy,organizacja WHERE dzial=id_org AND nazwa_dzial='serwis'");
-        echo("<h1 class=SQL_table>Zadanie 2: Wyświetl wiek pracowników z działu serwisowego</h1>");
+        echo("<h1 class=SQL_excercise>Zadanie 2: Wyświetl wiek pracowników z działu serwisowego</h1>");
         echo("</h1>Użyte zapytanie SQL: ".$sql."</h1>");
         $result=$conn->query("$sql");        
         echo("<table border=1>");
@@ -72,7 +72,7 @@
 
         //Zadanie 3: Wyświetlenie sumy lat wszystkich pracowników:
         $sql=("SELECT SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS Suma_lat_wszystkich_pracowników FROM pracownicy");
-        echo("<h1 class=SQL_table>Zadanie 3: Wyświetlenie sumy lat wszystkich pracowników</h1>");
+        echo("<h1 class=SQL_excercise>Zadanie 3: Wyświetlenie sumy lat wszystkich pracowników</h1>");
         echo("</h1>Użyte zapytanie SQL: ".$sql."</h1>");
         $result=$conn->query("$sql");
         echo("<table border=1>");
@@ -102,7 +102,7 @@
 
         //Zadanie 5: Wyświetl sumę lat kobiet:
         $sql=("SELECT SUM(YEAR(curdate())-YEAR(data_urodzenia)) AS Suma_lat_kobiet FROM pracownicy WHERE imie LIKE '%a'");
-        echo("<h1 class=SQL_table>Zadanie 5: Wyświetl sumę lat kobiet</h1>");
+        echo("<h1 class=SQL_excercise>Zadanie 5: Wyświetl sumę lat kobiet</h1>");
         echo("</h1>Użyte zapytanie SQL: ".$sql."</h1>");
         $result=$conn->query("$sql");     
         echo("<table border=1>");
@@ -117,7 +117,7 @@
 
         //Zadanie 6: Wyświetl sumę lat mężczyzn:
         $sql=("SELECT SUM(YEAR(curdate())-YEAR(data_urodzenia)) AS Suma_lat_mężczyzn FROM pracownicy WHERE imie NOT LIKE '%a'");
-        echo("<h1 class=SQL_table>Zadanie 6: Wyświetl sumę lat mężczyzn</h1>");
+        echo("<h1 class=SQL_excercise>Zadanie 6: Wyświetl sumę lat mężczyzn</h1>");
         echo("</h1>Użyte zapytanie SQL: ".$sql."</h1>");
         $result=$conn->query("$sql");     
         echo("<table border=1>");
@@ -132,7 +132,7 @@
 
         //Zadanie 7: Wyświetl średnią lat pracowników w poszczególnych działach wraz z wypisanymi nazwami działów:
         $sql=("SELECT dzial, nazwa_dzial, AVG(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS Średnia_wieku_pracowników_w_poszczególnych_działach FROM pracownicy,organizacja WHERE id_org=dzial GROUP BY dzial");
-        echo("<h1 class=SQL_table>Zadanie 7: Wyświetl średnią lat pracowników w poszczególnych działach wraz z wypisanymi nazwami działów</h1>");
+        echo("<h1 class=SQL_excercise>Zadanie 7: Wyświetl średnią lat pracowników w poszczególnych działach wraz z wypisanymi nazwami działów</h1>");
         echo("</h1>Użyte zapytanie SQL: ".$sql."</h1>");
         $result=$conn->query("$sql");     
         echo("<table border=1>");
@@ -149,7 +149,7 @@
 
         //Zadanie 8: Wyświetl sumę lat pracowników w poszczególnych działach wraz z wypisanymi nazwami działów:
         $sql=("SELECT dzial, nazwa_dzial, SUM(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS Suma_lat_pracowników_w_poszczególnych_działach FROM pracownicy,organizacja WHERE id_org=dzial GROUP BY dzial");
-        echo("<h1 class=SQL_table>Zadanie 8: Wyświetl sumę lat pracowników w poszczególnych działach wraz z wypisanymi nazwami działów</h1>");
+        echo("<h1 class=SQL_excercise>Zadanie 8: Wyświetl sumę lat pracowników w poszczególnych działach wraz z wypisanymi nazwami działów</h1>");
         echo("</h1>Użyte zapytanie SQL: ".$sql."</h1>");
         $result=$conn->query("$sql");     
         echo("<table border=1>");
@@ -166,7 +166,7 @@
 
         //Zadanie 9: Wyświetl najstarszych pracowników w każdym dziale (nazwa_dział, wiek):
         $sql=("SELECT MAX(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS wiek, nazwa_dzial FROM pracownicy,organizacja WHERE id_org=dzial GROUP BY dzial");
-        echo("<h1 class=SQL_table>Zadanie 9: Wyświetl najstarszych pracowników w każdym dziale (nazwa_dział, wiek)</h1>");
+        echo("<h1 class=SQL_excercise>Zadanie 9: Wyświetl najstarszych pracowników w każdym dziale (nazwa_dział, wiek)</h1>");
         echo("</h1>Użyte zapytanie SQL: ".$sql."</h1>");
         $result=$conn->query("$sql");     
         echo("<table border=1>");
@@ -182,7 +182,7 @@
 
         //Zadanie 10: Wyświetl najmłodszych pracowników z działu handel i serwis (nazwa_dział, wiek):
         $sql=("SELECT MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek, nazwa_dzial from pracownicy, organizacja WHERE id_org=dzial and (nazwa_dzial='handel' OR nazwa_dzial='serwis') GROUP BY dzial");
-        echo("<h1 class=SQL_table>Zadanie 10: Wyświetl najmłodszych pracowników z działu handel i serwis (nazwa_dział, wiek)</h1>");
+        echo("<h1 class=SQL_excercise>Zadanie 10: Wyświetl najmłodszych pracowników z działu handel i serwis (nazwa_dział, wiek)</h1>");
         echo("</h1>Użyte zapytanie SQL: ".$sql."</h1>");
         $result=$conn->query("$sql");     
         echo("<table border=1>");
@@ -198,7 +198,7 @@
 
         //Zadanie 11: Wyświetl najmłodszych pracowników z działu handel i serwis (imie, nazwa_dział, wiek):
         $sql=("SELECT MIN(YEAR(CURDATE()) - YEAR(data_urodzenia)) AS wiek, imie, nazwa_dzial FROM pracownicy,organizacja WHERE id_org=dzial AND (nazwa_dzial='handel' OR nazwa_dzial='serwis') GROUP BY dzial");
-        echo("<h1 class=SQL_table>Zadanie 11: Wyświetl najmłodszych pracowników z działu handel i serwis (imie, nazwa_dział, wiek)</h1>");
+        echo("<h1 class=SQL_excercise>Zadanie 11: Wyświetl najmłodszych pracowników z działu handel i serwis (imie, nazwa_dział, wiek)</h1>");
         echo("</h1>Użyte zapytanie SQL: ".$sql."</h1>");
         $result=$conn->query("$sql");     
         echo("<table border=1>");
@@ -215,7 +215,7 @@
 
         //Zadanie 12: Wyświetl długość życia pracowników w dniach:
         $sql=("SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) AS Dni_życia FROM pracownicy");
-        echo("<h1 class=SQL_table>Zadanie 12: Wyświetl długość życia pracowników w dniach:</h1>");
+        echo("<h1 class=SQL_excercise>Zadanie 12: Wyświetl długość życia pracowników w dniach:</h1>");
         echo("</h1>Użyte zapytanie SQL: ".$sql."</h1>");
         $result=$conn->query("$sql");     
         echo("<table border=1>");
@@ -231,7 +231,7 @@
 
         //Zadanie 13: Wyświetl najstarszego mężczyznę:
         $sql=("SELECT * FROM pracownicy WHERE imie NOT LIKE '%a' ORDER BY data_urodzenia ASC LIMIT 1");
-        echo("<h1 class=SQL_table>Zadanie 13: Wyświetl najstarszego mężczyznę</h1>");
+        echo("<h1 class=SQL_excercise>Zadanie 13: Wyświetl najstarszego mężczyznę</h1>");
         echo("</h1>Użyte zapytanie SQL: ".$sql."</h1>");
         $result=$conn->query("$sql");     
         echo("<table border=1>");

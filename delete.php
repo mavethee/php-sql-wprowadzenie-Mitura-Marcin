@@ -28,7 +28,7 @@
             echo("<h4><br>Jesteś na delete.php</h4></br>");
 
             //Wyświetlenie wysłanych danych przez użytkownika:           
-            echo("<h1 class=SQL_table> ID: ".$_POST["id_employee"]."</h1>");
+            echo("<h1 class=SQL_excercise> ID: ".$_POST["id_employee"]."</h1>");
 
             //Logowanie do serwera mySQL:
             require_once("connect.php");
@@ -37,7 +37,7 @@
             $sql = ("DELETE FROM pracownicy where id_pracownicy='".$_POST['id_employee']."'");
             
             //Wyświetlenie tabeli:
-            echo "<h1 class=SQL_table>". $sql;
+            echo "<h1 class=SQL_excercise>". $sql;
 
             //Informacja o sukcesie:
             if ($conn->query($sql) === TRUE)
@@ -53,8 +53,8 @@
 
             //Wyświetlenie tabelki jako podgląd przy usuwaniu pracowników:
             $sql=("SELECT * FROM pracownicy");
-            echo("<h1 class=SQL_table>Wyświetlenie tabelki jako podgląd przy usuwaniu pracowników:</h1>");
-            echo("<h1 class=SQL_table>Użyte zapytanie SQL: ".$sql."</h1>");
+            echo("<h1 class=SQL_excercise>Wyświetlenie tabelki jako podgląd przy usuwaniu pracowników:</h1>");
+            echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h1>");
             $result=$conn->query("$sql");
             echo("<table border=1>");
             echo("<th>id_pracownicy</th>");

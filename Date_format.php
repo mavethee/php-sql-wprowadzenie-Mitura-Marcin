@@ -32,8 +32,8 @@
 
         //Zadanie 1: Wyświetl nazwy dni w dacie urodzenia:
         $sql=("SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') FROM pracownicy");
-        echo("<h1 class=SQL_table>Zadanie 1: Wyświetl nazwy dni w dacie urodzenia</h1>");
-        echo("<h1 class=SQL_table>Użyte zapytanie SQL: ".$sql."</h1>");
+        echo("<h1 class=SQL_excercise>Zadanie 1: Wyświetl nazwy dni w dacie urodzenia</h1>");
+        echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h1>");
         $result=$conn->query("$sql");
         echo("<table border=1>");
         echo("<th>id_pracownicy</th>");
@@ -51,8 +51,8 @@
 
         //Zadanie 2: Wyświetl nazwy miesięcy w dacie urodzenia:
         $sql=("SELECT *, DATE_FORMAT(data_urodzenia,'%W-%M-%Y') FROM pracownicy");
-        echo("<h1 class=SQL_table>Zadanie 2: Wyświetl nazwy dni w dacie urodzenia</h1>");
-        echo("<h1 class=SQL_table>Użyte zapytanie SQL: ".$sql."</h1>");
+        echo("<h1 class=SQL_excercise>Zadanie 2: Wyświetl nazwy dni w dacie urodzenia</h1>");
+        echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h1>");
         $result=$conn->query("$sql");
         echo("<table border=1>");
         echo("<th>id_pracownicy</th>");
@@ -70,8 +70,8 @@
 
         //Zadanie 3: Wyświetl obecną, dokładną godzinę z dokładnością do milisekund:
         $sql=("SELECT curtime(4) AS Aktualna_godzina");
-        echo("<h1 class=SQL_table>Zadanie 3: Wyświetl obecną, dokładną godzinę z dokładnością do milisekund</h1>");
-        echo("<h1 class=SQL_table>Użyte zapytanie SQL: ".$sql."</h1>");
+        echo("<h1 class=SQL_excercise>Zadanie 3: Wyświetl obecną, dokładną godzinę z dokładnością do milisekund</h1>");
+        echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h1>");
         $result=$conn->query("$sql");
         echo("<table border=1>");
         echo("<th>Aktualna_godzina</th>");

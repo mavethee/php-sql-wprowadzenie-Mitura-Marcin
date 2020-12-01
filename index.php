@@ -37,8 +37,8 @@
 
                 //Zadanie 1: Wyświetlenie pełnej listy pracowników:
                 $sql=("SELECT * FROM pracownicy");
-                echo("<h1 class=SQL_table>Zadanie 1: Wyświetlenie pełnej listy pracowników:</h1>");
-                echo("<h1 class=SQL_table>Użyte zapytanie SQL: ".$sql."</h2>");
+                echo("<h1 class=SQL_excercise>Zadanie 1: Wyświetlenie pełnej listy pracowników:</h1>");
+                echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h1>");
                 $result=$conn->query($sql);
                 echo("<table border=1>");
                 echo("<th>id_pracownicy</th>");
@@ -55,8 +55,8 @@
 
                 //Zadanie 2: Wyświetlenie tylko kobiet listy pracowników:
                 $sql=("SELECT * FROM pracownicy WHERE imie LIKE '%a'");
-                echo("<h1>Zadanie 2: Wyświetlenie tylko kobiet listy pracowników:</h1>");
-                echo("<h2>Użyte zapytanie SQL: ".$sql."</h2>");
+                echo("<h1 class=SQL_excercise>Zadanie 2: Wyświetlenie tylko kobiet listy pracowników:</h1>");
+                echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h1>");
                 $result=$conn->query($sql);
                 echo("<table border=1>");
                 echo("<th>id_pracownicy</th>");
@@ -73,8 +73,8 @@
 
                 //Zadanie 3: Kobiety z działu 1 i 4:
                 $sql=("SELECT * FROM pracownicy WHERE imie LIKE '%a' AND (dzial=1 OR dzial=4)");
-                echo("<h1>Zadanie 3: Kobiety z działu 1 i 4:</h1>");
-                echo("<h2>Użyte zapytanie SQL: ".$sql."</h2>");
+                echo("<h1 class=SQL_excercise>Zadanie 3: Kobiety z działu 1 i 4:</h1>");
+                echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h1>");
                 $result=$conn->query($sql);
                 echo("<table border=1>");
                 echo("<th>id_pracownicy</th>");
@@ -91,8 +91,8 @@
 
                 //Zadanie 4: Kobiety zarabiające mniej niż 35 z działu 1 i 2:
                 $sql=("SELECT * FROM pracownicy WHERE imie LIKE '%a' AND (zarobki<35) AND (dzial=1 OR dzial=2)");
-                echo("<h1>Zadanie 4: Kobiety zarabiające mniej niż 35 z działu 1 i 2:</h1>");
-                echo("<h2>Użyte zapytanie SQL: ".$sql."</h2>");
+                echo("<h1 class=SQL_excercise>Zadanie 4: Kobiety zarabiające mniej niż 35 z działu 1 i 2:</h1>");
+                echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h1>");
                 $result=$conn->query($sql);
                 echo("<table border=1>");
                 echo("<th>id_pracownicy</th>");
@@ -109,8 +109,8 @@
 
                 //Zadanie 5: Mężczyźni zarabiający mniej niż 30:
                 $sql=("SELECT * FROM pracownicy WHERE imie NOT LIKE '%a' AND (zarobki<30)");
-                echo("<h1>Zadanie 5: Mężczyźni zarabiający mniej niż 30:</h1>");
-                echo("<h2>Użyte zapytanie SQL: ".$sql."</h2>");
+                echo("<h1 class=SQL_excercise>Zadanie 5: Mężczyźni zarabiający mniej niż 30:</h1>");
+                echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h1>");
                 $result=$conn->query($sql);
                 echo("<table border=1>");
                 echo("<th>id_pracownicy</th>");
@@ -127,8 +127,8 @@
 
                 //Zadanie 6: Wyświetlenie "MOJA_SUMA" (funkcja SUM):
                 $sql=("SELECT dzial, SUM(zarobki) AS MOJA_SUMA FROM pracownicy GROUP BY dzial");
-                echo("<h1>Zadanie 6: Wyświetlenie 'MOJA_SUMA' (funkcja SUM)</h1>");
-                echo("<h2>Użyte zapytanie SQL: ".$sql."</h2>");
+                echo("<h1 class=SQL_excercise>Zadanie 6: Wyświetlenie 'MOJA_SUMA' (funkcja SUM)</h1>");
+                echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h1>");
                 $result=$conn->query($sql);
                 echo("<table border=1>");
                 echo("<th>dzial</th>");
@@ -143,8 +143,8 @@
 
                 //Zadanie 7: Połączenie dwóch tabel:
                 $sql=("SELECT id_pracownicy, imie, dzial, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE id_org=dzial");
-                echo("<h1>Zadanie 7: Połączenie dwóch tabel</h1>");
-                echo("<h2>Użyte zapytanie SQL: ".$sql."</h2>");
+                echo("<h1 class=SQL_excercise>Zadanie 7: Połączenie dwóch tabel</h1>");
+                echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h1>");
                 $result=$conn->query($sql);
                 echo("<table border=1>");
                 echo("<th>id_pracownicy</th>");
@@ -162,8 +162,8 @@
 
                 //Zadanie 8: Wyświetlenie średniej z połączonymi dwoma tabelami:
                 $sql=("SELECT dzial, nazwa_dzial, AVG(zarobki) AS Średnia_zarobków FROM pracownicy, organizacja WHERE id_org=dzial GROUP BY dzial");
-                echo("<h1>Zadanie 8: Wyświetlenie średniej zarobków z połączonymi dwoma tabelami</h1>");
-                echo("<h2>Użyte zapytanie SQL: ".$sql."</h2>");
+                echo("<h1 class=SQL_excercise>Zadanie 8: Wyświetlenie średniej zarobków z połączonymi dwoma tabelami</h1>");
+                echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h1>");
                 $result=$conn->query($sql);
                 echo("<table border=1>");
                 echo("<th>dzial</th>");
@@ -179,8 +179,8 @@
 
                 //Zadanie 9: Wyświetlenie sumy z połączonymi dwoma tabelami:
                 $sql=("SELECT dzial, nazwa_dzial, SUM(zarobki) AS Suma_zarobków FROM pracownicy, organizacja WHERE id_org=dzial GROUP BY dzial");
-                echo("<h1>Zadanie 9: Wyświetlenie sumy zarobków z połączonymi dwoma tabelami</h1>");
-                echo("<h2>Użyte zapytanie SQL: ".$sql."</h2>");
+                echo("<h1 class=SQL_excercise>Zadanie 9: Wyświetlenie sumy zarobków z połączonymi dwoma tabelami</h1>");
+                echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h1>");
                 $result=$conn->query($sql);
                 echo("<table border=1>");
                 echo("<th>dzial</th>");

@@ -32,8 +32,8 @@
 
                 //Zadanie 1: Wyświetl listę z nazwiskami autorów:
                 $sql = ("SELECT * FROM bibliotekaAutor");
-                echo("<h1 class=SQL_table>Zadanie 1: Wyświetl listę z nazwiskami autorów</h1>");
-                echo("<h1 class=SQL_table>Użyte zapytanie SQL: ".$sql."</h1>");
+                echo("<h1 class=SQL_excercise>Zadanie 1: Wyświetl listę z nazwiskami autorów</h1>");
+                echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h1>");
                 $result=$conn->query($sql);
                 echo("<table border=1>");
                 echo("<th>id</th>");
@@ -48,8 +48,8 @@
 
                 //Zadanie 2: Wyświetl listę z tytułami książek:
                 $sql = ("SELECT * FROM bibliotekaTytuł");
-                echo("<h1 class=SQL_table>Zadanie 2: Wyświetl listę z tytułami książek</h1>");
-                echo("<h1 class=SQL_table>Użyte zapytanie SQL: ".$sql."</h1>");
+                echo("<h1 class=SQL_excercise>Zadanie 2: Wyświetl listę z tytułami książek</h1>");
+                echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h1>");
                 $result=$conn->query($sql);
                 echo("<table border=1>");
                 echo("<th>id</th>");
@@ -64,8 +64,8 @@
 
                 //Zadanie 3: Wyświetlenie pełnej bazy danych w blibiotece:
                 $sql = ('SELECT * FROM bibliotekaAT, bibliotekaAutor, bibliotekaTytuł WHERE id_autor=bibliotekaAutor_ID AND id_tytuł=bibliotekaTytul_ID');
-                echo("<h1 class=SQL_table>Zadanie 3: Wyświetlenie pełnej bazy danych w blibiotece</h1>");
-                echo("<h1 class=SQL_table>Użyte zapytanie SQL: ".$sql."</h1>");
+                echo("<h1 class=SQL_excercise>Zadanie 3: Wyświetlenie pełnej bazy danych w blibiotece</h1>");
+                echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h1>");
                 $result=$conn->query($sql);
                 echo("<table border=1>");
                 echo("<th>id</th>");

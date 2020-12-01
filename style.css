@@ -7,7 +7,7 @@ body /*used as styling for whole body in page*/
     background-size: cover;
 }
 
-h1, h2 /*used as styling for excerceses' and 'Used SQL function'*/
+.SQL_excercise /*used as styling for excerceses' and 'Used SQL function'*/
 {
     text-shadow: 5px 5px 5px black;
     color: white;
