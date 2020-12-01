@@ -8,7 +8,6 @@
     </head>
 <body>
     <div class="nav">
-        <br>
             <a href="index.php">Główny index</a>
             <a href="Organizacja_i_pracownicy.php">Organizacja_i_pracownicy</a>
             <a href="Sortowanie.php">Sortowanie</a>
@@ -22,7 +21,6 @@
             <a href="https://projekt-testowy-mavethee.herokuapp.com/">Testowanko</a>
             <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Mitura-Marcin">GitHub - PHP</a>
             <a href="https://github.com/mavethee/projekt_testowy">GitHub - Testowanko</a>
-        </br>
     </div>
 
             <?php
