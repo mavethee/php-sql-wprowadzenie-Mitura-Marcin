@@ -25,7 +25,7 @@
         <?php
 
             //Informacje o stronie:
-            echo("<h1><br>Jesteś na strona.php</h1></br>");
+            echo("<h4><br>Jesteś na strona.php</h4></br>");
 
             //Logowanie do serwera mySQL:
             require_once("connect.php");

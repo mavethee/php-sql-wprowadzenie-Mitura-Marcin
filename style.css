@@ -1,19 +1,36 @@
-body
+body /*used as styling for whole body in page*/
 {
     background-color: linen;
 }
 
-h1, h2, h3 
+h1, h2 /*used as styling for excerceses' and 'Used SQL function'*/
 {
     color: orange;
 }
 
-table, th, td 
+h4 /*used as styling for 'current page' info on a top of the page */
+{
+    color: white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+h4 /*used as styling of student info in index.php*/
+{
+    color:orange;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+table, th, td /*used as styling for SQL tables in PHP*/
 {
     border: 1px solid black;
 }
 
-.nav{
+.nav /*used as nav links button styling*/
+{
     display:flex;
     justify-content: space-around;
     width:90vw;
@@ -21,7 +38,7 @@ table, th, td
     height: 30px;
 }
 
-.nav1
+.nav1 /*used as nav links button styling*/
 {
     display:flex;
     justify-content: center;
@@ -52,7 +69,7 @@ table, th, td
     flex-direction: column;
 }
 
-.form_dDB_delete_button
+.form_dDB_delete_button /*used as SQL delete button styling in daneDoBazy.php*/
 {
     display:flex;
     flex-direction:column;

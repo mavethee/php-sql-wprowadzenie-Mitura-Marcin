@@ -25,7 +25,7 @@
         <?php
 
             //Informacje o stronie:
-            echo("<h2><br>Jesteś na insert.php</br></h2>");
+            echo("<h4><br>Jesteś na insert.php</br></h4>");
 
             //Wyświetlenie wysłanych danych przez użytkownika:
             echo("<h2> Imie: ".$_POST["firstname"]."</h2>");

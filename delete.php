@@ -25,7 +25,7 @@
         <?php
 
             //Informacja o stronie:
-            echo("<h1><br>Jesteś na delete.php</h1></br>");
+            echo("<h4><br>Jesteś na delete.php</h4></br>");
 
             //Wyświetlenie wysłanych danych przez użytkownika:           
             echo("<h2> ID: ".$_POST["id_employee"]."</h2>");

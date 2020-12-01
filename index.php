@@ -29,12 +29,12 @@
 
             <?php
                 //Podpisanie pracy:
-                echo("<h1>Marcin Mitura</h1>");
-                echo("<h2>Klasa 2Ti, grupa 1</h2>");
-                echo("<h3>Numer 22</h3>");
+                echo("<h5>Marcin Mitura</h5>");
+                echo("<h5>Klasa 2Ti, grupa 1</h5>");
+                echo("<h5>Numer 22</h5>");
 
                 //Informacje o stronie:
-                echo("<h1><br>Jesteś w głównym indexie!</br></h1>");
+                echo("<h4><br>Jesteś w głównym indexie!</br></h4>");
 
                 //Logowanie do serwera mySQL:
                 require_once("connect.php");
