@@ -7,19 +7,16 @@ body /*used as styling for whole body in page*/
     background-size: cover;
 }
 
-.nav /*used as nav links button styling*/
+.nav /*used as nav styling*/
 {
-    display:block;
-    float:center;
-    justify-content: center;
-    width:90vw;
-    background:pink;
-    height: 30px;
-    margin: auto;
+
+    display: flex;
+    justify-content: space-around;
+
 }
 
 
-.link
+.link /*used as nav links button styling*/
 {
     text-decoration: none;
 	height: 50px;
