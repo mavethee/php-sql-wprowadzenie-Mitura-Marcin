@@ -7,15 +7,6 @@ body /*used as styling for whole body in page*/
     background-size: cover;
 }
 
-.loading_screen /*body class used as styling for fake loading body*/
-{
-
-    background-image: url("https://d.wattpad.com/story_parts/661232681/images/156c88faa371d3dd312710202882.gif");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
 .nav /*used as nav links button styling*/
 {
     display:block;
