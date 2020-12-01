@@ -17,6 +17,7 @@
         <a href="Date_format.php">Formatowanie_dat</a>
         <a href="formularz.html">Formularz - Strona.php</a>
         <a href="daneDoBazy.php">Formularz - daneDoBazy.php</a>
+        <a href="Library.php">Książki</a>
         <a href="https://projekt-testowy-mavethee.herokuapp.com/">Testowanko</a>
         <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Mitura-Marcin">GitHub - PHP</a>
         <a href="https://github.com/mavethee/projekt_testowy">GitHub - Testowanko</a>
@@ -24,7 +25,9 @@
         <?php
 
             //Informacje o stronie:
-            echo("<br>Jesteś w insert.php</br>");
+            echo("<h2><br>Jesteś na insert.php</br></h2>");
+
+            //Wyświetlenie wysłanych danych przez użytkownika:
             echo("<h2> Imie: ".$_POST["firstname"]."</h2>");
             echo("<h2> Dział: ".$_POST["shift"]."</h2>");
             echo("<h2> Zarobki: ".$_POST["salary"]."</h2>");
@@ -51,10 +54,11 @@
                 echo "Error: " . $sql . "<br>" . $conn->error;
             }
 
-            //Wyświetlenie tabelki jako podgląd przy dodawaniu pracowników
+            //Wyświetlenie tabelki jako podgląd przy dodawaniu pracowników:
+            $sql=("SELECT * FROM pracownicy");
             echo("<h1>Wyświetlenie tabelki jako podgląd przy dodawaniu pracowników:</h1>");
-            echo("<h2>Użyte zapytanie SQL: SELECT * FROM pracownicy</h2>");
-            $result=$conn->query("SELECT * FROM pracownicy");
+            echo("<h2>Użyte zapytanie SQL:".$sql."</h2>");
+            $result=$conn->query("$sql");
             echo("<table border=1>");
             echo("<th>id_pracownicy</th>");
             echo("<th>imie</th>");

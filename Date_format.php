@@ -2,6 +2,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Formularz</title>
         <link rel="stylesheet" href="style.css">
     </head>
 <body>
@@ -15,20 +17,24 @@
         <a href="Date_format.php">Formatowanie_dat</a>
         <a href="formularz.html">Formularz - Strona.php</a>
         <a href="daneDoBazy.php">Formularz - daneDoBazy.php</a>
+        <a href="Library.php">Książki</a>
         <a href="https://projekt-testowy-mavethee.herokuapp.com/">Testowanko</a>
         <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Mitura-Marcin">GitHub - PHP</a>
         <a href="https://github.com/mavethee/projekt_testowy">GitHub - Testowanko</a>
     </div>
         <?php
 
+        //Informacja o stronie:
+        echo("<h1><br>Jesteś na Date_format.php</h1></br>");
+
         //Logowanie do serwera mySQL
         require_once("connect.php");
 
-        echo("Date_format.php");
-        //Zadanie 1: Wyświetl nazwy dni w dacie urodzenia
+        //Zadanie 1: Wyświetl nazwy dni w dacie urodzenia:
+        $sql=("SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') FROM pracownicy");
         echo("<h1>Zadanie 1: Wyświetl nazwy dni w dacie urodzenia</h1>");
-        echo("<h2>Użyte zapytanie SQL: SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') FROM pracownicy</h2>");
-        $result=$conn->query("SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') FROM pracownicy");
+        echo("<h2>Użyte zapytanie SQL:".$sql."</h2>");
+        $result=$conn->query("$sql");
         echo("<table border=1>");
         echo("<th>id_pracownicy</th>");
         echo("<th>imie</th>");
@@ -43,10 +49,11 @@
         }
         echo("</table>");
 
-        //Zadanie 2: Wyświetl nazwy miesięcy w dacie urodzenia
+        //Zadanie 2: Wyświetl nazwy miesięcy w dacie urodzenia:
+        $sql=("SELECT *, DATE_FORMAT(data_urodzenia,'%W-%M-%Y') FROM pracownicy");
         echo("<h1>Zadanie 2: Wyświetl nazwy dni w dacie urodzenia</h1>");
-        echo("<h2>Użyte zapytanie SQL: SELECT *, DATE_FORMAT(data_urodzenia,'%W-%M-%Y') FROM pracownicy</h2>");
-        $result=$conn->query("SELECT *, DATE_FORMAT(data_urodzenia,'%W-%M-%Y') FROM pracownicy");
+        echo("<h2>Użyte zapytanie SQL:".$sql."</h2>");
+        $result=$conn->query("$sql");
         echo("<table border=1>");
         echo("<th>id_pracownicy</th>");
         echo("<th>imie</th>");
@@ -62,9 +69,10 @@
         echo("</table>");
 
         //Zadanie 3: Wyświetl obecną, dokładną godzinę z dokładnością do milisekund:
+        $sql=("SELECT curtime(4) AS Aktualna_godzina");
         echo("<h1>Zadanie 3: Wyświetl obecną, dokładną godzinę z dokładnością do milisekund</h1>");
-        echo("<h2>Użyte zapytanie SQL: SELECT curtime(4) AS Aktualna_godzina</h2>");
-        $result=$conn->query("SELECT curtime(4) AS Aktualna_godzina");
+        echo("<h2>Użyte zapytanie SQL:".$sql."</h2>");
+        $result=$conn->query("$sql");
         echo("<table border=1>");
         echo("<th>Aktualna_godzina</th>");
         while($row=$result->fetch_assoc())

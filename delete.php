@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Usuwanie pracownika</title>
-        <link rel="stylesheet" href="style.css">
-      </head>
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width">
+            <title>Usuwanie pracownika</title>
+            <link rel="stylesheet" href="style.css">
+    </head>
 <body>
     <div class="nav">
         <a href="index.php">Główny index</a>
@@ -17,14 +17,17 @@
         <a href="Date_format.php">Formatowanie_dat</a>
         <a href="formularz.html">Formularz - Strona.php</a>
         <a href="daneDoBazy.php">Formularz - daneDoBazy.php</a>
+        <a href="Library.php">Książki</a>
         <a href="https://projekt-testowy-mavethee.herokuapp.com/">Testowanko</a>
         <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Mitura-Marcin">GitHub - PHP</a>
         <a href="https://github.com/mavethee/projekt_testowy">GitHub - Testowanko</a>
     </div>
         <?php
 
-            //Informacje o stronie:
-            echo("<br>Jesteś w w delete.php</br>");
+            //Informacja o stronie:
+            echo("<h1><br>Jesteś na delete.php</h1></br>");
+
+            //Wyświetlenie wysłanych danych przez użytkownika:           
             echo("<h2> ID: ".$_POST["id_employee"]."</h2>");
 
             //Logowanie do serwera mySQL:
@@ -48,10 +51,11 @@
                 echo "Error: " . $sql . "<br>" . $conn->error;
             }
 
-            //Wyświetlenie tabelki jako podgląd przy usuwaniu pracowników
+            //Wyświetlenie tabelki jako podgląd przy usuwaniu pracowników:
+            $sql=("SELECT * FROM pracownicy");
             echo("<h1>Wyświetlenie tabelki jako podgląd przy usuwaniu pracowników:</h1>");
-            echo("<h2>Użyte zapytanie SQL: SELECT * FROM pracownicy</h2>");
-            $result=$conn->query("SELECT * FROM pracownicy");
+            echo("<h2>Użyte zapytanie SQL:".$sql."</h2>");
+            $result=$conn->query("$sql");
             echo("<table border=1>");
             echo("<th>id_pracownicy</th>");
             echo("<th>imie</th>");
