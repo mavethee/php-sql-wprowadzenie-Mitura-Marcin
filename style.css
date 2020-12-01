@@ -1,6 +1,9 @@
 body /*used as styling for whole body in page*/
 {
-    background-color: linen;
+
+    background-image: url("content/walllpaper_for_site.png");
+    background-color: #cccccc;
+
 }
 
 h1, h2 /*used as styling for excerceses' and 'Used SQL function'*/
