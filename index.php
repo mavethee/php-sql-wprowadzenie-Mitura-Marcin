@@ -29,9 +29,9 @@
 
             <?php
                 //Podpisanie pracy:
-                echo("<h5>Marcin Mitura</h5>");
-                echo("<h5>Klasa 2Ti, grupa 1</h5>");
-                echo("<h5>Numer 22</h5>");
+                echo("<h4>Marcin Mitura</h4>");
+                echo("<h4>Klasa 2Ti, grupa 1</h4>");
+                echo("<h4>Numer 22</h4>");
 
                 //Informacje o stronie:
                 echo("<h4><br>Jesteś w głównym indexie!</br></h4>");
