@@ -71,7 +71,8 @@ table, th, td /*used as styling for SQL tables in PHP*/
 
 .form_dDB_delete_button /*used as SQL delete button styling in daneDoBazy.php*/
 {
+    align-items:center;
     display:flex;
     flex-direction:column;
-    align-items:center;
+    margin: auto;
 }
