@@ -71,6 +71,7 @@ table, th, td /*used as styling for SQL tables in PHP*/
 
 .form_dDB_delete_button /*used as SQL delete button styling in daneDoBazy.php*/
 {
+    align-items:center;
     box-shadow: 3px 4px 0px 0px #8a2a21;
     background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
     background-color:#c62d1f;
@@ -87,11 +88,13 @@ table, th, td /*used as styling for SQL tables in PHP*/
 }
 .form_dDB_delete_button:hover /*used as SQL delete button styling in daneDoBazy.php*/
 {
+    align-items:center;
     background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
     background-color:#f24437;
 }
 .form_dDB_delete_button:active /*used as SQL delete button styling in daneDoBazy.php*/
 {
+    align-items:center;
     position:relative;
     top:1px;
 }
