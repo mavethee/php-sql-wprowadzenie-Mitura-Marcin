@@ -13,6 +13,9 @@ body /*used as styling for whole body in page*/
     text-shadow: 5px 5px 5px black;
     color: white;
     margin: auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 
 }
 
