@@ -32,8 +32,8 @@
 
             //Zadanie 1: Wyświetlenie sumy zarobków wszystkich pracowników:
             $sql=("SELECT SUM(zarobki) AS Suma_zarobków_wszystkich_pracowników FROM pracownicy");
-            echo("<h1>Zadanie 1: Wyświetlenie sumy zarobków wszystkich pracowników</h1>");
-            echo("<h2>Użyte zapytanie SQL: ".$sql."</h2>");
+            echo("<h1 class=SQL_table>Zadanie 1: Wyświetlenie sumy zarobków wszystkich pracowników</h1>");
+            echo("<h1 class=SQL_table>Użyte zapytanie SQL: ".$sql."</h1>");
             $result=$conn->query("$sql");
             echo("<table border=1>");
             echo("<th>Suma_zarobków_wszystkich_pracowników</th>");
@@ -47,8 +47,8 @@
 
             //Zadanie 2: Wyświetlenie sumy zarobków wszystkich kobiet:
             $sql=("SELECT SUM(zarobki) AS Suma_zarobków_kobiet FROM pracownicy WHERE imie LIKE '%a'");
-            echo("<h1>Zadanie 2: Wyświetlenie sumy zarobków wszystkich kobiet</h1>");
-            echo("<h2>Użyte zapytanie SQL: ".$sql."</h2>");
+            echo("<h1 class=SQL_table>Zadanie 2: Wyświetlenie sumy zarobków wszystkich kobiet</h1>");
+            echo("<h1 class=SQL_table>Użyte zapytanie SQL: ".$sql."</h1>");
             $result=$conn->query("$sql");
             echo("<table border=1>");
             echo("<th>Suma_zarobków_kobiet</th>");
@@ -62,8 +62,8 @@
 
             //Zadanie 3: Wyświetlenie sumy zarobków mężczyzn pracujących w dziale 2 i 3:
             $sql=("SELECT SUM(zarobki) AS Suma_zarobków_mężczyzn_pracujących_w_dziale_2_i_3 FROM pracownicy WHERE imie NOT LIKE '%a' and (dzial=2 OR dzial=3)");
-            echo("<h1>Zadanie 3: Wyświetlenie sumy zarobków mężczyzn pracujących w dziale 2 i 3</h1>");
-            echo("<h2>Użyte zapytanie SQL: ".$sql."</h2>");
+            echo("<h1 class=SQL_table>Zadanie 3: Wyświetlenie sumy zarobków mężczyzn pracujących w dziale 2 i 3</h1>");
+            echo("<h1 class=SQL_table>Użyte zapytanie SQL: ".$sql."</h1>");
             $result=$conn->query("$sql");
             echo("<table border=1>");
             echo("<th>Suma_zarobków_mężczyzn_pracujących_w_dziale_2_i_3</th>");
@@ -77,8 +77,8 @@
 
             //Zadanie 4: Wyświetlenie średniej zarobków wszystkich męzczyzn:
             $sql=("SELECT AVG(zarobki) AS Średnia_zarobków_mężczyzn FROM pracownicy WHERE imie NOT LIKE '%a'");
-            echo("<h1>Zadanie 4: Wyświetlenie średniej zarobków wszystkich męzczyzn</h1>");
-            echo("<h2>Użyte zapytanie SQL: ".$sql."</h2>");
+            echo("<h1 class=SQL_table>Zadanie 4: Wyświetlenie średniej zarobków wszystkich męzczyzn</h1>");
+            echo("<h1 class=SQL_table>Użyte zapytanie SQL: ".$sql."</h1>");
             $result=$conn->query("$sql");
             echo("<table border=1>");
             echo("<th>Średnia_zarobków_mężczyzn</th>");
@@ -92,8 +92,8 @@
 
             //Zadanie 5: Wyświetlenie średniej zarobków pracowników z dzialu 4:
             $sql=("SELECT AVG(zarobki) AS Średnia_zarobków_mężczyzn FROM pracownicy WHERE imie NOT LIKE '%a'");
-            echo("<h1>Zadanie 5: Wyświetlenie średniej zarobków pracowników z dzialu 4</h1>");
-            echo("<h2>Użyte zapytanie SQL: ".$sql."</h2>");
+            echo("<h1 class=SQL_table>Zadanie 5: Wyświetlenie średniej zarobków pracowników z dzialu 4</h1>");
+            echo("<h1 class=SQL_table>Użyte zapytanie SQL: ".$sql."</h1>");
             $result=$conn->query("$sql");
             echo("<table border=1>");
             echo("<th>Średnia_zarobków_pracowników_z_działu_4</th>");
@@ -107,8 +107,8 @@
 
             //Zadanie 6: Wyświetlenie średniej zarobków mężczyzn pracujących w dziale 1 i 2:
             $sql=("SELECT AVG(zarobki) AS Średnia_zarobków_mężczyzn FROM pracownicy WHERE imie NOT LIKE '%a'");
-            echo("<h1>Zadanie 6: Wyświetlenie średniej zarobków mężczyzn pracujących w dziale 2 i 3</h1>");
-            echo("<h2>Użyte zapytanie SQL: ".$sql."</h2>");
+            echo("<h1 class=SQL_table>Zadanie 6: Wyświetlenie średniej zarobków mężczyzn pracujących w dziale 2 i 3</h1>");
+            echo("<h1 class=SQL_table>Użyte zapytanie SQL: ".$sql."</h1>");
             $result=$conn->query("$sql");
             echo("<table border=1>");
             echo("<th>Średnia_zarobków_mężczyzn_pracujących_w_dziale_1_i_2</th>");
@@ -122,8 +122,8 @@
 
             //Zadanie 7: Ilość wszystkich pracowników:
             $sql=("SELECT COUNT(imie) AS Ilość_wszystkich_pracowników FROM pracownicy");
-            echo("<h1>Zadanie 7: Ilość wszystkich pracowników</h1>");
-            echo("<h2>Użyte zapytanie SQL: ".$sql."</h2>");
+            echo("<h1 class=SQL_table>Zadanie 7: Ilość wszystkich pracowników</h1>");
+            echo("<h1 class=SQL_table>Użyte zapytanie SQL: ".$sql."</h1>");
             $result=$conn->query("$sql");
             echo("<table border=1>");
             echo("<th>Ilość_wszystkich_pracowników</th>");
@@ -137,8 +137,8 @@
 
             //Zadanie 8: Ilość kobiet pracujących w dziale 1 i 3:
             $sql=("SELECT COUNT(imie) AS Ilość_kobiet_pracujących_w_dziale_1_i_3 FROM pracownicy WHERE imie LIKE '%a'");
-            echo("<h1>Zadanie 8: Ilość kobiet pracujących w dziale 1 i 3</h1>");
-            echo("<h2>Użyte zapytanie SQL: ".$sql."</h2>");
+            echo("<h1 class=SQL_table>Zadanie 8: Ilość kobiet pracujących w dziale 1 i 3</h1>");
+            echo("<h1 class=SQL_table>Użyte zapytanie SQL: ".$sql."</h1>");
             $result=$conn->query("$sql");
             echo("<table border=1>");
             echo("<th>Ilość_kobiet_pracujących_w_dziale_1_i_3</th>");

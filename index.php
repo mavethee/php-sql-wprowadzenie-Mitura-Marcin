@@ -22,10 +22,6 @@
         <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Mitura-Marcin">GitHub - PHP</a>
         <a href="https://github.com/mavethee/projekt_testowy">GitHub - Testowanko</a>
     </div>
-        <form action="strona.php" method="POST">
-            <input type="text" name="name">
-            <input type="submit" value="send">
-        </form>
 
             <?php
                 //Podpisanie pracy:
@@ -41,8 +37,8 @@
 
                 //Zadanie 1: Wyświetlenie pełnej listy pracowników:
                 $sql=("SELECT * FROM pracownicy");
-                echo("<h1>Zadanie 1: Wyświetlenie pełnej listy pracowników:</h1>");
-                echo("<h2>Użyte zapytanie SQL: ".$sql."</h2>");
+                echo("<h1 class=SQL_table>Zadanie 1: Wyświetlenie pełnej listy pracowników:</h1>");
+                echo("<h1 class=SQL_table>Użyte zapytanie SQL: ".$sql."</h2>");
                 $result=$conn->query($sql);
                 echo("<table border=1>");
                 echo("<th>id_pracownicy</th>");

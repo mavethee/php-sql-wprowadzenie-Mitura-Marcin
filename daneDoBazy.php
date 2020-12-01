@@ -28,7 +28,7 @@
             echo("<h4><br>Jesteś na daneDoBazy.php</h4></br>");
         ?>
 
-    <h2>Dodanie pracownika:</h2>
+    <h1 class=SQL_table>Dodanie pracownika:</h1>
 
     <form action="insert.php" method="POST">
         <input type="text" name="firstname" placeholder="Imię"></br>
@@ -38,7 +38,7 @@
         <input type="submit" value="Dodaj pracownika">
     </form>
 
-    <h2>Usuwanie pracownika:</h2>
+    <h1 class=SQL_table>Usuwanie pracownika:</h1>
 
     <form action="delete.php" method="POST">
         <input type="number" name="id_employee" placeholder="identyfikator pracownika"></br>
@@ -52,8 +52,8 @@
 
             //Wyświetlenie tabelki jako podgląd przy dodawaniu/usuwaniu pracowników:
             $sql=("SELECT * FROM pracownicy");
-            echo("<h1>Wyświetlenie tabelki jako podgląd przy dodawaniu/usuwaniu pracowników</h1>");
-            echo("<h2>Użyte zapytanie SQL: ".$sql."</h2>");
+            echo("<h1 class=SQL_table>Wyświetlenie tabelki jako podgląd przy dodawaniu/usuwaniu pracowników</h1>");
+            echo("<h1 class=SQL_table>Użyte zapytanie SQL: ".$sql."</h1>");
             $result=$conn->query("$sql");
             echo("<table border=1>");
             echo("<th>id_pracownicy</th>");

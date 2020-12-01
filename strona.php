@@ -31,10 +31,10 @@
             require_once("connect.php");
 
             //Wyświetlenie informacji wprowadzonej przez użytkownika:
-            echo("<h2> Imie: ".$_POST["firstname"]."</h2>");
-            echo("<h2> Dział: ".$_POST["shift"]."</h2>");
-            echo("<h2> Zarobki: ".$_POST["salary"]."</h2>");
-            echo("<h2> Data urodzenia: ".$_POST["date_of_birth"]."</h2>");
+            echo("<h1 class=SQL_table> Imie: ".$_POST["firstname"]."</h1>");
+            echo("<h1 class=SQL_table> Dział: ".$_POST["shift"]."</h1>");
+            echo("<h1 class=SQL_table> Zarobki: ".$_POST["salary"]."</h1>");
+            echo("<h1 class=SQL_table> Data urodzenia: ".$_POST["date_of_birth"]."</h1>");
 
         ?>
 </body>

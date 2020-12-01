@@ -32,8 +32,8 @@
 
             //Zadanie 1: Wyświetl dwóch najlepiej zarabiających pracowników z działu 4:
             $sql=("SELECT * FROM pracownicy,organizacja WHERE (dzial=id_org AND dzial=4) ORDER BY zarobki ASC LIMIT 2");
-            echo("<h1>Zadanie 1: Wyświetl dwóch najlepiej zarabiających pracowników z działu 4</h1>");
-            echo("<h2>Użyte zapytanie SQL:".$sql."</h2>");
+            echo("<h1 class=SQL_table>Zadanie 1: Wyświetl dwóch najlepiej zarabiających pracowników z działu 4</h1>");
+            echo("<h1 class=SQL_table>Użyte zapytanie SQL:".$sql."</h1>");
             $result=$conn->query($sql);
             echo("<table border=1>");
             echo("<th>id_pracownicy</th>");
@@ -52,8 +52,8 @@
 
             //Zadanie 2: Wyświetl trzy najlepiej zarabiające kobiety z działu 2 i 4:
             $sql=("SELECT * FROM pracownicy,organizacja WHERE (dzial=id_org AND imie LIKE '%a') AND (dzial=2 OR dzial=4) ORDER BY zarobki ASC LIMIT 3 GROUP BY dzial");
-            echo("<h1>Zadanie 2: Wyświetl trzy najlepiej zarabiające kobiety z działu 2 i 4</h1>");
-            echo("<h2>Użyte zapytanie SQL:".$sql."</h2>");
+            echo("<h1 class=SQL_table>Zadanie 2: Wyświetl trzy najlepiej zarabiające kobiety z działu 2 i 4</h1>");
+            echo("<h1 class=SQL_table>Użyte zapytanie SQL:".$sql."</h1>");
             $result=$conn->query($sql);
             echo("<table border=1>");
             echo("<th>id_pracownicy</th>");
@@ -72,8 +72,8 @@
 
             //Zadanie 3: Wyświetlenie najstarszego pracownika:
             $sql=("SELECT * FROM pracownicy,organizacja WHERE dzial=id_org ORDER BY data_urodzenia ASC LIMIT 1");
-            echo("<h1>Zadanie 3: Wyświetlenie najstarszego pracownika</h1>");
-            echo("<h2>Użyte zapytanie SQL:".$sql."</h2>");
+            echo("<h1 class=SQL_table>Zadanie 3: Wyświetlenie najstarszego pracownika</h1>");
+            echo("<h1 class=SQL_table>Użyte zapytanie SQL:".$sql."</h1>");
             $result=$conn->query($sql);
             echo("<table border=1>");
             echo("<th>id_pracownicy</th>");

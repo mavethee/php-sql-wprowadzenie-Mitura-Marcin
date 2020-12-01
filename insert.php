@@ -28,10 +28,10 @@
             echo("<h4><br>Jesteś na insert.php</br></h4>");
 
             //Wyświetlenie wysłanych danych przez użytkownika:
-            echo("<h2> Imie: ".$_POST["firstname"]."</h2>");
-            echo("<h2> Dział: ".$_POST["shift"]."</h2>");
-            echo("<h2> Zarobki: ".$_POST["salary"]."</h2>");
-            echo("<h2> Data urodzenia: ".$_POST["date_of_birth"]."</h2>");
+            echo("<h1 class=SQL_table> Imie: ".$_POST["firstname"]."</h1>");
+            echo("<h1 class=SQL_table> Dział: ".$_POST["shift"]."</h1>");
+            echo("<h1 class=SQL_table> Zarobki: ".$_POST["salary"]."</h1>");
+            echo("<h1 class=SQL_table> Data urodzenia: ".$_POST["date_of_birth"]."</h1>");
 
             //Logowanie do serwera mySQL:
             require_once("connect.php");
@@ -40,7 +40,7 @@
             $sql = ("INSERT INTO pracownicy (id_pracownicy,imie, dzial, zarobki, data_urodzenia) VALUES (NULL,'".$_POST['firstname']."', ".$_POST['shift'].", ".$_POST['salary'].",'".$_POST['date_of_birth']."')");
             
             //Wyświetlenie tabeli:
-            echo "<h2>". $sql;
+            echo "<h1 class=SQL_table>". $sql;
 
             //Informacja o sukcesie:
             if ($conn->query($sql) === TRUE)
@@ -56,8 +56,8 @@
 
             //Wyświetlenie tabelki jako podgląd przy dodawaniu pracowników:
             $sql=("SELECT * FROM pracownicy");
-            echo("<h1>Wyświetlenie tabelki jako podgląd przy dodawaniu pracowników:</h1>");
-            echo("<h2>Użyte zapytanie SQL: ".$sql."</h2>");
+            echo("<h1 class=SQL_table>Wyświetlenie tabelki jako podgląd przy dodawaniu pracowników:</h1>");
+            echo("<h1 class=SQL_table>Użyte zapytanie SQL: ".$sql."</h1>");
             $result=$conn->query("$sql");
             echo("<table border=1>");
             echo("<th>id_pracownicy</th>");

@@ -32,8 +32,8 @@
 
             //Zadanie 1: Wyświetl pracowników posortowanych malejąco według imienia wraz z nazwami działów:
             $sql=("SELECT  * FROM pracownicy,organizacja WHERE id_org=dzial ORDER BY imie DESC");
-            echo("<h1>Zadanie 1: Wyświetl pracowników posortowanych malejąco według imienia wraz z nazwami działów</h1>");
-            echo("<h2>Użyte zapytanie SQL: ".$sql."</h2>");
+            echo("<h1 class=SQL_table>Zadanie 1: Wyświetl pracowników posortowanych malejąco według imienia wraz z nazwami działów</h1>");
+            echo("<h1 class=SQL_table>Użyte zapytanie SQL: ".$sql."</h1>");
             $result=$conn->query($sql);
             echo("<table border=1>");
             echo("<th>id_pracownicy</th>");
@@ -52,8 +52,8 @@
 
             //Zadanie 2: Wyświetl pracowników z działu 3 posortowanych rosnąco po imieniu:
             $sql=("SELECT  * FROM pracownicy,organizacja WHERE id_org=dzial AND dzial=3 ORDER BY imie DESC");
-            echo("<h1>Zadanie 2: Wyświetl pracowników z działu 3 posortowanych rosnąco po imieniu</h1>");
-            echo("<h2>Użyte zapytanie SQL: ".$sql."</h2>");
+            echo("<h1 class=SQL_table>Zadanie 2: Wyświetl pracowników z działu 3 posortowanych rosnąco po imieniu</h1>");
+            echo("<h1 class=SQL_table>Użyte zapytanie SQL: ".$sql."</h1>");
             $result=$conn->query($sql);
             echo("<table border=1>");
             echo("<th>id_pracownicy</th>");
@@ -72,8 +72,8 @@
 
             //Zadanie 3: Wyświetlenie kobiet posortowanych rosnąco po imieniu:
             $sql=("SELECT * FROM pracownicy,organizacja WHERE id_org=dzial AND imie LIKE '%a' ORDER BY imie ASC");
-            echo("<h1>Zadanie 3: Wyświetlenie kobiet posortowanych rosnąco po imieniu</h1>");
-            echo("<h2>Użyte zapytanie SQL: ".$sql."</h2>");
+            echo("<h1 class=SQL_table>Zadanie 3: Wyświetlenie kobiet posortowanych rosnąco po imieniu</h1>");
+            echo("<h1 class=SQL_table>Użyte zapytanie SQL: ".$sql."</h1>");
             $result=$conn->query($sql);
             echo("<table border=1>");
             echo("<th>id_pracownicy</th>");
@@ -92,8 +92,8 @@
 
             //Zadanie 4: Wyświetlenie kobiet z działu 1 i 3 posortowanych rosnąco po zarobkach:
             $sql=("SELECT * FROM pracownicy,organizacja WHERE id_org=dzial AND imie LIKE '%a' AND (dzial=1 OR dzial=3) ORDER BY zarobki ASC");
-            echo("<h1>Zadanie 4: Wyświetlenie kobiet z działu 1 i 3 posortowanych rosnąco po zarobkach</h1>");
-            echo("<h2>Użyte zapytanie SQL: ".$sql."</h2>");
+            echo("<h1 class=SQL_table>Zadanie 4: Wyświetlenie kobiet z działu 1 i 3 posortowanych rosnąco po zarobkach</h1>");
+            echo("<h1 class=SQL_table>Użyte zapytanie SQL: ".$sql."</h1>");
             $result=$conn->query($sql);
             echo("<table border=1>");
             echo("<th>id_pracownicy</th>");
@@ -112,8 +112,8 @@
 
             //Zadanie 5: Wyświetlenie mężczyzn posortowanych rosnąco po nazwie działu, a następnie po wysokości zarobków:
             $sql=("SELECT * FROM pracownicy,organizacja WHERE id_org=dzial AND imie NOT LIKE '%a' ORDER BY  nazwa_dzial ASC, zarobki ASC");
-            echo("<h1>Zadanie 5: Wyświetlenie mężczyzn posortowanych rosnąco po nazwie działu, a następnie po wysokości zarobków</h1>");
-            echo("<h2>Użyte zapytanie SQL: ".$sql."</h2>");
+            echo("<h1 class=SQL_table>Zadanie 5: Wyświetlenie mężczyzn posortowanych rosnąco po nazwie działu, a następnie po wysokości zarobków</h1>");
+            echo("<h1 class=SQL_table>Użyte zapytanie SQL: ".$sql."</h1>");
             $result=$conn->query($sql);
             echo("<table border=1>");
             echo("<th>id_pracownicy</th>");
