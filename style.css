@@ -21,6 +21,13 @@ body /*used as styling for whole body in page*/
 
 .SQL_excercise /*used as styling for excerceses' and 'Used SQL function'*/
 {
+    text-shadow: 5px 5px 5px black;
+    color: white;
+    margin-left: 20px;
+}
+
+.Student_name, .Student_class_and_group, .Student_number  /*used as styling of student info in index.php*/
+{
     align-items:center;
     text-shadow: 5px 5px 5px black;
     color: white;
@@ -28,14 +35,6 @@ body /*used as styling for whole body in page*/
     display:flex;
     flex-direction:column;
     align-items:center;
-}
-
-.Student_name, .Student_class_and_group, .Student_number  /*used as styling of student info in index.php*/
-{
-    text-shadow: 5px 5px 5px black;
-    color: white;
-    margin-left: 20px;
-    justify-content: center;
 }
 
 table, th, td /*used as styling for SQL tables in PHP*/
