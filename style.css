@@ -21,9 +21,13 @@ body /*used as styling for whole body in page*/
 
 .SQL_excercise /*used as styling for excerceses' and 'Used SQL function'*/
 {
+    align-items:center;
     text-shadow: 5px 5px 5px black;
     color: white;
-    margin-left: 20px;
+    margin: auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
 
 .Student_name, .Student_class_and_group, .Student_number  /*used as styling of student info in index.php*/
