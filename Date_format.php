@@ -190,7 +190,7 @@
 
         //Zadanie 9: Wyświetl ilu pracowników urodziło się w poniedziałek:
         $sql1=("SET lc_time_names = 'pl_PL'");
-        $sql2=("SELECT COUNT(DATE_FORMAT(data_urodzenia, %W)) AS Ilość_pracowników_urodzonych_w_poniedziałek FROM pracownicy WHERE DATE_FORMAT(data_urodzenia,%W)=Poniedziałek");
+        $sql2=("SELECT COUNT(DATE_FORMAT(data_urodzenia,'%W')) AS Ilość_pracowników_urodzonych_w_poniedziałek FROM pracownicy WHERE DATE_FORMAT(data_urodzenia,'%W')=Poniedziałek");
         echo("<h1 class=SQL_excercise>Zadanie 9: Wyświetl ilu pracowników urodziło się w poniedziałek</h1>");
         echo("<h1 class=SQL_excercise>Użyte zapytanie SQL do polskich nazw: ".$sql1."</h1>");
         echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql2."</h1>");
@@ -208,20 +208,19 @@
 
         //Zadanie 10: Wyświetl ilu pracowników urodziło się w poszczególne dni tygodnia:
         $sql1=("SET lc_time_names = 'pl_PL'");
-        $sql2=("SELECT COUNT(DATE_FORMAT(data_urodzenia, %W) AS dzień_urodzenia FROM pracownicy ORDER BY CASE WHEN dzień_urodzenia='Poniedziałek' THEN 1 WHEN dzień_urodzenia='Wtorek' THEN 2 WHEN dzień_urodzenia='Środa' THEN 3 WHEN dzień_urodzenia='Czwartek' THEN 4 WHEN dzień_urodzenia='Piątek' THEN 5 WHEN dzień_urodzenia='Sobota' THEN 6 WHEN dzień_urodzenia='Niedziela' THEN 7 END ASC");
+        $sql2=("SELECT DATE_FORMAT(data_urodzenia,'%W') AS dzień_tygodnia, COUNT(DATE_FORMAT(data_urodzenia, '%W')) AS ilość FROM pracownicy ORDER BY CASE WHEN dzień_urodzenia='Poniedziałek' THEN 1 WHEN dzień_urodzenia='Wtorek' THEN 2 WHEN dzień_urodzenia='Środa' THEN 3 WHEN dzień_urodzenia='Czwartek' THEN 4 WHEN dzień_urodzenia='Piątek' THEN 5 WHEN dzień_urodzenia='Sobota' THEN 6 WHEN dzień_urodzenia='Niedziela' THEN 7 END ASC");
         echo("<h1 class=SQL_excercise>Zadanie 10: Wyświetl ilu pracowników urodziło się w poszczególne dni tygodnia</h1>");
         echo("<h1 class=SQL_excercise>Użyte zapytanie SQL do polskich nazw: ".$sql1."</h1>");
         echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql2."</h1>");
         $result=$conn->query("$sql1");
         $result=$conn->query("$sql2");
         echo("<table border=1>");
-        echo("<th>imie</th>");
-        echo("<th>data_urodzenia</th>");
-        echo("<th>dzień_urodzenia</th>");
+        echo("<th>dzień_tygodnia</th>");
+        echo("<th>ilość</th>");
         while($row=$result->fetch_assoc())
         {
             echo("<tr>");
-            echo("<td>".$row["imie"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["dzień_urodzenia"]."</td>");
+            echo("<td>".$row["dzień_urodzenia"]."</td><td>".$row["ilość"]."</td>");
             echo("</tr>");
         }
         echo("</table>");
