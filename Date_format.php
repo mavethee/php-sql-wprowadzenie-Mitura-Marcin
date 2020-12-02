@@ -54,18 +54,18 @@
 
         //Zadanie 2: Wypisz dzisiejszą nazwę dnia po polsku:
         $sql1=("SET lc_time_names = 'pl_PL'");
-        $sql2=("SELECT DATE_FORMAT(CURDATE(),%W) AS dzisiejeszy_dzień_to");
+        $sql2=("SELECT DATE_FORMAT(CURDATE(),'%W') AS dzisiejeszy_dzień_to:");
         echo("<h1 class=SQL_excercise>Zadanie 2: Wypisz dzisiejszą nazwę dnia po polsku</h1>");
         echo("<h1 class=SQL_excercise>Użyte zapytanie SQL do polskich nazw: ".$sql1."</h1>");
         echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql2."</h1>");
         $result=$conn->query("$sql1");
         $result=$conn->query("$sql2");
         echo("<table border=1>");
-        echo("<th>dzisiejeszy_dzień_to</th>");
+        echo("<th>dzisiejeszy_dzień_to:</th>");
         while($row=$result->fetch_assoc())
         {
             echo("<tr>");
-            echo("<td>".$row[">dzisiejeszy_dzień_to"]."</td>");
+            echo("<td>".$row["dzisiejeszy_dzień_to:"]."</td>");
             echo("</tr>");
         }
         echo("</table>");
