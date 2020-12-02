@@ -33,6 +33,7 @@
         //Zadanie 1: Wyświetl nazwy dni w dacie urodzenia:
         $sql1=("SET lc_time_names = 'pl_PL'");
         $sql2=("SELECT *, DATE_FORMAT(data_urodzenia,'%W, %d-%m-%Y') AS szczegółowa_data_urodzenia FROM pracownicy");
+        echo("<h1 class=SQL_excercise>Zadanie 1: Wyświetl nazwy dni w dacie urodzenia</h1>");
         echo("<h1 class=SQL_excercise>Użyte zapytanie SQL do polskich nazw: ".$sql1."</h1>");
         echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql2."</h1>");
         $result=$conn->query("$sql1");
