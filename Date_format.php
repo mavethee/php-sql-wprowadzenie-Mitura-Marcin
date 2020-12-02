@@ -76,11 +76,11 @@
         echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h1>");
         $result=$conn->query("$sql");
         echo("<table border=1>");
-        echo("<th>Aktualna_godzina</th>");
+        echo("<th>Aktualna_godzina_z_dokładnością_do milisekund</th>");
         while($row=$result->fetch_assoc())
         {
             echo("<tr>");
-            echo("<td>".$row["Aktualna_godzina"]."</td>");
+            echo("<td>".$row["Aktualna_godzina_z_dokładnością_do milisekund"]."</td>");
             echo("</tr>");
         }
         echo("</table>");
