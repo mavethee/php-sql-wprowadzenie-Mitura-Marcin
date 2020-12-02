@@ -152,14 +152,14 @@
 
         //Zadanie 7: Wyświetl, w którym dniu się urodziłeś:
         $sql1=("SET lc_time_names = 'pl_PL'");
-        $sql2=("SELECT DATE_FORMAT(2003-07-24, %j) AS Urodzony_dnia_roku");
+        $sql2=("SELECT DATE_FORMAT(2003-07-24, %j) AS urodzony_dnia_roku");
         echo("<h1 class=SQL_excercise>Zadanie 7: Wyświetl, w jakim dniu się urodziłeś</h1>");
         echo("<h1 class=SQL_excercise>Użyte zapytanie SQL do polskich nazw: ".$sql1."</h1>");
         echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql2."</h1>");
         $result=$conn->query("$sql1");
         $result=$conn->query("$sql2");
         echo("<table border=1>");
-        echo("<th>Urodzony_dnia_roku</th>");
+        echo("<th>urodzony_dnia_roku</th>");
         while($row=$result->fetch_assoc())
         {
             echo("<tr>");
