@@ -74,6 +74,7 @@
         //Zadanie 3: Wyświetl nazwy miesięcy w dacie urodzenia:
         $sql1=("SET lc_time_names = 'pl_PL'");
         $sql2=("SELECT *, DATE_FORMAT(data_urodzenia,'%W, %d %M %Y') AS szczegółowa_data_urodzenia FROM pracownicy");
+        echo("<h1 class=SQL_excercise>Zadanie 3: Wyświetl nazwy miesięcy w dacie urodzenia</h1>");
         echo("<h1 class=SQL_excercise>Użyte zapytanie SQL do polskich nazw: ".$sql1."</h1>");
         echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql2."</h1>");
         $result=$conn->query("$sql1");
