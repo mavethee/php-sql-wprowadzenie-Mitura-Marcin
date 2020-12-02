@@ -34,8 +34,8 @@
         $sql1=("SET lc_time_names = 'pl_PL'");
         $sql2=("SELECT *, DATE_FORMAT(data_urodzenia,'%W, %d-%m-%Y') AS szczegółowa_data_urodzenia FROM pracownicy");
         echo("<h1 class=SQL_excercise>Zadanie 1: Wyświetl nazwy dni w dacie urodzenia</h1>");
-        echo("<h1 class=SQL_excercise>Użyte zapytanie SQL do polskich nazw: ".$sql1."</h1>");
-        echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql2."</h1>");
+        echo("<h4 class=SQL_excercise>Użyte zapytanie SQL do polskich nazw: ".$sql1."</h1>");
+        echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql2."</h4>");
         $result=$conn->query("$sql1");
         $result=$conn->query("$sql2");
         echo("<table border=1>");
@@ -57,8 +57,8 @@
         $sql1=("SET lc_time_names = 'pl_PL'");
         $sql2=("SELECT DATE_FORMAT(CURDATE(), '%W') AS dzisiejszy_dzień");
         echo("<h1 class=SQL_excercise>Zadanie 2: Wypisz dzisiejszą nazwę dnia po polsku</h1>");
-        echo("<h1 class=SQL_excercise>Użyte zapytanie SQL do polskich nazw: ".$sql1."</h1>");
-        echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql2."</h1>");
+        echo("<h4 class=SQL_excercise>Użyte zapytanie SQL do polskich nazw: ".$sql1."</h1>");
+        echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql2."</h4>");
         $result=$conn->query("$sql1");
         $result=$conn->query("$sql2");
         echo("<table border=1>");
@@ -75,8 +75,8 @@
         $sql1=("SET lc_time_names = 'pl_PL'");
         $sql2=("SELECT *, DATE_FORMAT(data_urodzenia,'%W, %d %M %Y') AS szczegółowa_data_urodzenia FROM pracownicy");
         echo("<h1 class=SQL_excercise>Zadanie 3: Wyświetl nazwy miesięcy w dacie urodzenia</h1>");
-        echo("<h1 class=SQL_excercise>Użyte zapytanie SQL do polskich nazw: ".$sql1."</h1>");
-        echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql2."</h1>");
+        echo("<h4 class=SQL_excercise>Użyte zapytanie SQL do polskich nazw: ".$sql1."</h1>");
+        echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql2."</h4>");
         $result=$conn->query("$sql1");
         $result=$conn->query("$sql2");
         echo("<table border=1>");
@@ -97,7 +97,7 @@
         //Zadanie 4: Wyświetl obecną, dokładną godzinę z dokładnością do milisekund:
         $sql=("SELECT curtime(4) AS Aktualna_godzina_z_dokładnością_do_milisekund");
         echo("<h1 class=SQL_excercise>Zadanie 4: Wyświetl obecną, dokładną godzinę z dokładnością do milisekund</h1>");
-        echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h1>");
+        echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
         $result=$conn->query("$sql");
         echo("<table border=1>");
         echo("<th>Aktualna_godzina_z_dokładnością_do_milisekund</th>");
@@ -113,8 +113,8 @@
         $sql1=("SET lc_time_names = 'pl_PL'");
         $sql2=("SELECT *, DATE_FORMAT(data_urodzenia,'%Y-%M-%W') AS data_urodzenia_w_formie_RRRR_MM_DD FROM pracownicy");
         echo("<h1 class=SQL_excercise>Zadanie 5: Wyświetl datę urodzenia w formie: ROK-MIESIĄC-DZIEŃ_TYGODNIA</h1>");
-        echo("<h1 class=SQL_excercise>Użyte zapytanie SQL do polskich nazw: ".$sql1."</h1>");
-        echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql2."</h1>");
+        echo("<h4 class=SQL_excercise>Użyte zapytanie SQL do polskich nazw: ".$sql1."</h1>");
+        echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql2."</h4>");
         $result=$conn->query("$sql1");
         $result=$conn->query("$sql2");
         echo("<table border=1>");
@@ -135,7 +135,7 @@
         //Zadanie 6: Wyświetl ile dni, godzin i minut żyją pracownicy:
         $sql=("SELECT id_pracownicy, imie, DATEDIFF(CURDATE(),data_urodzenia) AS dni_życia, DATEDIFF(CURDATE(),data_urodzenia)*24 AS godziny_życia, DATEDIFF(CURDATE(),data_urodzenia)*24*60 AS minuty_życia FROM pracownicy");
         echo("<h1 class=SQL_excercise>Zadanie 6: Wyświetl ile dni, godzin i minut żyją pracownicy</h1>");
-        echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h1>");
+        echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
         $result=$conn->query("$sql");
         echo("<table border=1>");
         echo("<th>id_pracownicy</th>");
@@ -155,8 +155,8 @@
         $sql1=("SET lc_time_names = 'pl_PL'");
         $sql2=("SELECT DATE_FORMAT('2003-07-24', '%j') AS urodzony_dnia_roku");
         echo("<h1 class=SQL_excercise>Zadanie 7: Wyświetl, w jakim dniu się urodziłeś</h1>");
-        echo("<h1 class=SQL_excercise>Użyte zapytanie SQL do polskich nazw: ".$sql1."</h1>");
-        echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql2."</h1>");
+        echo("<h4 class=SQL_excercise>Użyte zapytanie SQL do polskich nazw: ".$sql1."</h1>");
+        echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql2."</h4>");
         $result=$conn->query("$sql1");
         $result=$conn->query("$sql2");
         echo("<table border=1>");
@@ -173,8 +173,8 @@
         $sql1=("SET lc_time_names = 'pl_PL'");
         $sql2=("SELECT imie, data_urodzenia, DATE_FORMAT(data_urodzenia,'%W') AS dzień_urodzenia FROM pracownicy ORDER BY CASE WHEN dzień_urodzenia='Poniedziałek' THEN 1 WHEN dzień_urodzenia='Wtorek' THEN 2 WHEN dzień_urodzenia='Środa' THEN 3 WHEN dzień_urodzenia='Czwartek' THEN 4 WHEN dzień_urodzenia='Piątek' THEN 5 WHEN dzień_urodzenia='Sobota' THEN 6 WHEN dzień_urodzenia='Niedziela' THEN 7 END ASC");
         echo("<h1 class=SQL_excercise>Zadanie 8: Wyświetl pracowników z nazwami dni tygodnia, w których się urodzili z sortowaniem według dni tygodnia</h1>");
-        echo("<h1 class=SQL_excercise>Użyte zapytanie SQL do polskich nazw: ".$sql1."</h1>");
-        echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql2."</h1>");
+        echo("<h4 class=SQL_excercise>Użyte zapytanie SQL do polskich nazw: ".$sql1."</h1>");
+        echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql2."</h4>");
         $result=$conn->query("$sql1");
         $result=$conn->query("$sql2");
         echo("<table border=1>");
@@ -191,18 +191,18 @@
 
         //Zadanie 9: Wyświetl ilu pracowników urodziło się w poniedziałek:
         $sql1=("SET lc_time_names = 'pl_PL'");
-        $sql2=("SELECT COUNT(DATE_FORMAT(data_urodzenia,'%W')) AS Ilość_pracowników_urodzonych_w_poniedziałek FROM pracownicy WHERE DATE_FORMAT(data_urodzenia,'%W')=Poniedziałek");
+        $sql2=("SELECT COUNT(DATE_FORMAT(data_urodzenia,'%W')) AS ilość_pracowników_urodzonych_w_poniedziałek FROM pracownicy WHERE DATE_FORMAT(data_urodzenia,'%W')=Poniedziałek");
         echo("<h1 class=SQL_excercise>Zadanie 9: Wyświetl ilu pracowników urodziło się w poniedziałek</h1>");
-        echo("<h1 class=SQL_excercise>Użyte zapytanie SQL do polskich nazw: ".$sql1."</h1>");
-        echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql2."</h1>");
+        echo("<h4 class=SQL_excercise>Użyte zapytanie SQL do polskich nazw: ".$sql1."</h1>");
+        echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql2."</h4>");
         $result=$conn->query("$sql1");
         $result=$conn->query("$sql2");
         echo("<table border=1>");
-        echo("<th>Ilość_pracowników_urodzonych_w_poniedziałek</th>");
+        echo("<th>ilość_pracowników_urodzonych_w_poniedziałek</th>");
         while($row=$result->fetch_assoc())
         {
             echo("<tr>");
-            echo("<td>".$row["Ilość_pracowników_urodzonych_w_poniedziałek"]."</td>");
+            echo("<td>".$row["ilość_pracowników_urodzonych_w_poniedziałek"]."</td>");
             echo("</tr>");
         }
         echo("</table>");
@@ -211,8 +211,8 @@
         $sql1=("SET lc_time_names = 'pl_PL'");
         $sql2=("SELECT DATE_FORMAT(data_urodzenia,'%W') AS dzień_tygodnia, COUNT(DATE_FORMAT(data_urodzenia, '%W')) AS ilość FROM pracownicy ORDER BY CASE WHEN dzień_urodzenia='Poniedziałek' THEN 1 WHEN dzień_urodzenia='Wtorek' THEN 2 WHEN dzień_urodzenia='Środa' THEN 3 WHEN dzień_urodzenia='Czwartek' THEN 4 WHEN dzień_urodzenia='Piątek' THEN 5 WHEN dzień_urodzenia='Sobota' THEN 6 WHEN dzień_urodzenia='Niedziela' THEN 7 END ASC");
         echo("<h1 class=SQL_excercise>Zadanie 10: Wyświetl ilu pracowników urodziło się w poszczególne dni tygodnia</h1>");
-        echo("<h1 class=SQL_excercise>Użyte zapytanie SQL do polskich nazw: ".$sql1."</h1>");
-        echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql2."</h1>");
+        echo("<h4 class=SQL_excercise>Użyte zapytanie SQL do polskich nazw: ".$sql1."</h1>");
+        echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql2."</h4>");
         $result=$conn->query("$sql1");
         $result=$conn->query("$sql2");
         echo("<table border=1>");
