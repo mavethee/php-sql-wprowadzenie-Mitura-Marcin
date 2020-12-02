@@ -30,7 +30,7 @@
             require_once("connect.php");
 
             //Zadanie 1: Wyświetlenie pełnej listy pracowników z nazwami działów:
-            $sql=("SELECT imie, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org");
+            $sql=("SELECT * FROM pracownicy, organizacja WHERE (dzial=1 OR dzial=4) AND dzial=id_org ORDER BY `pracownicy`.`dzial` ASC");
             echo("<h1 class=SQL_excercise>Zadanie 1: Wyświetlenie pełnej listy pracowników z nazwami działów</h1>");
             echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h1>");
             $result=$conn->query($sql);
@@ -47,7 +47,7 @@
             echo("</table>");
 
             //Zadanie 2: Wyświetlenie pracowników tylko z działu 1 i 4:
-            $sql=("SELECT imie, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE (dzial=1 OR dzial=4) AND dzial=id_org");
+            $sql=("SELECT * FROM pracownicy, organizacja WHERE (dzial=1 OR dzial=4) AND dzial=id_org ORDER BY `pracownicy`.`dzial` ASC");
             echo("<h1 class=SQL_excercise>Zadanie 2: Wyświetlenie pracowników tylko z działu 1 i 4</h1>");
             echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h1>");
             $result=$conn->query($sql);
@@ -64,7 +64,7 @@
             echo("</table>");
 
             //Zadanie 3: Wyświetlenie listy kobiet z nazwami działów:
-            $sql=("SELECT imie, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE imie LIKE '%a' AND dzial=id_org");
+            $sql=("SELECT * FROM pracownicy, organizacja WHERE imie LIKE '%a' AND dzial=id_org ORDER BY `pracownicy`.`dzial` ASC");
             echo("<h1 class=SQL_excercise>Zadanie 3: Wyświetlenie listy kobiet z nazwami działów</h1>");
             echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h1>");
             $result=$conn->query($sql);
@@ -81,7 +81,7 @@
             echo("</table>");
 
             //Zadanie 4: Wyświetlenie listy mężczyzn z nazwami działów:
-            $sql=("SELECT imie, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE imie NOT LIKE '%a' AND dzial=id_org");
+            $sql=("SELECT * FROM pracownicy, organizacja WHERE imie NOT LIKE '%a' AND dzial=id_org ORDER BY `pracownicy`.`dzial` ASC");
             echo("<h1 class=SQL_excercise>Zadanie 4: Wyświetlenie listy mężczyzn z nazwami działów</h1>");
             echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h1>");
             $result=$conn->query($sql);
