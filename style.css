@@ -67,7 +67,10 @@ body /*used as styling for whole body in page*/
 /* table, th and tr variables are used as styling for SQL tables*/
 table
 {
-    background-color: rgb(100, 149, 247);
+    background-image: url("https://64.media.tumblr.com/7eb3b45c7b926734db67d5599e6dfbd1/tumblr_pm3owfFXDn1umvny5o1_500.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     color: rgb(255, 255, 255, 0.7);
 }
 
