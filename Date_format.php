@@ -31,7 +31,7 @@
         require_once("connect.php");
 
         //Zadanie 1: Wyświetl nazwy dni w dacie urodzenia:
-        $sql=("SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') FROM pracownicy");
+        $sql=("SELECT *, DATE_FORMAT(data_urodzenia,'%W, %d-%m-%Y') AS szczegółowa_data_urodzenia FROM pracownicy");
         echo("<h1 class=SQL_excercise>Zadanie 1: Wyświetl nazwy dni w dacie urodzenia</h1>");
         echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h1>");
         $result=$conn->query("$sql");
@@ -39,18 +39,19 @@
         echo("<th>id_pracownicy</th>");
         echo("<th>imie</th>");
         echo("<th>data_urodzenia</th>");
+        echo("<th>szczegółowa_data_urodzenia</th>");
         echo("<th>dzial</th>");
         echo("<th>zarobki</th>");
         while($row=$result->fetch_assoc())
         {
             echo("<tr>");
-            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
+            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["szczegółowa_data_urodzenia"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
             echo("</tr>");
         }
         echo("</table>");
 
         //Zadanie 2: Wyświetl nazwy miesięcy w dacie urodzenia:
-        $sql=("SELECT *, DATE_FORMAT(data_urodzenia,'%W-%M-%Y') FROM pracownicy");
+        $sql=("SELECT *, DATE_FORMAT(data_urodzenia,'%W, %d %M %Y') AS szczegółowa_data_urodzenia FROM pracownicy");
         echo("<h1 class=SQL_excercise>Zadanie 2: Wyświetl nazwy dni w dacie urodzenia</h1>");
         echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h1>");
         $result=$conn->query("$sql");
@@ -58,18 +59,19 @@
         echo("<th>id_pracownicy</th>");
         echo("<th>imie</th>");
         echo("<th>data_urodzenia</th>");
+        echo("<th>szczegółowa_data_urodzenia</th>");
         echo("<th>dzial</th>");
         echo("<th>zarobki</th>");
         while($row=$result->fetch_assoc())
         {
             echo("<tr>");
-            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
+            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["szczegółowa_data_urodzenia"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
             echo("</tr>");
         }
         echo("</table>");
 
         //Zadanie 3: Wyświetl obecną, dokładną godzinę z dokładnością do milisekund:
-        $sql=("SELECT curtime(4) AS Aktualna_godzina");
+        $sql=("SELECT curtime(4) AS Aktualna_godzina_z_dokładnością_do milisekund");
         echo("<h1 class=SQL_excercise>Zadanie 3: Wyświetl obecną, dokładną godzinę z dokładnością do milisekund</h1>");
         echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h1>");
         $result=$conn->query("$sql");
