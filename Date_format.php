@@ -216,7 +216,7 @@
         while($row=$result->fetch_assoc())
         {
             echo("<tr>");
-            echo("<td>".$row["Urodzony_dnia_roku"]."</td>");
+            echo("<td>".$row["urodzony_dnia_roku"]."</td>");
             echo("</tr>");
         }
         echo("</table>");
