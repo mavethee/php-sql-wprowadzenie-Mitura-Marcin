@@ -71,16 +71,16 @@
         echo("</table>");
 
         //Zadanie 3: Wyświetl obecną, dokładną godzinę z dokładnością do milisekund:
-        $sql=("SELECT curtime(4) AS Aktualna_godzina_z_dokładnością_do milisekund");
+        $sql=("SELECT curtime(4) AS Aktualna_godzina_z_dokładnością_do_milisekund");
         echo("<h1 class=SQL_excercise>Zadanie 3: Wyświetl obecną, dokładną godzinę z dokładnością do milisekund</h1>");
         echo("<h1 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h1>");
         $result=$conn->query("$sql");
         echo("<table border=1>");
-        echo("<th>Aktualna_godzina_z_dokładnością_do milisekund</th>");
+        echo("<th>Aktualna_godzina_z_dokładnością_do_milisekund</th>");
         while($row=$result->fetch_assoc())
         {
             echo("<tr>");
-            echo("<td>".$row["Aktualna_godzina_z_dokładnością_do milisekund"]."</td>");
+            echo("<td>".$row["Aktualna_godzina_z_dokładnością_do_milisekund"]."</td>");
             echo("</tr>");
         }
         echo("</table>");
