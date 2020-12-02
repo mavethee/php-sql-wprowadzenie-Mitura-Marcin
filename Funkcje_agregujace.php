@@ -158,7 +158,7 @@
             echo("</table>");
 
             //Zadanie 6: Wyświetlenie średniej zarobków mężczyzn pracujących w dziale 1 i 2:
-            $sql=("SELECT AVG(zarobki) AS Średnia_zarobków_mężczyzn FROM pracownicy WHERE imie NOT LIKE '%a' AND (dzial=1 OR dzial=2)");
+            $sql=("SELECT AVG(zarobki) AS Średnia_zarobków_mężczyzn_pracujących_w_dziale_1_i_2 FROM pracownicy WHERE imie NOT LIKE '%a' AND (dzial=1 OR dzial=2)");
             echo("<h1 class=SQL_excercise>Zadanie 6: Wyświetlenie średniej zarobków mężczyzn pracujących w dziale 1 i 2</h1>");
             echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
             $result=$conn->query("$sql");
