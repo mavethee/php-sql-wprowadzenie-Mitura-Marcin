@@ -1,4 +1,101 @@
-body /*used as styling for whole body in page*/
+body /*used as styling for body in index.php*/
+{
+
+    background-image: url("https://i.pinimg.com/originals/a1/19/a9/a119a95d0275ce9666721f61d8cbacf2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.body_dandt /*used as styling for body in Data_i_czas.php*/
+{
+
+    background-image: url("https://cutewallpaper.org/21/detroit-become-human-wallpaper-hd/Wallpaper-Detroit-Become-Human-4k-E3-2017-screenshot-.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.body_df /*used as styling for body in Date_format.php*/
+{
+
+    background-image: url("https://cdn.wccftech.com/wp-content/uploads/2017/07/detroit_become_human_broken_android.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.body_del /*used as styling for body in delete.php*/
+{
+
+    background-image: url("https://www.miastogier.pl/baza/Encyklopedia/gry/News/12.12.2018/nws_det1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.body_form /*used as styling for body in formularz.html*/
+{
+
+    background-image: url("https://i.pinimg.com/originals/a1/19/a9/a119a95d0275ce9666721f61d8cbacf2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.body_aggrefunc /*used as styling for body in funkcje_agregujace.php*/
+{
+
+    background-image: url("https://i.pinimg.com/originals/a1/19/a9/a119a95d0275ce9666721f61d8cbacf2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.body_dDB /*used as styling for body in daneDoBazy.php*/
+{
+
+    background-image: url("https://i.pinimg.com/originals/a1/19/a9/a119a95d0275ce9666721f61d8cbacf2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.body_insert /*used as styling for body in insert.php*/
+{
+
+    background-image: url("https://i.pinimg.com/originals/a1/19/a9/a119a95d0275ce9666721f61d8cbacf2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.body_lib /*used as styling for body in library.php*/
+{
+
+    background-image: url("https://gamingsociety.pl/wp-content/uploads/2019/05/detroit-become-human-pc.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.body_limit /*used as styling for body in limit.php*/
+{
+
+    background-image: url("https://i.pinimg.com/originals/a1/19/a9/a119a95d0275ce9666721f61d8cbacf2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.body_orgiprac /*used as styling for body in Organizacja_i_pracownicy.php*/
+{
+
+    background-image: url("https://i.pinimg.com/originals/a1/19/a9/a119a95d0275ce9666721f61d8cbacf2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.body_sort /*used as styling for body in Sortowanie.php*/
+{
+
+    background-image: url("https://i.pinimg.com/originals/a1/19/a9/a119a95d0275ce9666721f61d8cbacf2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.body_page /*used as styling for body in strona.php*/
 {
 
     background-image: url("https://i.pinimg.com/originals/a1/19/a9/a119a95d0275ce9666721f61d8cbacf2.jpg");

@@ -6,7 +6,7 @@
         <title>Sortowanie</title>
         <link rel="stylesheet" href="style.css">
     </head>
-<body>
+<body class="body_sort">
     <div class="nav">
             <a class="link a" href="index.php">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/nav_icon.png"/>
