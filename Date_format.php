@@ -179,7 +179,7 @@
         while($row=$result->fetch_assoc())
         {
             echo("<tr>");
-            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["data_urodzenia_w_formie_RRRR_MM_DD"]."</td><td>".$row["szczegółowa_data_urodzenia"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
+            echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["data_urodzenia_w_formie_RRRR_MM_DD"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
             echo("</tr>");
         }
         echo("</table>");
