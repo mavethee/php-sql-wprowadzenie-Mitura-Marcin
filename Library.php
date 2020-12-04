@@ -106,7 +106,6 @@
                     echo("<option value=".$row['id_tytuł'].">".$row['Tytuł']."</option>");
                 }
                 echo("</select>");
-                echo("<br><br>");
                 echo("<input type='submit' value='Wypożycz'>'");
                 echo("</form>");
 
