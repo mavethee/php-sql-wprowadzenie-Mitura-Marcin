@@ -83,7 +83,7 @@
                     </script>
 
             <!--Muzyka w tle, zapętlona-->
-            <audio controls autoplay loops>
+            <audio controls autoplay loop>
                 <source src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Kara_OST.mp3" type="audio/mpeg">
             </audio>
         <?php
