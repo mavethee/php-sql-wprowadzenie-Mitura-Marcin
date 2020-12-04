@@ -113,7 +113,8 @@
                 echo("<h1 class=SQL_excercise>Zadanie 3: Wyświetlenie pełnej bazy danych ksiąg do wypożyczenia w blibiotece do wyboru</h1>");
                 echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
                 $result=$conn->query($sql);
-                echo("<select name='tytul' id='tytul'>");
+                echo("<select name='Autor' id='id_autor'>");
+                echo("<select name='Tytuł' id='tytuł'>");
                 while($row=$result->fetch_assoc()) 
                 {
                     echo("<option value=".$row['id_autor'].">".$row["Autor"]."</option>");
