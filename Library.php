@@ -87,10 +87,10 @@
                 echo("<h1 class=SQL_excercise>Zadanie 1: Wyświetl listę z nazwiskami autorów do wyboru</h1>");
                 echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
                 $result=$conn->query($sql);
-                echo("<select name='autor' id='autor'>");
+                echo("<select name='Autor' id='id_autor'>");
                 while($row=$result->fetch_assoc()) 
                 {
-                    echo("<option value=".$row['autor'].">".$row["autor"]."</option>");
+                    echo("<option value=".$row['id_autor'].">".$row["Autor"]."</option>");
                 }
                 echo("<input type='Submit' value='Wybierz autora'><br>");
                 echo("</select>");
@@ -100,10 +100,10 @@
                 echo("<h1 class=SQL_excercise>Zadanie 2: Wyświetl listę z nazwiskami autorów do wyboru</h1>");
                 echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
                 $result=$conn->query($sql);
-                echo("<select name='tytul' id='tytul'>");
+                echo("<select name='Tytuł' id='id_tytuł'>");
                 while($row=$result->fetch_assoc()) 
                 {
-                    echo("<option value=".$row['tytul'].">".$row["tytul"]."</option>");
+                    echo("<option value=".$row['id_tytul'].">".$row["Tytuł"]."</option>");
                 }
                 echo("<input type='Submit' value='Wybierz tytuł'><br>");
                 echo("</select>");
@@ -116,8 +116,8 @@
                 echo("<select name='tytul' id='tytul'>");
                 while($row=$result->fetch_assoc()) 
                 {
-                    echo("<option value=".$row['autor'].">".$row["autor"]."</option>");
-                    echo("<option value=".$row['tytul'].">".$row["tytul"]."</option>");
+                    echo("<option value=".$row['id_autor'].">".$row["Autor"]."</option>");
+                    echo("<option value=".$row['id_tytul'].">".$row["Tytuł"]."</option>");
                 }
                 echo("<input type='Submit' value='Wypożycz'><br>");
                 echo("</select>");
@@ -149,7 +149,7 @@
                 while($row=$result->fetch_assoc())
                 {
                     echo("<tr>");
-                    echo("<td>".$row["id_tytuł"]."</td><td>".$row["Tytuł"]."</td>");
+                    echo("<td>".$row["id_tytuł"]."</td><td>".$row["ytuł"]."</td>");
                     echo("</tr>");
                 }
                 echo("</table>");
