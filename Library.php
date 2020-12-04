@@ -149,7 +149,7 @@
                 while($row=$result->fetch_assoc())
                 {
                     echo("<tr>");
-                    echo("<td>".$row["id_tytuł"]."</td><td>".$row["ytuł"]."</td>");
+                    echo("<td>".$row["id_tytuł"]."</td><td>".$row["tytuł"]."</td>");
                     echo("</tr>");
                 }
                 echo("</table>");
