@@ -243,7 +243,7 @@
 
         //Zadanie 9: Wyświetl ilu pracowników urodziło się w poniedziałek:
         $sql1=("SET lc_time_names = 'pl_PL'");
-        $sql2=("SELECT COUNT(DATE_FORMAT(data_urodzenia,'%W')) AS ilość_pracowników_urodzonych_w_poniedziałek FROM pracownicy WHERE DATE_FORMAT(data_urodzenia,'%W')=Poniedziałek");
+        $sql2=("SELECT Count(DATE_FORMAT(data_urodzenia,'%W')) AS ilość_pracowników_urodzonych_w_poniedziałek FROM pracownicy where DATE_FORMAT(data_urodzenia, '%W')='Poniedziałek'");
         echo("<h1 class=SQL_excercise>Zadanie 9: Wyświetl ilu pracowników urodziło się w poniedziałek</h1>");
         echo("<h4 class=SQL_excercise>Użyte zapytanie SQL do polskich nazw: ".$sql1."</h1>");
         echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql2."</h4>");
