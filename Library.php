@@ -84,10 +84,11 @@
                 require_once("connect.php");
 
                 //Zadanie 0: Fukcja wypożyczania:
-                $sql = ('SELECT * FROM bibliotekaAT, bibliotekaAutor, bibliotekaTytuł WHERE id_autor=bibliotekaAutor_ID AND id_tytuł=bibliotekaTytul_ID');
+                $sql1 = ("SELECT * FROM bibliotekaAutor"); //Autorzy
+                $sql2 = ("SELECT * FROM bibliotekaTytuł"); //Książki
                 echo("<h1 class=SQL_excercise>Zadanie 0: Fukcja wypożyczania</h1>");
                 echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
-                $result=$conn->query($sql);
+                $result=$conn->query($sql1);
                 echo("<form action='wypozyczalnia.php' method='POST'>");
                 echo("<label for='Autor'>'Wybierz autora:'</label>");
                 echo("<select name='Autor' id='id_autor'>");
@@ -97,6 +98,7 @@
                 }
                 echo("</select>");
                 echo("<br><br>");
+                $result=$conn->query($sql2);
                 echo("<label for='Tytuł'>'Wybierz tytuł:'</label>");
                 echo("<select name='Tytuł' id='id_tytuł'>");
                 while($row=$result->fetch_assoc())
