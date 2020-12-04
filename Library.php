@@ -114,10 +114,13 @@
                 echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
                 $result=$conn->query($sql);
                 echo("<select name='Autor' id='id_autor'>");
-                echo("<select name='Tytuł' id='tytuł'>");
                 while($row=$result->fetch_assoc()) 
                 {
                     echo("<option value=".$row['id_autor'].">".$row["Autor"]."</option>");
+                }
+                echo("<select name='Tytuł' id='tytuł'>");
+                while($row=$result->fetch_assoc()) 
+                {
                     echo("<option value=".$row['id_tytuł'].">".$row["Tytuł"]."</option>");
                 }
                 echo("<input type='Submit' value='Wypożycz'><br>");
