@@ -98,7 +98,6 @@
                     echo("<option value=".$row['id_autor'].">".$row['Autor']."</option>");
                 }
                 echo("</select>");
-                echo("<br><br>");
                 $result=$conn->query($sql2);
                 echo("<label for='Tytuł'><h4 class='renting_form'>Wybierz tytuł:</h4></label>");
                 echo("<select name='Tytuł' id='id_tytuł'>");
@@ -158,7 +157,6 @@
                     echo("<option value=".$row['id_autor'].">".$row['Autor']."</option>");
                 }
                 echo("</select>");
-                echo("<br><br>");
                 $result=$conn->query($sql2);
                 echo("<label for='Tytuł'><h4 class='renting_form'>Wybierz tytuł:</h4></label>");
                 echo("<select name='Tytuł' id='id_tytuł'>");
