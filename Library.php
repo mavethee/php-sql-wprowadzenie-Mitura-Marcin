@@ -119,6 +119,7 @@
                     echo("<option value=".$row['id_autor'].">".$row["Autor"]."</option>");
                 }
                 echo("<select name='Tytuł' id='tytuł'>");
+                echo("<input type='Submit' value='Wybierz autora'><br>");
                 while($row=$result->fetch_assoc()) 
                 {
                     echo("<option value=".$row['id_tytuł'].">".$row["Tytuł"]."</option>");
