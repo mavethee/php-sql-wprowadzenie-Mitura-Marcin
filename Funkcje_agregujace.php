@@ -74,8 +74,16 @@
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/nav_icon.png">
             </a>
     </div>
+                    <!--Skrypt pod autoplay muzyki w tle-->
+                    <script>
+                        window.onload = function() 
+                        {
+                        var context = new AudioContext();
+                        }
+                    </script>
 
-            <audio controls autoplay>
+            <!--Muzyka w tle, zapętlona-->
+            <audio controls autoplay loops>
                 <source src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Kara_OST.mp3" type="audio/mpeg">
             </audio>
         <?php

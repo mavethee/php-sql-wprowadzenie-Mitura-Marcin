@@ -75,13 +75,22 @@
             </a>
     </div>
 
-                <audio controls autoplay>
-                    <source src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Kara_OST.mp3" type="audio/mpeg">
-                </audio>
-            <?php
-            //Wyświetlenie informacji wprowadzonej przez użytkownika:
-            echo("<h4 class='renting_form'>Autor: ".$_POST["Autor"]."</h4>");
-            echo("<h4 class='renting_form'>Tytuł: ".$_POST["Tytuł"]."</h4>");
-            ?>
+                    <!--Skrypt pod autoplay muzyki w tle-->
+                    <script>
+                        window.onload = function() 
+                        {
+                        var context = new AudioContext();
+                        }
+                    </script>
+
+            <!--Muzyka w tle, zapętlona-->
+            <audio controls autoplay loops>
+                <source src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Kara_OST.mp3" type="audio/mpeg">
+            </audio>
+                <?php
+                    //Wyświetlenie informacji wprowadzonej przez użytkownika:
+                    echo("<h4 class='renting_form'>Autor: ".$_POST["Autor"]."</h4>");
+                    echo("<h4 class='renting_form'>Tytuł: ".$_POST["Tytuł"]."</h4>");
+                ?>
 </body>
 </html>
