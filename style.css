@@ -172,6 +172,7 @@ body /*used as styling for body in index.php*/
     text-shadow: 5px 5px 5px black;
     color: white;
     margin-left: 20px;
+    display:inline-block;
 }
     
 /* table, th and tr variables are used as styling for SQL tables*/
