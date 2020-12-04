@@ -91,7 +91,7 @@
                 echo("<h4 class=SQL_excercise>Użyte zapytanie SQL do wyświetlenia tytułów w formularzu: ".$sql2."</h4>");
                 $result=$conn->query($sql1);
                 echo("<form action='wypozyczalnia.php' method='POST'>");
-                echo("<label for='Autor'><h4 class='renting_form'>Wybierz autora:</h4></label>");
+                echo("<label for='Autor'>Wybierz autora:</label>");
                 echo("<select name='Autor' id='id_autor'>");
                 while($row=$result->fetch_assoc()) 
                 {
@@ -100,7 +100,7 @@
                 echo("</select>");
                 echo("<br><br>");
                 $result=$conn->query($sql2);
-                echo("<label for='Tytuł'><h4 class='renting_form'>Wybierz tytuł:</h4></label>");
+                echo("<label for='Tytuł'>Wybierz tytuł:</label>");
                 echo("<select name='Tytuł' id='id_tytuł'>");
                 while($row=$result->fetch_assoc())
                 {
