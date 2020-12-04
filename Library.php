@@ -74,6 +74,7 @@
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/nav_icon.png">
             </a>
     </div>
+
             <?php
 
                 //Informacja o stronie:
@@ -81,6 +82,31 @@
 
                 //Logowanie do serwera mySQL:
                 require_once("connect.php");
+
+                //Zadanie 0: Fukcja wypożyczania:
+                $sql = ('SELECT * FROM bibliotekaAT, bibliotekaAutor, bibliotekaTytuł WHERE id_autor=bibliotekaAutor_ID AND id_tytuł=bibliotekaTytul_ID');
+                echo("<h1 class=SQL_excercise>Zadanie 0: Fukcja wypożyczania</h1>");
+                echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
+                $result=$conn->query($sql);
+                echo("<form action='wypozyczalnia.php' method='POST'>");
+                echo("<label for='Autor'>'Wybierz autora:'</label>");
+                echo("<select name='Autor' id='id_autor'>");
+                while($row=$result->fetch_assoc()) 
+                {
+                    echo("<option value=".$row['id_autor'].">".$row["Autor"]."</option>");
+                }
+                echo("</select>");
+                echo("<br><br>");
+                echo("<label for='Tytuł'>'Wybierz tytuł:'</label>");
+                echo("<select name='Tytuł' id='id_tytuł'>");
+                while($row=$result->fetch_assoc())
+                {
+                    echo("<option value=".$row['id_tytuł'].">".$row["Tytuł"]."</option>");
+                }
+                echo("</select>");
+                echo("<br><br>");
+                echo("<input type='submit' value='Submit>'");
+                echo("</form>");
 
                 //Zadanie 1: Wyświetl listę z nazwiskami autorów do wyboru:
                 $sql = ("SELECT * FROM bibliotekaAutor");
@@ -95,9 +121,9 @@
                 echo("<input type='Submit' value='Wybierz autora'><br>");
                 echo("</select>");
 
-                //Zadanie 2: Wyświetl listę z nazwiskami autorów do wyboru:
+                //Zadanie 2: Wyświetl listę z tytułami książek do wyboru:
                 $sql = ("SELECT * FROM bibliotekaTytuł");
-                echo("<h1 class=SQL_excercise>Zadanie 2: Wyświetl listę z nazwiskami autorów do wyboru</h1>");
+                echo("<h1 class=SQL_excercise>Zadanie 2: Wyświetl listę z tytułami książek do wyboru</h1>");
                 echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
                 $result=$conn->query($sql);
                 echo("<select name='Tytuł' id='id_tytuł'>");
