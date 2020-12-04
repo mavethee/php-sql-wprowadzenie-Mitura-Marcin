@@ -3,7 +3,7 @@
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
-        <title>Główny Index</title>
+        <title>Wypożyczalnia</title>
         <link rel="stylesheet" href="style.css">
     </head>
 <body class="">
@@ -76,8 +76,9 @@
     </div>
             <?php
             //Wyświetlenie informacji wprowadzonej przez użytkownika:
-            echo("<h1 class=SQL_excercise> Imie: ".$_POST["firstname"]."</h1>");
-            echo("<h1 class=SQL_excercise> Dział: ".$_POST["shift"]."</h1>");
-            echo("<h1 class=SQL_excercise> Zarobki: ".$_POST["salary"]."</h1>");
-            echo("<h1 class=SQL_excercise> Data urodzenia: ".$_POST["date_of_birth"]."</h1>"); 
+            echo("<h4 class='renting_form'>Autor: ".$_POST["Autor"]."</h1>");
+            echo("<h4 class='renting_form'>Tytuł: ".$_POST["Tytuł"]."</h1>");
+            
             ?>
+</body>
+</html>

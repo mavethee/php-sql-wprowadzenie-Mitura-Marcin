@@ -83,14 +83,15 @@
                 //Logowanie do serwera mySQL:
                 require_once("connect.php");
 
-                //Zadanie 0: Fukcja wypożyczania:
+                //Zadanie 0: Funkcja wypożyczania:
                 $sql1 = ("SELECT * FROM bibliotekaAutor"); //Autorzy
                 $sql2 = ("SELECT * FROM bibliotekaTytuł"); //Książki
-                echo("<h1 class=SQL_excercise>Zadanie 0: Fukcja wypożyczania</h1>");
-                echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
+                echo("<h1 class=SQL_excercise>Zadanie 0: Funkcja wypożyczania</h1>");
+                echo("<h4 class=SQL_excercise>Użyte zapytanie SQL do wyświetlenia autorów w formularzu: ".$sql1."</h4>");
+                echo("<h4 class=SQL_excercise>Użyte zapytanie SQL do wyświetlenia tytułów w formularzu: ".$sql2."</h4>");
                 $result=$conn->query($sql1);
                 echo("<form action='wypozyczalnia.php' method='POST'>");
-                echo("<label for='Autor'>'Wybierz autora:'</label>");
+                echo("<label for='Autor'><h4 class='renting_form'>Wybierz autora:</h4></label>");
                 echo("<select name='Autor' id='id_autor'>");
                 while($row=$result->fetch_assoc()) 
                 {
@@ -99,7 +100,7 @@
                 echo("</select>");
                 echo("<br><br>");
                 $result=$conn->query($sql2);
-                echo("<label for='Tytuł'>'Wybierz tytuł:'</label>");
+                echo("<label for='Tytuł'><h4 class='renting_form'>Wybierz tytuł:</h4></label>");
                 echo("<select name='Tytuł' id='id_tytuł'>");
                 while($row=$result->fetch_assoc())
                 {
@@ -107,7 +108,7 @@
                 }
                 echo("</select>");
                 echo("<br><br>");
-                echo("<input type='submit' value='Submit>'");
+                echo("<input type='submit' value='Wypożycz'>'");
                 echo("</form>");
 
                 //Zadanie 1: Wyświetl listę z nazwiskami autorów do wyboru:

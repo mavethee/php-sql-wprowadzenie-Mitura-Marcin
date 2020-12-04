@@ -166,6 +166,13 @@ body /*used as styling for body in index.php*/
     color: white;
     margin-left: 20px;
 }
+
+.renting_form /*used as styling for renting form in library.php*/
+{
+    text-shadow: 5px 5px 5px black;
+    color: white;
+    margin-left: 20px;
+}
     
 /* table, th and tr variables are used as styling for SQL tables*/
 table
