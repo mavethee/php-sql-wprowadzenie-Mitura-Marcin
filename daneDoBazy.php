@@ -75,6 +75,10 @@
             </a>
     </div>
 
+            <audio controls autoplay>
+                <source src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Kara_OST.mp3" type="audio/mpeg">
+            </audio>
+
         <?php
             //Informacja o stronie:
             echo("<h1 class='page_info'><br>Jesteś w daneDoBazy.php</h1></br>");

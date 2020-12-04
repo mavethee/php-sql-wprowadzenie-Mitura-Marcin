@@ -75,6 +75,10 @@
             </a>
     </div>
 
+                <audio controls autoplay>
+                    <source src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Kara_OST.mp3" type="audio/mpeg">
+                </audio>
+
             <?php
                 //Podpisanie pracy:
                 echo("<h1 class='Student_name'>Marcin Mitura</h1>");
