@@ -146,7 +146,7 @@
                 //Zadanie 3: Wyświetlenie pełnej bazy danych ksiąg do wypożyczenia w blibiotece do wyboru:
                 $sql1 = ("SELECT * FROM bibliotekaAutor"); //Autorzy
                 $sql2 = ("SELECT * FROM bibliotekaTytuł"); //Książki
-                echo("<h1 class=SQL_excercise>Zadanie 0: Funkcja wypożyczania</h1>");
+                echo("<h1 class=SQL_excercise>Zadanie 3: Wyświetlenie pełnej bazy danych ksiąg do wypożyczenia w blibiotece do wyboru</h1>");
                 echo("<h4 class=SQL_excercise>Użyte zapytanie SQL do wyświetlenia autorów w formularzu: ".$sql1."</h4>");
                 echo("<h4 class=SQL_excercise>Użyte zapytanie SQL do wyświetlenia tytułów w formularzu: ".$sql2."</h4>");
                 $result=$conn->query($sql1);
