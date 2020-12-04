@@ -103,7 +103,7 @@
                 echo("<select name='Tytuł' id='id_tytuł'>");
                 while($row=$result->fetch_assoc()) 
                 {
-                    echo("<option value=".$row['id_tytul'].">".$row["Tytuł"]."</option>");
+                    echo("<option value=".$row['id_tytuł'].">".$row["Tytuł"]."</option>");
                 }
                 echo("<input type='Submit' value='Wybierz tytuł'><br>");
                 echo("</select>");
@@ -117,7 +117,7 @@
                 while($row=$result->fetch_assoc()) 
                 {
                     echo("<option value=".$row['id_autor'].">".$row["Autor"]."</option>");
-                    echo("<option value=".$row['id_tytul'].">".$row["Tytuł"]."</option>");
+                    echo("<option value=".$row['id_tytuł'].">".$row["Tytuł"]."</option>");
                 }
                 echo("<input type='Submit' value='Wypożycz'><br>");
                 echo("</select>");
@@ -145,11 +145,11 @@
                 $result=$conn->query($sql);
                 echo("<table border=1>");
                 echo("<th>id</th>");
-                echo("<th>Tytuł</th>");
+                echo("<th>tytuł</th>");
                 while($row=$result->fetch_assoc())
                 {
                     echo("<tr>");
-                    echo("<td>".$row["id_tytuł"]."</td><td>".$row["tytuł"]."</td>");
+                    echo("<td>".$row["id_tytuł"]."</td><td>".$row["Tytuł"]."</td>");
                     echo("</tr>");
                 }
                 echo("</table>");
