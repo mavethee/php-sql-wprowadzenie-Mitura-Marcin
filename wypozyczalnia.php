@@ -78,9 +78,6 @@
             //Wyświetlenie informacji wprowadzonej przez użytkownika:
             echo("<h4 class='renting_form'>Autor: ".$_POST["Autor"]."</h4>");
             echo("<h4 class='renting_form'>Tytuł: ".$_POST["Tytuł"]."</h4>");
-            echo("<h4 class='renting_form'>Autor: ".$_POST["id_autor"]."</h4>");
-            echo("<h4 class='renting_form'>Tytuł: ".$_POST["id_tytuł"]."</h4>");
-
             ?>
 </body>
 </html>
