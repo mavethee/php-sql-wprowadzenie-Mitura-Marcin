@@ -116,6 +116,8 @@
                 echo("<h1 class=SQL_excercise>Zadanie 1: Wyświetl listę z nazwiskami autorów do wyboru</h1>");
                 echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
                 $result=$conn->query($sql);
+                echo("<form>");
+                echo("<label for='Autor'><h4 class='renting_form'>Wybierz autora:</h4></label>");
                 echo("<select name='Autor' id='id_autor'>");
                 while($row=$result->fetch_assoc()) 
                 {
@@ -123,12 +125,15 @@
                 }
                 echo("<input type='Submit' value='Wybierz autora'><br>");
                 echo("</select>");
+                echo("<form>");
 
                 //Zadanie 2: Wyświetl listę z tytułami książek do wyboru:
                 $sql = ("SELECT * FROM bibliotekaTytuł");
                 echo("<h1 class=SQL_excercise>Zadanie 2: Wyświetl listę z tytułami książek do wyboru</h1>");
                 echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
                 $result=$conn->query($sql);
+                echo("<form>");
+                echo("<label for='Tytuł'><h4 class='renting_form'>Wybierz tytuł:</h4></label>");
                 echo("<select name='Tytuł' id='id_tytuł'>");
                 while($row=$result->fetch_assoc()) 
                 {
@@ -136,25 +141,35 @@
                 }
                 echo("<input type='Submit' value='Wybierz tytuł'><br>");
                 echo("</select>");
+                echo("</form>");
 
                 //Zadanie 3: Wyświetlenie pełnej bazy danych ksiąg do wypożyczenia w blibiotece do wyboru:
-                $sql = ("SELECT * FROM bibliotekaAT, bibliotekaAutor, bibliotekaTytuł WHERE id_autor=bibliotekaAutor_ID AND id_tytuł=bibliotekaTytul_ID");
-                echo("<h1 class=SQL_excercise>Zadanie 3: Wyświetlenie pełnej bazy danych ksiąg do wypożyczenia w blibiotece do wyboru</h1>");
-                echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
-                $result=$conn->query($sql);
+                $sql1 = ("SELECT * FROM bibliotekaAutor"); //Autorzy
+                $sql2 = ("SELECT * FROM bibliotekaTytuł"); //Książki
+                echo("<h1 class=SQL_excercise>Zadanie 0: Funkcja wypożyczania</h1>");
+                echo("<h4 class=SQL_excercise>Użyte zapytanie SQL do wyświetlenia autorów w formularzu: ".$sql1."</h4>");
+                echo("<h4 class=SQL_excercise>Użyte zapytanie SQL do wyświetlenia tytułów w formularzu: ".$sql2."</h4>");
+                $result=$conn->query($sql1);
+                echo("<form>");
+                echo("<label for='Autor'><h4 class='renting_form'>Wybierz autora:</h4></label>");
                 echo("<select name='Autor' id='id_autor'>");
                 while($row=$result->fetch_assoc()) 
                 {
-                    echo("<option value=".$row['id_autor'].">".$row["Autor"]."</option>");
+                    echo("<option value=".$row['id_autor'].">".$row['Autor']."</option>");
                 }
-                echo("<input type='Submit' value='Wybierz autora'><br>");
-                echo("<select name='Tytuł' id='tytuł'>");
-                while($row=$result->fetch_assoc()) 
-                {
-                    echo("<option value=".$row['id_tytuł'].">".$row["Tytuł"]."</option>");
-                }
-                echo("<input type='Submit' value='Wypożycz'><br>");
                 echo("</select>");
+                echo("<br><br>");
+                $result=$conn->query($sql2);
+                echo("<label for='Tytuł'><h4 class='renting_form'>Wybierz tytuł:</h4></label>");
+                echo("<select name='Tytuł' id='id_tytuł'>");
+                while($row=$result->fetch_assoc())
+                {
+                    echo("<option value=".$row['id_tytuł'].">".$row['Tytuł']."</option>");
+                }
+                echo("</select>");
+                echo("<br><br>");
+                echo("<input type='submit' value='Wypożycz'>'");
+                echo("</form>");
 
                 //Zadanie 4: Wyświetl listę z nazwiskami autorów:
                 $sql = ("SELECT * FROM bibliotekaAutor");
