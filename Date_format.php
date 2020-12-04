@@ -261,7 +261,7 @@
 
         //Zadanie 10: Wyświetl ilu pracowników urodziło się w poszczególne dni tygodnia:
         $sql1=("SET lc_time_names = 'pl_PL'");
-        $sql2=("SELECT DATE_FORMAT(data_urodzenia,'%W') AS dzien_urodzenia, COUNT(DATE_FORMAT(data_urodzenia,'%W')) AS ilosc FROM pracownicy GROUP BY dzien_urodzenia ORDER BY CASE WHEN dzien='Poniedziałek' THEN 1 WHEN dzien='Wtorek' THEN 2 WHEN dzien='Środa' THEN 3 WHEN dzien='Czwartek' THEN 4 WHEN dzien='Piątek' THEN 5 WHEN dzien='Sobota' THEN 6 WHEN dzien='Niedziela' THEN 7 END ASC");
+        $sql2=("SELECT DATE_FORMAT(data_urodzenia,'%W') AS dzien_urodzenia, COUNT(DATE_FORMAT(data_urodzenia,'%W')) AS ilosc FROM pracownicy GROUP BY dzien_urodzenia ORDER BY CASE WHEN dzien_urodzenia='Poniedziałek' THEN 1 WHEN dzien_urodzenia='Wtorek' THEN 2 WHEN dzien_urodzenia='Środa' THEN 3 WHEN dzien_urodzenia='Czwartek' THEN 4 WHEN dzien_urodzenia='Piątek' THEN 5 WHEN dzien_urodzenia='Sobota' THEN 6 WHEN dzien_urodzenia='Niedziela' THEN 7 END ASC");
         echo("<h1 class=SQL_excercise>Zadanie 10: Wyświetl ilu pracowników urodziło się w poszczególne dni tygodnia</h1>");
         echo("<h4 class=SQL_excercise>Użyte zapytanie SQL do polskich nazw: ".$sql1."</h1>");
         echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql2."</h4>");
