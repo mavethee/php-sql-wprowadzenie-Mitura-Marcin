@@ -95,7 +95,7 @@
                 echo("<select name='Autor' id='id_autor'>");
                 while($row=$result->fetch_assoc()) 
                 {
-                    echo("<option value=".$row['id_autor'].">".$row["Autor"]."</option>");
+                    echo("<option value=".$row['id_autor'].">".$row['Autor']."</option>");
                 }
                 echo("</select>");
                 echo("<br><br>");
@@ -104,7 +104,7 @@
                 echo("<select name='Tytuł' id='id_tytuł'>");
                 while($row=$result->fetch_assoc())
                 {
-                    echo("<option value=".$row['id_tytuł'].">".$row["Tytuł"]."</option>");
+                    echo("<option value=".$row['id_tytuł'].">".$row['Tytuł']."</option>");
                 }
                 echo("</select>");
                 echo("<br><br>");
