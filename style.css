@@ -7,6 +7,11 @@ body /*used as styling for body in index.php*/
     background-size: cover;
 }
 
+audio /*used as styling to hide audio playblack*/
+{
+    display:none;
+}
+
 .body_dandt /*used as styling for body in Data_i_czas.php*/
 {
 
