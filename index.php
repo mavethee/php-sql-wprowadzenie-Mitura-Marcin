@@ -73,6 +73,11 @@
                     GitHub - Testowanko
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/nav_icon.png">
             </a>
+            <a class="link o" href="https://www.youtube.com/watch?v=PzrGGyPMfoo">
+                <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/nav_icon.png">
+                    WESOŁYCH ŚWIĄT! (Uwaga! Weeboza :P)
+                <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/nav_icon.png">
+            </a>
     </div>
 
                     <!--Skrypt pod autoplay muzyki w tle-->
