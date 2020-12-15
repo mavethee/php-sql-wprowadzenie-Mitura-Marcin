@@ -4,56 +4,56 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <title>Data i czas</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/style.css">
     </head>
 <body class="body_dandt">
     <div class="nav">
-            <a class="link a" href="index.php">
+            <a class="link a" href="/index.php">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png"/>
                     Główny index
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png"/>
             </a>
-            <a class="link b" href="$_SERVER['DOCUMENT_ROOT'] . '/Organizacja%20i%20pracownicy/Organizacja_i_pracownicy.php'">
+            <a class="link b" href="/Organizacja%20i%20pracownicy/Organizacja_i_pracownicy.php">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png"/>  
                     Organizacja i pracownicy
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png"/>
             </a>
-            <a class="link c" href="$_SERVER['DOCUMENT_ROOT'] . '/Organizacja%20i%20pracownicy/Sortowanie.php'">
+            <a class="link c" href="/Organizacja%20i%20pracownicy/Sortowanie.php">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png">
                     Sortowanie
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png">
             </a>
-            <a class="link d" href="$_SERVER['DOCUMENT_ROOT'] . '/Organizacja%20i%20pracownicy/Limit.php'">
+            <a class="link d" href="/Organizacja%20i%20pracownicy/Limit.php">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png">
                     Limit
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png">
             </a>
-            <a class="link e" href="$_SERVER['DOCUMENT_ROOT'] . '/Organizacja%20i%20pracownicy/Funkcje_agregujace.php'">
+            <a class="link e" href="/Organizacja%20i%20pracownicy/Funkcje_agregujace.php">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png">
                     Funkcje agregujące
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png">
             </a>
-            <a class="link f" href="$_SERVER['DOCUMENT_ROOT'] . '/Data%20i%20czas/Data_i_czas.php'">
+            <a class="link f" href="/Data%20i%20czas/Data_i_czas.php">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png">
                     Data i czas
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png">
             </a>
-            <a class="link g" href="$_SERVER['DOCUMENT_ROOT'] . '/Data%20i%20czas/Formatowanie_dat.php'">
+            <a class="link g" href="/Data%20i%20czas/Formatowanie_dat.php">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png">
                     Formatowanie dat
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png">
             </a>
-            <a class="link h" href="$_SERVER['DOCUMENT_ROOT'] . '/Formularze/formularz.html'">
+            <a class="link h" href="/Formularze/formularz.html">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png">
                     Formularz - Strona.php
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png">
             </a>
-            <a class="link j" href="$_SERVER['DOCUMENT_ROOT'] . '/Formularze/daneDoBazy.php'">
+            <a class="link j" href="/Formularze/daneDoBazy.php">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png">
                     Formularz - daneDoBazy.php
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png">
             </a>
-            <a class="link k" href="$_SERVER['DOCUMENT_ROOT'] . '/Biblioteka/Biblioteka.php'">
+            <a class="link k" href="/Biblioteka/Biblioteka.php">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png">
                     Książki
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png">
@@ -71,6 +71,11 @@
             <a class="link n" href="https://github.com/mavethee/projekt_testowy">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png">
                     GitHub - Testowanko
+                <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png">
+            </a>
+            <a class="link o" href="https://www.youtube.com/watch?v=OnMPFBZfJew">
+                <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png">
+                    WESOŁYCH ŚWIĄT!
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png">
             </a>
     </div>
