@@ -94,7 +94,7 @@
                 echo("<h1 class=page_info><br>Jesteś w Library.php</h1></br>");
 
                 //Logowanie do serwera mySQL:
-                require_once("https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/connect.php");
+                require_once($_SERVER['DOCUMENT_ROOT'] . '/connect.php');
 
                 //Zadanie 0: Funkcja wypożyczania:
                 $sql1 = ("SELECT * FROM bibliotekaAutor"); //Autorzy

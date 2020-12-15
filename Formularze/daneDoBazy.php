@@ -113,7 +113,7 @@
         <?php
 
             //Logowanie do serwera mySQL:
-            require_once("https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/connect.php");
+            require_once($_SERVER['DOCUMENT_ROOT'] . '/connect.php');
 
             //Wyświetlenie tabelki jako podgląd przy dodawaniu/usuwaniu pracowników:
             $sql=("SELECT * FROM pracownicy");

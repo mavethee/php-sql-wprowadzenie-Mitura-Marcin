@@ -96,7 +96,7 @@
             echo("<h1 class=SQL_excercise> ID: ".$_POST["id_employee"]."</h1>");
 
             //Logowanie do serwera mySQL:
-            require_once("https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/connect.php");
+            require_once($_SERVER['DOCUMENT_ROOT'] . '/connect.php');
 
             //Zapytanie DELETE w $SQL z próbą uzyskania danych od użytkownika:
             $sql = ("DELETE FROM pracownicy where id_pracownicy='".$_POST['id_employee']."'");
