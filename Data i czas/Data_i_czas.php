@@ -92,8 +92,8 @@
         //Informacja o stronie:
         echo("<h1 class='page_info'><br>Jesteś w Data_i_czas.php<h1 class=SQL_excercise></br>");
 
-        //Logowanie do serwera mySQL
-        require_once("connect.php");
+        //Logowanie do serwera mySQL:
+        require_once("https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/connect.php");
 
         //Zadanie 1: Wyświetl wiek poszczegolnych pracowników:
         $sql=("SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS Wiek_poszczególnych_pracowników FROM pracownicy");

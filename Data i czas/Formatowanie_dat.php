@@ -92,8 +92,8 @@
             //Informacja o stronie:
             echo("<h1 class='page_info'><br>Jesteś w Date_format.php</h1></br>");
 
-            //Logowanie do serwera mySQL
-            require_once("connect.php");
+            //Logowanie do serwera mySQL:
+            require_once("https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/connect.php");
 
             //Zadanie 1: Wyświetl nazwy dni w dacie urodzenia:
             $sql1=("SET lc_time_names = 'pl_PL'");

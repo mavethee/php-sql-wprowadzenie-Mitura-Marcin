@@ -93,7 +93,7 @@
             echo("<h4><br>Jesteś w strona.php</h1></br>");
 
             //Logowanie do serwera mySQL:
-            require_once("connect.php");
+            require_once("https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/connect.php");
 
             //Wyświetlenie informacji wprowadzonej przez użytkownika:
             echo("<h1 class=SQL_excercise> Imie: ".$_POST["firstname"]."</h1>");

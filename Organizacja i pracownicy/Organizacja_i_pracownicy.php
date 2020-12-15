@@ -91,8 +91,8 @@
             //Informacja o stronie:
             echo("<h1 class='page_info'><br>Jesteś w Organizacja_i_pracownicy.php</h1></br>");
 
-            //Logowanie do serwera mySQL
-            require_once("connect.php");
+            //Logowanie do serwera mySQL:
+            require_once("https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/connect.php");
 
             //Zadanie 1: Wyświetlenie pełnej listy pracowników z nazwami działów:
             $sql=("SELECT * FROM pracownicy, organizacja WHERE (dzial=1 OR dzial=4) AND dzial=id_org ORDER BY `pracownicy`.`dzial` ASC");

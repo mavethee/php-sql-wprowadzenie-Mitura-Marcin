@@ -93,7 +93,7 @@
             echo("<h1 class='page_info'><br>Jesteś w Limit.php</h1></br>");
 
             //Logowanie do serwera mySQL:
-            require_once("connect.php");
+            require_once("https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/connect.php");
 
             //Zadanie 1: Wyświetl dwóch najlepiej zarabiających pracowników z działu 4:
             $sql=("SELECT * FROM pracownicy,organizacja WHERE (dzial=id_org AND dzial=4) ORDER BY zarobki DESC LIMIT 2");

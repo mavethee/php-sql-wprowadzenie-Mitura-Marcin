@@ -91,8 +91,8 @@
             //Informacje o stronie:
             echo("<h1 class='page_info'><br>Jesteś w Funkcje_agregujące.php</br></h1>");
 
-            //Logowanie do serwera mySQL
-            require_once("connect.php");
+            //Logowanie do serwera mySQL:
+            require_once("https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/connect.php");
 
             //Zadanie 1: Wyświetlenie sumy zarobków wszystkich pracowników:
             $sql=("SELECT SUM(zarobki) AS Suma_zarobków_wszystkich_pracowników FROM pracownicy");
