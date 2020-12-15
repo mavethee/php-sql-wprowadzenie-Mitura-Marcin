@@ -100,7 +100,7 @@
 
     <h1 class=SQL_excercise>Dodanie pracownika:</h1>
 
-    <form action="insert.php" method="POST">
+    <form action="/Formularze/insert.php" method="POST">
         <input type="text" name="firstname" placeholder="Imię"></br>
         <input type="number" name="shift" placeholder="Dział"></br>
         <input type="number" name="salary" placeholder="Zarobki"></br>
@@ -110,7 +110,7 @@
 
     <h1 class=SQL_excercise>Usuwanie pracownika:</h1>
 
-    <form action="delete.php" method="POST">
+    <form action="/Formularze/delete.php" method="POST">
         <input type="number" name="id_employee" placeholder="identyfikator pracownika"></br>
         <input type="submit" value="Usuń pracownika">
     </form>
@@ -136,7 +136,7 @@
                 echo("<tr>");
                 echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>
                 <td>
-                <form action='delete.php' method='POST'>
+                <form action='/Formularze/delete.php' method='POST'>
                 <input type='hidden' name='id_employee' value='".$row['id_pracownicy']."'>
                 <input type='submit' class='form_dDB_delete_button' value='X'>
                 </form>
