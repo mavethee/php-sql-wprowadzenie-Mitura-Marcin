@@ -98,7 +98,7 @@
                             WESOŁYCH ŚWIĄT!
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png">
                     </a>
-                    </div>
+                </div>
                     <div class="item colorGreen">
                       <?php
                         //Informacje o stronie:
@@ -267,6 +267,6 @@
                         }
                         echo("</table>");
                       ?>
-                    </div>
+            </div>
 </body>
 </html>
