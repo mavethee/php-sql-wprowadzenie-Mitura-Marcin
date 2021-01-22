@@ -1,5 +1,5 @@
 <?php
 
-# Push working :D
+# git and push working :D
 
 ?>
