@@ -20,13 +20,14 @@
         <audio controls autoplay loop>
             <source src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Muzyka/Kara_OST.mp3" type="audio/mpeg">
         </audio>
-            <!--Podpisanie pracy:-->
+            <!--Podpisanie pracy w flexbox:-->
             <div="container">
                 <div class="item colorRed">
                     <h1 class='Student_name'>Marcin Mitura</h1>
                     <h1 class='Student_class_and_group'>Klasa 2Ti, grupa 1</h1>
                     <h1 class='Student_number'>Numer 22</h1>
                 </div>
+                <!--Menu boczne w flexbox:-->
                 <div class="item colorBlue">
                     <a class="link a" href="/index.php">
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png"/>
@@ -94,6 +95,7 @@
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png">
                     </a>
                 </div>
+                    <!--Treść strony w flexbox:-->
                     <div class="item colorGreen">
                       <?php
                         //Informacje o stronie:
