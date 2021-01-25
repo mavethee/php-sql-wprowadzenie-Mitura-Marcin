@@ -93,11 +93,6 @@
                             GitHub - Testowanko
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png">
                     </a>
-                    <a class="link o" href="https://www.youtube.com/watch?v=OnMPFBZfJew">
-                        <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png">
-                            WESOŁYCH ŚWIĄT!
-                        <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png">
-                    </a>
                 </div>
                     <div class="item colorGreen">
                       <?php
