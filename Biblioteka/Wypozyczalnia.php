@@ -5,9 +5,18 @@
         <meta name="viewport" content="width=device-width">
         <title>Wypożyczalnia</title>
         <link rel="stylesheet" href="/style.css">
-    </head>
-<body class="">
-    <div class="nav">
+</head>
+<body class="body_lib">
+    <!--Tytuł strony w flexbox:-->
+    <div class="container">
+        <div class="item colorRed">
+            <?php
+                //Informacja o stronie:
+                echo("<h1 class=page_info><br>Jesteś w Wypozyczalnia.php</h1></br>");
+            ?>
+        </div>
+            <!--Menu boczne w flexbox:-->
+            <div class="item colorBlue">
             <a class="link a" href="/index.php">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png"/>
                     Główny index
@@ -78,7 +87,7 @@
                     WESOŁYCH ŚWIĄT!
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/Utilities/Ikony/nav_icon.png">
             </a>
-    </div>
+        </div>
 
                     <!--Skrypt pod autoplay muzyki w tle-->
                     <script>
