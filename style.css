@@ -98,6 +98,51 @@ audio /*used as styling to hide audio playblack*/
     background-attachment: fixed;
     background-size: cover;
 }
+
+.container 
+{
+    background-color: lightgray;
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.item 
+{
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+}
+  
+.colorRed 
+{
+    background-color: darkgray;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+  
+.colorBlue
+{
+    background-color: gainsboro;
+    width: auto;
+    max-width: 20%;
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: column;
+    flex-direction: column
+}
+  
+.colorGreen 
+{
+    background-color: gray;
+    width: auto;
+    max-width: 70%;
+    height: auto;
+    overflow: hidden;  
+}
   
 .nav /*used as nav styling*/ 
 {
