@@ -101,7 +101,6 @@ audio /*used as styling to hide audio playblack*/
 
 .container 
 {
-    background-color: lightgray;
     display: flex;
     flex-wrap: wrap;
 }
@@ -115,7 +114,6 @@ audio /*used as styling to hide audio playblack*/
   
 .colorRed 
 {
-    background-color: darkgray;
     width: 100%;
     height: auto;
     display: flex;
@@ -125,7 +123,6 @@ audio /*used as styling to hide audio playblack*/
   
 .colorBlue
 {
-    background-color: gainsboro;
     width: auto;
     max-width: 20%;
     height: fit-content;
@@ -137,7 +134,6 @@ audio /*used as styling to hide audio playblack*/
   
 .colorGreen 
 {
-    background-color: gray;
     width: auto;
     max-width: 70%;
     height: auto;
