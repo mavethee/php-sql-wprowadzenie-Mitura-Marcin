@@ -113,7 +113,7 @@
                     echo("<h4 class=SQL_excercise>Użyte zapytanie SQL do wyświetlenia autorów w formularzu: ".$sql1."</h4>");
                     echo("<h4 class=SQL_excercise>Użyte zapytanie SQL do wyświetlenia tytułów w formularzu: ".$sql2."</h4>");
                     $result=$conn->query($sql1);
-                    echo("<form action='wypozyczalnia.php' method='POST'>");
+                    echo("<form action='Wypozyczalnia.php' method='POST'>");
                     echo("<label for='Autor'><h4 class='renting_form'>Wybierz autora:</h4></label>");
                     echo("<select name='Autor' id='id_autor'>");
                     while($row=$result->fetch_assoc()) 
