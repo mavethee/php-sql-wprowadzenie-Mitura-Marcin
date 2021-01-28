@@ -13,6 +13,7 @@
             <?php
                 //Informacja o stronie:
                 echo("<h1 class=page_info><br>Jesteś w Wypozyczalnia.php</h1></br>");
+                
             ?>
         </div>
             <!--Menu boczne w flexbox:-->
@@ -103,8 +104,8 @@
             </audio>
                 <?php
                     //Wyświetlenie informacji wprowadzonej przez użytkownika:
-                    echo("<h4 class='renting_form'>Autor: ".$_POST["Autor"]."</h4>");
-                    echo("<h4 class='renting_form'>Tytuł: ".$_POST["Tytuł"]."</h4>");
+                    echo("<h4 class='renting_form'>Autor: ".$_POST['Autor']."</h4>");
+                    echo("<h4 class='renting_form'>Tytuł: ".$_POST['Tytuł']."</h4>");
                 ?>
 </body>
 </html>
