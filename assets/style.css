@@ -42,6 +42,7 @@ audio /*used as styling to hide audio playblack*/
     background-attachment: fixed;
     background-size: cover;
 }
+
 .body_aggrefunc /*used as styling for body in funkcje_agregujace.php*/ 
 {
     background-image: url("https://www.miastogier.pl/baza/Encyklopedia/gry/News/12.12.2018/nws_det1.jpg");
@@ -49,6 +50,7 @@ audio /*used as styling to hide audio playblack*/
     background-attachment: fixed;
     background-size: cover;
 }
+
 .body_dDB /*used as styling for body in daneDoBazy.php*/ 
 {
     background-image: url("https://ps4site.pl/wp-content/uploads/2018/06/Detroit_Become_Human_Connor_7.jpg");
@@ -56,6 +58,7 @@ audio /*used as styling to hide audio playblack*/
     background-attachment: fixed;
     background-size: cover;
 }
+
 .body_insert /*used as styling for body in insert.php*/ 
 {
     background-image: url("https://i.pinimg.com/originals/a1/19/a9/a119a95d0275ce9666721f61d8cbacf2.jpg");
@@ -63,6 +66,7 @@ audio /*used as styling to hide audio playblack*/
     background-attachment: fixed;
     background-size: cover;
 }
+
 .body_lib /*used as styling for body in library.php*/ 
 {
     background-image: url("https://gamingsociety.pl/wp-content/uploads/2019/05/detroit-become-human-pc.jpg");
@@ -70,6 +74,7 @@ audio /*used as styling to hide audio playblack*/
     background-attachment: fixed;
     background-size: cover;
 }
+
 .body_limit /*used as styling for body in limit.php*/ 
 {
     background-image: url("https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Fdetroit-become-human%2Fhome%2FDETROIT_BECOME_HUMAN_PC_SCREENSHOT_9-1920x1080-dd4f4e6c26721a91e62ad81cf6bbc1f9102c9f9a.jpg");
@@ -77,6 +82,7 @@ audio /*used as styling to hide audio playblack*/
     background-attachment: fixed;
     background-size: cover;
 }
+
 .body_orgiprac /*used as styling for body in Organizacja_i_pracownicy.php*/ 
 {
     background-image: url("https://assets.gamepur.com/images/detroit-become-human/norths-past.jpg");
@@ -84,6 +90,7 @@ audio /*used as styling to hide audio playblack*/
     background-attachment: fixed;
     background-size: cover;
 }
+
 .body_sort /*used as styling for body in Sortowanie.php*/ 
 {
     background-image: url("https://www.taminggaming.com/cms/graphics/screen_shot_2159.jpg");
@@ -91,9 +98,26 @@ audio /*used as styling to hide audio playblack*/
     background-attachment: fixed;
     background-size: cover;
 }
+
 .body_page /*used as styling for body in strona.php*/ 
 {
     background-image: url("https://i.pinimg.com/originals/a1/19/a9/a119a95d0275ce9666721f61d8cbacf2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.body_wdw_main /*used as styling for body in index.php as a main webpage of Relacje wiele do wielu*/ 
+{
+    background-image: url("https://gamingsociety.pl/wp-content/uploads/2019/05/detroit-become-human-pc.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.body_wdw_lib /*used as styling for body in library.php inside Relacje wiele do wielu*/ 
+{
+    background-image: url("https://gamingsociety.pl/wp-content/uploads/2019/05/detroit-become-human-pc.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -103,6 +127,12 @@ audio /*used as styling to hide audio playblack*/
 {
     display: flex;
     flex-wrap: wrap;
+}
+
+.containerWDW 
+{
+    justify-content: center;
+    display: flex;
 }
   
 .item 
@@ -121,7 +151,7 @@ audio /*used as styling to hide audio playblack*/
     flex-direction: column;
 }
   
-.colorBlue
+.colorGreen
 {
     width: auto;
     max-width: 20%;
@@ -129,15 +159,15 @@ audio /*used as styling to hide audio playblack*/
     overflow: hidden;
     display: flex;
     align-items: column;
-    flex-direction: column
+    flex-direction: column;
 }
   
-.colorGreen 
+.colorBlue 
 {
     width: auto;
     max-width: 70%;
     height: auto;
-    overflow: hidden;  
+    overflow: hidden;
 }
   
 .nav /*used as nav styling*/ 
@@ -163,6 +193,7 @@ audio /*used as styling to hide audio playblack*/
     justify-content: space-around;
     display: flex;
     border-radius: 11px;
+    margin: 5px;
 }
   
 .link:hover /*used as nav links hover styling*/
@@ -190,6 +221,7 @@ audio /*used as styling to hide audio playblack*/
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
   
 .SQL_excercise /*used as styling for excerceses' and 'Used SQL function'*/

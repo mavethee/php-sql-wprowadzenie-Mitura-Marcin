@@ -1,14 +1,13 @@
 <?php
-$servername = "mysql-mavethee.alwaysdata.net";
-$username = "mavethee_marcin";
-$password = "H@slo24!";
-$dbname = "mavethee_php-mitura-marcin";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) 
-{
-  die("Connection failed: " . $conn->connect_error);
-}
+  //Create connection:
+    $conn = new mysqli($_SERVER['MYSQL_SERVER'],$_SERVER['MYSQL_USER'], $_SERVER['MYSQL_PASS'], $_SERVER['MYSQL_DBNAME']);
+      //Check connection:
+        if ($conn->connect_error) 
+        {
+          die("Connection failed: " . $conn->connect_error);
+        }
+          else
+          {
+            echo("<h4 class='page_info'>Connected successfully</h4>");
+          }
 ?>

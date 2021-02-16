@@ -1,0 +1,161 @@
+body
+{
+    background-image: url("https://i.pinimg.com/originals/a1/19/a9/a119a95d0275ce9666721f61d8cbacf2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+audio /*used as styling to hide audio playblack*/ 
+{
+    display: none;
+}
+
+.container 
+{
+    justify-content: center;
+    display: flex;
+}
+  
+.item 
+{
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+}
+  
+.colorRed 
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+  
+.colorGreen
+{
+    width: auto;
+    max-width: 20%;
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: column;
+    flex-direction: column;
+}
+  
+.colorBlue 
+{
+    width: auto;
+    max-width: 70%;
+    height: auto;
+    overflow: hidden;
+}
+  
+.nav /*used as nav styling*/ 
+{
+    display: flex;
+    justify-content: space-around;
+}
+  
+.nav_icon /*used for nav icons*/ 
+{
+    height: 30px;
+    width: 30px;
+}
+  
+.link /*used as nav links styling*/ 
+{
+    text-decoration: none;
+    height: 50px;
+    width: 220px;
+    background-color: rgb(0, 0, 0, 0.4);
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    border-radius: 11px;
+    margin: 5px;
+}
+  
+.link:hover /*used as nav links hover styling*/
+{
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+.galleryHeader  /*used as styling for header in index.html*/
+{
+    align-items: center;
+    text-shadow: 5px 5px 5px black;
+    color: white;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.gallery 
+{
+    display: flex;
+}
+  
+.row 
+{
+    display: flex;
+    background-color: lightsalmon;
+}
+  
+.image 
+{
+    background-color: lightblue;
+    margin: 5px;
+    padding: 0px;
+    width: 500px;
+    height: 300px;
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain, cover; */
+    background-position: center;
+    background-size: cover;
+    transition: 0.25s;
+}
+  
+.image:hover 
+{
+    transform: scale(0.99);
+    filter: saturate(3.5) brightness(2.0);
+}
+  
+.photoFirst 
+{
+    background-image: url("https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80");
+}
+
+.photoFirst:hover 
+{
+    background-image: url("https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80");
+}
+  
+.photoSecond 
+{
+    background-image: url("https://images.theconversation.com/files/79109/original/image-20150423-25578-10t7t3r.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop");
+}
+  
+.photoThird 
+{
+    background-image: url("https://interactive-examples.mdn.mozilla.net/media/cc0-images/painted-hand-298-332.jpg");
+}
+  
+.photo_desc1
+{
+    background-color: blueviolet;
+    padding: 1px;
+    display: block;
+}
+
+.photo_desc2
+{
+    background-color: blueviolet;
+    padding: 1px;
+    display: block;
+}
