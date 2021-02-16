@@ -29,7 +29,7 @@
         <div class="item colorRed">
             <?php
                 //Informacja o stronie:
-                echo("<h1 class=page_info><br>Jesteś w Wypozyczalnia.php</h1></br>");
+                echo("<h1 class=page_info><br>Jesteś w wypozyczalnia.php</h1></br>");
                 
             ?>
         </div>
