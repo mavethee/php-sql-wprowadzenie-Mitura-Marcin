@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
-        <title>Limit</title>
+        <title>Organizacja i pracownicy</title>
         <link rel="stylesheet" href="/assets/style.css">
         <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/favicons/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/favicons/apple-icon-60x60.png">
@@ -23,7 +23,7 @@
         <meta name="msapplication-TileImage" content="/assets/icons/favicons/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
     </head>
-<body class="body_limit">
+<body class="body_orgiprac">
     <div class="nav">
             <a class="link a" href="/index.php">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
@@ -55,7 +55,7 @@
                     Data i czas
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/nav_icon.png">
             </a>
-            <a class="link g" href="/Data%20i%20czas/formatowanie_dat.php'">
+            <a class="link g" href="/Data%20i%20czas/formatowanie_dat.php">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/nav_icon.png">
                     Formatowanie dat
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/nav_icon.png">
@@ -70,7 +70,7 @@
                     Formularz - daneDoBazy.php
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/nav_icon.png">
             </a>
-            <a class="link k" href="/Biblioteka/biblioteka.php'">
+            <a class="link k" href="/Biblioteka/biblioteka.php">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/nav_icon.png">
                     Biblioteka
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/nav_icon.png">
@@ -106,73 +106,96 @@
                 <source src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/music/Kara_OST.mp3" type="audio/mpeg">
             </audio>
         <?php
-
             //Informacja o stronie:
-            echo("<h1 class='page_info'><br>Jesteś w Limit.php</h1></br>");
+            echo("<h1 class='page_info'><br>Jesteś w Organizacja_i_pracownicy.php</h1></br>");
 
             //Logowanie do serwera mySQL:
             require_once($_SERVER['DOCUMENT_ROOT'] . '/assets/connect.php');
 
-            //Zadanie 1: Wyświetl dwóch najlepiej zarabiających pracowników z działu 4:
-            $sql=("SELECT * FROM pracownicy,organizacja WHERE (dzial=id_org AND dzial=4) ORDER BY zarobki DESC LIMIT 2");
-            echo("<h1 class=SQL_excercise>Zadanie 1: Wyświetl dwóch najlepiej zarabiających pracowników z działu 4</h1>");
+            //Zadanie 1: Wyświetlenie pełnej listy pracowników z nazwami działów:
+            $sql=("SELECT * FROM pracownicy, organizacja WHERE (dzial=1 OR dzial=4) AND dzial=id_org ORDER BY `pracownicy`.`dzial` ASC");
+            echo("<h1 class=SQL_excercise>Zadanie 1: Wyświetlenie pełnej listy pracowników z nazwami działów</h1>");
             echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
             $result=$conn->query($sql);
             echo("<table border=1>");
-            echo("<th>id_pracownicy</th>");
             echo("<th>imie</th>");
-            echo("<th>data_urodzenia</th>");
-            echo("<th>zarobki</th>");
             echo("<th>dzial</th>");
             echo("<th>nazwa_dzial</th>");
             while($row=$result->fetch_assoc())
             {
                 echo("<tr>");
-                echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["zarobki"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td>");
+                echo("<td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td>");
                 echo("</tr>");
             }
             echo("</table>");
 
-            //Zadanie 2: Wyświetl trzy najlepiej zarabiające kobiety z działu 2 i 4:
-            $sql=("SELECT * FROM pracownicy,organizacja WHERE (dzial=id_org) AND (dzial=2 OR dzial=4) AND imie LIKE '%a' ORDER BY `pracownicy`.`zarobki` DESC LIMIT 3");
-            echo("<h1 class=SQL_excercise>Zadanie 2: Wyświetl trzy najlepiej zarabiające kobiety z działu 2 i 4</h1>");
+            //Zadanie 2: Wyświetlenie pracowników tylko z działu 1 i 4:
+            $sql=("SELECT * FROM pracownicy, organizacja WHERE (dzial=1 OR dzial=4) AND dzial=id_org ORDER BY `pracownicy`.`dzial` ASC");
+            echo("<h1 class=SQL_excercise>Zadanie 2: Wyświetlenie pracowników tylko z działu 1 i 4</h1>");
             echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
             $result=$conn->query($sql);
             echo("<table border=1>");
-            echo("<th>id_pracownicy</th>");
             echo("<th>imie</th>");
-            echo("<th>data_urodzenia</th>");
-            echo("<th>zarobki</th>");
             echo("<th>dzial</th>");
             echo("<th>nazwa_dzial</th>");
             while($row=$result->fetch_assoc())
             {
                 echo("<tr>");
-                echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["zarobki"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td>");
+                echo("<td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td>");
                 echo("</tr>");
             }
             echo("</table>");
 
-            //Zadanie 3: Wyświetlenie najstarszego pracownika:
-            $sql=("SELECT * FROM pracownicy,organizacja WHERE dzial=id_org ORDER BY data_urodzenia ASC LIMIT 1");
-            echo("<h1 class=SQL_excercise>Zadanie 3: Wyświetlenie najstarszego pracownika</h1>");
+            //Zadanie 3: Wyświetlenie listy kobiet z nazwami działów:
+            $sql=("SELECT * FROM pracownicy, organizacja WHERE imie LIKE '%a' AND dzial=id_org ORDER BY `pracownicy`.`dzial` ASC");
+            echo("<h1 class=SQL_excercise>Zadanie 3: Wyświetlenie listy kobiet z nazwami działów</h1>");
             echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
             $result=$conn->query($sql);
             echo("<table border=1>");
-            echo("<th>id_pracownicy</th>");
             echo("<th>imie</th>");
-            echo("<th>data_urodzenia</th>");
-            echo("<th>zarobki</th>");
             echo("<th>dzial</th>");
             echo("<th>nazwa_dzial</th>");
             while($row=$result->fetch_assoc())
             {
                 echo("<tr>");
-                echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["zarobki"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td>");
+                echo("<td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td>");
                 echo("</tr>");
             }
             echo("</table>");
 
+            //Zadanie 4: Wyświetlenie listy mężczyzn z nazwami działów:
+            $sql=("SELECT * FROM pracownicy, organizacja WHERE imie NOT LIKE '%a' AND dzial=id_org ORDER BY `pracownicy`.`dzial` ASC");
+            echo("<h1 class=SQL_excercise>Zadanie 4: Wyświetlenie listy mężczyzn z nazwami działów</h1>");
+            echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
+            $result=$conn->query($sql);
+            echo("<table border=1>");
+            echo("<th>imie</th>");
+            echo("<th>dzial</th>");
+            echo("<th>nazwa_dzial</th>");
+            while($row=$result->fetch_assoc())
+            {
+                echo("<tr>");
+                echo("<td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td>");
+                echo("</tr>");
+            }
+            echo("</table>");
+
+            //Zadanie 5: Wyświetlenie pracowników tylko z działu 2 i 3:
+            $sql=("SELECT imie, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE (dzial=2 OR dzial=3) AND dzial=id_org ORDER BY `pracownicy`.`dzial` ASC");
+            echo("<h1 class=SQL_excercise>Zadanie 5: Wyświetlenie pracowników tylko z działu 2 i 3</h1>");
+            echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
+            $result=$conn->query($sql);
+            echo("<table border=1>");
+            echo("<th>imie</th>");
+            echo("<th>dzial</th>");
+            echo("<th>nazwa_dzial</th>");
+            while($row=$result->fetch_assoc())
+            {
+                echo("<tr>");
+                echo("<td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td>");
+                echo("</tr>");
+            }
+            echo("</table>");
         ?>
 </body>
 </html>
