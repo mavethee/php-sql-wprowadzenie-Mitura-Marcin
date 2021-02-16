@@ -24,7 +24,16 @@
         <meta name="theme-color" content="#ffffff">
     </head>
 <body class="body_aggrefunc">
-    <div class="nav">
+    <div class="container">
+        <div class="item colorRed">
+            <?php
+                //Informacja o stronie:
+                echo("<h1 class='page_info'><br>Jesteś w funkcje_agregujace.php</h1></br>");
+            ?>
+        </div>
+        <!--Menu boczne w flexbox:-->
+        <div class="item colorBlue">
+            <a class="link a" href="/index.php">
             <a class="link a" href="/index.php">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                     Główny index
@@ -103,10 +112,9 @@
             <audio controls autoplay loop>
                 <source src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/music/Kara_OST.mp3" type="audio/mpeg">
             </audio>
+    <!--Treść w flexbox:-->
+    <div class="item colorGreen">
         <?php
-
-            //Informacje o stronie:
-            echo("<h1 class='page_info'><br>Jesteś w Funkcje_agregujące.php</br></h1>");
 
             //Logowanie do serwera mySQL:
             require_once($_SERVER['DOCUMENT_ROOT'] . '/assets/connect.php');
@@ -232,5 +240,6 @@
             echo("</table>");
 
         ?>
+    </div>
 </body>
-</html'">
+</html>

@@ -111,6 +111,9 @@
                     GitHub - Testowanko
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/nav_icon.png"/>
             </a>
+            </div>
+            <!--Menu boczne w flexbox:-->
+            <div class="item colorBlue">
                 <?php
                     //Logowanie do serwera mySQL:
                     require_once($_SERVER['DOCUMENT_ROOT'] . '/assets/connect.php');

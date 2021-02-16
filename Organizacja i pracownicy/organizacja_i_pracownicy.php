@@ -25,6 +25,16 @@
     </head>
 <body class="body_orgiprac">
     <div class="nav">
+    <!--Tytuł strony w flexbox:-->
+    <div class="container">
+        <div class="item colorRed">
+            <?php
+                //Informacja o stronie:
+                echo("<h1 class='page_info'><br>Jesteś w organizacja_i_pracownicy.php</h1></br>");
+            ?>
+        </div>
+        <!--Menu boczne w flexbox:-->
+        <div class="item colorBlue">
             <a class="link a" href="/index.php">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                     Główny index
@@ -90,9 +100,7 @@
                     GitHub - Testowanko
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/nav_icon.png"/>
             </a>
-
-    </div>
-
+        </div>
                     <!--Skrypt pod autoplay muzyki w tle-->
                     <script>
                         window.onload = function() 
@@ -105,10 +113,10 @@
             <audio controls autoplay loop>
                 <source src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/music/Kara_OST.mp3" type="audio/mpeg">
             </audio>
+        
+        <!--Treść strony w flexbox:-->
+        <div class="item colorGreen">
         <?php
-            //Informacja o stronie:
-            echo("<h1 class='page_info'><br>Jesteś w Organizacja_i_pracownicy.php</h1></br>");
-
             //Logowanie do serwera mySQL:
             require_once($_SERVER['DOCUMENT_ROOT'] . '/assets/connect.php');
 
@@ -197,5 +205,6 @@
             }
             echo("</table>");
         ?>
+        </div>
 </body>
 </html>
