@@ -46,12 +46,12 @@
             </div>
         <!--Menu boczne w flexbox:-->
         <div class="item colorBlue">
-            <a class="link a" href="/index.php'">
+            <a class="link a" href="/index.php">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                     Główny index
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
             </a>
-            <a class="link b" href="/Organizacja%20i%20pracownicy/organizacja_i_pracownicy.php'">
+            <a class="link b" href="/Organizacja%20i%20pracownicy/organizacja_i_pracownicy.php">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>  
                     Organizacja i pracownicy
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
