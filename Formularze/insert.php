@@ -72,7 +72,7 @@
             </a>
             <a class="link k" href="$_SERVER['DOCUMENT_ROOT'] . '/Biblioteka/biblioteka.php'">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/nav_icon.png">
-                    Książki
+                    Biblioteka
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/nav_icon.png">
             </a>
             <a class="link l" href="https://projekt-testowy-mavethee.herokuapp.com/">
@@ -117,7 +117,7 @@
             echo("<h1 class=SQL_excercise> Data urodzenia: ".$_POST["date_of_birth"]."</h1>");
 
             //Logowanie do serwera mySQL:
-            require_once($_SERVER['DOCUMENT_ROOT'] . '/assets/connect.php');
+            require_once('/assets/connect.php');
 
             //Zapytanie INSERT w $SQL z próbą uzyskania danych od użytkownika:
             $sql = ("INSERT INTO pracownicy (id_pracownicy,imie, dzial, zarobki, data_urodzenia) VALUES (NULL,'".$_POST['firstname']."', ".$_POST['shift'].", ".$_POST['salary'].",'".$_POST['date_of_birth']."')");

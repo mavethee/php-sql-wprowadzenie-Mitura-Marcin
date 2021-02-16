@@ -72,7 +72,7 @@
             </a>
             <a class="link k" href="$_SERVER['DOCUMENT_ROOT'] . '/Biblioteka/biblioteka.php'">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/nav_icon.png">
-                    Książki
+                    Biblioteka
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/nav_icon.png">
             </a>
             <a class="link l" href="https://projekt-testowy-mavethee.herokuapp.com/">

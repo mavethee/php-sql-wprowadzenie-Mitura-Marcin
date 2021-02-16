@@ -1,5 +1,5 @@
-<!DOCTYPE html'">
-<html'">
+<!DOCTYPE html>
+<html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
@@ -25,54 +25,54 @@
     </head>
 <body class="body_page">
     <div class="nav">
-            <a class="link a" href="$_SERVER['DOCUMENT_ROOT'] . '/index.php'">
+            <a class="link a" href="/index.php">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                     Główny index
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
             </a>
-            <a class="link b" href="$_SERVER['DOCUMENT_ROOT'] . '/Organizacja%20i%20pracownicy/organizacja_i_pracownicy.php'">
+            <a class="link b" href="/Organizacja%20i%20pracownicy/organizacja_i_pracownicy.php">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>  
                     Organizacja i pracownicy
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
             </a>
-            <a class="link c" href="$_SERVER['DOCUMENT_ROOT'] . '/Organizacja%20i%20pracownicy/sortowanie.php'">sortowanie.php'">
+            <a class="link c" href="/Organizacja%20i%20pracownicy/sortowanie.php">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/nav_icon.png">
                     Sortowanie
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/nav_icon.png">
             </a>
-            <a class="link d" href="$_SERVER['DOCUMENT_ROOT'] . '/limit.php'">
+            <a class="link d" href="/Organizacja%20i%20pracownicy/limit.php">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/nav_icon.png">
                     Limit
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/nav_icon.png">
             </a>
-            <a class="link e" href="$_SERVER['DOCUMENT_ROOT'] . '/Organizacja%20i%20pracownicy/funkcje_agregujace.php'">
+            <a class="link e" href="/Organizacja%20i%20pracownicy/funkcje_agregujace.php">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/nav_icon.png">
                     Funkcje agregujące
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/nav_icon.png">
             </a>
-            <a class="link f" href="$_SERVER['DOCUMENT_ROOT'] . '/Data%20i%20czas/data_i_czas.php'">
+            <a class="link f" href="/Data%20i%20czas/data_i_czas.php">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/nav_icon.png">
                     Data i czas
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/nav_icon.png">
             </a>
-            <a class="link g" href="$_SERVER['DOCUMENT_ROOT'] . '/Data%20i%20czas/formatowanie_dat.php'">
+            <a class="link g" href="/Data%20i%20czas/formatowanie_dat.php">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/nav_icon.png">
                     Formatowanie dat
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/nav_icon.png">
             </a>
-            <a class="link h" href="$_SERVER['DOCUMENT_ROOT'] . '/Formularze/formularz.html'"">
+            <a class="link h" href="/Formularze/formularz.html">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/nav_icon.png">
                     Formularz - Strona.php
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/nav_icon.png">
             </a>
-            <a class="link j" href="$_SERVER['DOCUMENT_ROOT'] . '/Formularze/daneDoBazy.php'">
+            <a class="link j" href="/Formularze/daneDoBazy.php">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/nav_icon.png">
                     Formularz - daneDoBazy.php
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/nav_icon.png">
             </a>
-            <a class="link k" href="$_SERVER['DOCUMENT_ROOT'] . '/Biblioteka/biblioteka.php'">
+            <a class="link k" href="/Biblioteka/biblioteka.php">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/nav_icon.png">
-                    Książki
+                    Biblioteka
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/nav_icon.png">
             </a>
             <a class="link l" href="https://projekt-testowy-mavethee.herokuapp.com/">
@@ -111,7 +111,7 @@
             echo("<h4><br>Jesteś w strona.php</h1></br>");
 
             //Logowanie do serwera mySQL:
-            require_once($_SERVER['DOCUMENT_ROOT'] . '/assets/connect.php');
+            require_once('/assets/connect.php');
 
             //Wyświetlenie informacji wprowadzonej przez użytkownika:
             echo("<h1 class=SQL_excercise> Imie: ".$_POST["firstname"]."</h1>");
@@ -121,4 +121,4 @@
 
         ?>
 </body>
-</html'">
+</html>

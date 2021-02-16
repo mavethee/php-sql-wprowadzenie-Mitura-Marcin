@@ -46,12 +46,12 @@
             </div>
             <!--Menu boczne w flexbox:-->
             <div class="item colorBlue">
-            <a class="link a" href="$_SERVER['DOCUMENT_ROOT'] . '/index.php'">>CUMENT_ROOT'] . '/inde.php'">">
+            <a class="link a" href="/index.php">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                     Główny index
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
             </a>
-            <a class="link b" href="$_SERVER['DOCUMENT_ROOT'] . '/_SERVER['DOCUMENT_ROOT'] . '/Organizacja%20i%20pracownicy/organizacja_i_pracownicy.php'">>
+            <a class="link b" href="/Organizacja%20i%20pracownicy/organizacja_i_pracownicy.php">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>  
                     Organizacja i pracownicy
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
@@ -93,7 +93,7 @@
             </a>
             <a class="link k" href="$_SERVER['DOCUMENT_ROOT'] . '/_SERVER['DOCUMENT_ROOT'] . '/Biblioteka/biblioteka.php'">>
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/nav_icon.png">
-                    Książki
+                    Biblioteka
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/nav_icon.png">
             </a>
             <a class="link l" href="https://projekt-testowy-mavethee.herokuapp.com/">
@@ -111,7 +111,7 @@
                     GitHub - Testowanko
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/nav_icon.png">
             </a>
-<?php
+                <?php
                     //Logowanie do serwera mySQL:
                     require_once($_SERVER['DOCUMENT_ROOT'] . '/assets/connect.php');
 
