@@ -117,6 +117,12 @@
                         <?php
                         //Informacje o stronie:
                         echo("<h1 class='page_info'><br>Jesteś w głównym indexie!</br></h1>");
+                        
+                        //this is a test kek:
+                        echo("<li> SERVER: ".$_SERVER['SERVER']);
+                        echo("<li> SERVER username: ".$_SERVER['USER']);
+                        echo("<li> SERVER passsword: ".$_SERVER['PASS']);
+                        echo("<li> SERVER database name: ".$_SERVER['DBNAME']);
         
                         //Logowanie do serwera mySQL:
                         require_once($_SERVER['DOCUMENT_ROOT'] . '/assets/connect.php');
