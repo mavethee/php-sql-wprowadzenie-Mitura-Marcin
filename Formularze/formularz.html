@@ -25,7 +25,13 @@
         <meta name="theme-color" content="#ffffff">
     </head>
 <body class="body_form">
-    <div class="nav">
+    <!--Tytuł strony w flexbox:-->
+    <div class="container">
+        <div class="item colorRed">
+            <h1 class=page_info><br>Jesteś w daneDoBazy.php</h1></br>
+        </div>
+    <!--Menu boczne w flexbox:-->
+    <div class="item colorBlue">
         <a class="link a" href="/index.php">
             <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                 Główny index
@@ -105,7 +111,9 @@
             <audio controls autoplay loop>
                 <source src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/music/Kara_OST.mp3" type="audio/mpeg">
             </audio>
-
+    
+<!--Treść strony w flexbox:-->
+<div class="item colorGreen">
     <form action="Formularze/strona.php" method="POST">
         <input type="text" name="firstname" placeholder="Imię"></br>
         <input type="number" name="shift" placeholder="Dział"></br>
@@ -113,5 +121,6 @@
         <input type="date" name="date_of_birth" placeholder="Data urodzenia"></br>
         <input type="submit" value="wyślij do strona.php'">
     </form>
+</div>
 </body>
 </html>

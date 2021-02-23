@@ -25,7 +25,16 @@
         <meta name="theme-color" content="#ffffff">
     </head>
 <body class="body_dDB">
-    <div class="nav">
+    <!--Tytuł strony w flexbox:-->
+    <div class="container">
+        <div class="item colorRed">
+            <?php
+                //Informacja o stronie:
+                echo("<h1 class=page_info><br>Jesteś w daneDoBazy.php</h1></br>");
+            ?>
+        </div>
+        <!--Menu boczne w flexbox:-->
+        <div class="item colorBlue">
             <a class="link a" href="/index.php">
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                     Główny index
@@ -91,7 +100,7 @@
                     GitHub - Testowanko
                 <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
             </a>
-    </div>
+        </div>
 
                     <!--Skrypt pod autoplay muzyki w tle-->
                     <script>
@@ -106,11 +115,8 @@
                 <source src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/music/Kara_OST.mp3" type="audio/mpeg">
             </audio>
 
-        <?php
-            //Informacja o stronie:
-            echo("<h1 class='page_info'><br>Jesteś w daneDoBazy.php</h1></br>");
-        ?>
-
+<!--Treść strony w flexbox:-->
+<div class="item colorGreen">
     <h1 class=SQL_excercise>Dodanie pracownika:</h1>
 
     <form action="/Formularze/insert.php" method="POST">
