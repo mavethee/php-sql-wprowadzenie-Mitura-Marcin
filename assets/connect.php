@@ -1,11 +1,6 @@
 <?php
-$servername = "mysql-mavethee.alwaysdata.net";
-$username = "mavethee_marcin";
-$password = "H@slo24!";
-$dbname = "mavethee_php-mitura-marcin";
-
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($_SERVER['SERVER'],$_SERVER['USER'], $_SERVER['PASS'], $_SERVER['DBNAME']);
 // Check connection
 if ($conn->connect_error) 
 {
