@@ -120,7 +120,7 @@
                         
                         //this is a test kek:
                         echo("<li> SERVER: ".$_SERVER['MYSQL_SERVER']);
-                        echo("<li> SERVER username: ".$_SERVER['MSQL_USER']);
+                        echo("<li> SERVER username: ".$_SERVER['MYSQL_USER']);
                         echo("<li> SERVER passsword: ".$_SERVER['MYSQL_PASS']);
                         echo("<li> SERVER database name: ".$_SERVER['MYSQL_DBNAME']);
         
