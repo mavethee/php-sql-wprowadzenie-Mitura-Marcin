@@ -7,4 +7,5 @@ print_r($_POST);
 echo "get<br/>";
 print_r($_GET);
 //Adding as a separate file just in case.
+//I need to use this file more.
 ?>
