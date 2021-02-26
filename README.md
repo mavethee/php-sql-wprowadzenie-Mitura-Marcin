@@ -1,7 +1,7 @@
 # PHP-SQL-Introduction
 
 ## About this repository:
-This is an introduction in doing mySQL stuff with help of one and only PHP and some html'"+CSS as a background to fill empty hole of web design and all that crap. Again, it's student's repository, don't expect miracles, mister! ...or miss ;)
+This is an introduction in doing mySQL stuff with help of one and only PHP and some HTML+CSS as a background to fill empty hole of web design and all that crap. Again, it's student's repository, don't expect miracles, mister! ...or miss ;)
 
 ### Main Heroku app (Heroku can track IP address, use VPN if you're worried that I would track your ass):
 https://php-mitura-marcin.herokuapp.com/
