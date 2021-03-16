@@ -1,9 +1,9 @@
 <?php
 //For localhost:
 require_once($_SERVER['DOCUMENT_ROOT'] . '/config.php');
-//Create connection
+//Create connection:
 $conn = new mysqli($_SERVER['MYSQL_SERVER'],$_SERVER['MYSQL_USER'], $_SERVER['MYSQL_PASS'], $_SERVER['MYSQL_DBNAME']);
-// Check connection
+// Check connection:
 if ($conn->connect_error) 
 {
   die("Connection failed: " . $conn->connect_error);
