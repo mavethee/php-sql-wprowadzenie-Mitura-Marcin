@@ -1,6 +1,4 @@
 .DS_Store
 tests
 config.php
-Dockerfile
-docker-compose.yaml
 localhost
