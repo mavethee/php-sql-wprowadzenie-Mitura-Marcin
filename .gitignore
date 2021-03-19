@@ -2,3 +2,5 @@
 tests
 config.php
 localhost
+docker-compose.yaml
+Dockerfile
