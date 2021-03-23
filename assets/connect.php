@@ -8,6 +8,6 @@
         }
           else
           {
-            echo("Connected successfully");
+            echo("<h4 class='page_info'>Connected successfully</h4>");
           }
 ?>
