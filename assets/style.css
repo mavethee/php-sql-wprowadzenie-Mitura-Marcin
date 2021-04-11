@@ -129,7 +129,7 @@ audio /*used as styling to hide audio playblack*/
     overflow: hidden;
     display: flex;
     align-items: column;
-    flex-direction: column
+    flex-direction: column;
 }
   
 .colorGreen 
