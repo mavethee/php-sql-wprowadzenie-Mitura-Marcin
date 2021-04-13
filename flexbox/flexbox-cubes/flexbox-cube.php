@@ -49,7 +49,7 @@
                 <!--Treść strony w flexbox:-->
                 <div class="item colorGreen">
                     <h1>Zadanie 1</h1>
-                    <div class="container">
+                    <div class="container1">
                         <div class="nav">
                             <a class="link" href="https://pcsx2.net/">LINK</a>
                             <a class="link" href="https://pcsx2.net/">LINK</a>

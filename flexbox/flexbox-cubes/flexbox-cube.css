@@ -25,6 +25,13 @@ audio /*used as styling to hide audio playblack*/
 
 .container 
 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container1 
+{
+    background-color: rgba(138, 120, 96, 0.5);
     width: 1440px;
     height: 900px;
     margin: 20px;
