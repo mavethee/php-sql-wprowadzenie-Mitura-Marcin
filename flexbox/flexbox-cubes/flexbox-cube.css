@@ -146,6 +146,7 @@ audio /*used as styling to hide audio playblack*/
 
 h1 
 {
+    text-align: center;
     color: rgb(255, 255, 255);
     margin-left: 20px;
     text-shadow: 0px 5px 5px rgba(167, 167, 167, 0.5);
