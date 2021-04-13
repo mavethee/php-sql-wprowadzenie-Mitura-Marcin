@@ -48,96 +48,97 @@
 
                 <!--Treść strony w flexbox:-->
                 <div class="item colorGreen">
-                    <h1>Zadanie 1</h1>
+                    <h2>Zadanie 1</h2>
                     <div class="container">
-                        <div class="nav-ex">
-                            <a class="link" href="https://www.rpcs3.net/">nav_link</a>
-                            <a class="link" href="https://www.rpcs3.net/">nav_link</a>
-                            <a class="link" href="https://www.rpcs3.net/">nav_link</a>
+                        <div class="nav">
+                            <a class="link" href="https://pcsx2.net/">LINK</a>
+                            <a class="link" href="https://pcsx2.net/">LINK</a>
                         </div>
                     </div>
-                    <h1>Zadanie 2</h1>
+                    <h2>Zadanie 2</h2>
                     <div class="container2">
-                        <div class="nav-ex">
-                            <a class="link" href="https://www.pcsx2.net/">link</a>
-                            <a class="link" href="https://www.pcsx2.net/">link</a>
-                            <a class="link" href="https://www.pcsx2.net/">link</a>
+                        <div class="nav">
+                            <a class="link2" href="https://rpcs3.net/">LINK2</a>
+                            <a class="link2" href="https://rpcs3.net/">LINK2</a>
                         </div>
                     </div>
-                    <h1>Zadanie 3</h1>
+                    <h2>Zadanie 3</h2>
                     <div class="container3">
-                        <div class="nav-ex">
-                            zad 3
+                        <div class="nav">
+                            <a class="link3" href="https://phi.nz/orbital/">LINK3</a>
+                            <a class="link3" href="https://phi.nz/orbital/">LINK3</a>
                         </div>
                     </div>
-                    <h1>Zadanie 4</h1>
+                    <h2>Zadanie 4</h2>
                     <div class="container4">
-                        <div class="nav-ex">
-                            zad 4
+                        <div class="nav">
+                            <a class="link4" href="https://vita3k.org/">LINK4</a>
+                            <a class="link4" href="https://vita3k.org/">LINK4</a>
                         </div>
                     </div>
-                    <h1>Zadanie 5</h1>
+                    <h2>Zadanie 5</h2>
                     <div class="container5">
-                        <div class="nav-ex">
-                            zad 5
+                        <div class="nav">
+                            555
                         </div>
                     </div>
-                    <h1>Zadanie 6</h1>
+                    <h2>Zadanie 6</h2>
                     <div class="container6">
-                        <div class="nav-ex">
-                            zad 6
+                        <div class="nav">
+                            666
                         </div>
                     </div>
-                    <h1>Zadanie 7</h1>
+                    <h2>Zadanie 7</h2>
                     <div class="container7">
-                        <div class="nav-ex">
-                            zad 7
+                        <div class="nav">
+                            777
                         </div>
                     </div>
-                    <h1>Zadanie 8</h1>
+                    <h2>Zadanie 8</h2>
                     <div class="container8">
-                        <div class="nav-ex">
-                            zad 8
+                        <div class="nav">
+                            888
                         </div>
-                        <div class="nav-ex">
-                            zad 8
+                        <div class="nav">
+                            888
                         </div>
                     </div>
-                    <h1>Zadanie 9</h1>
+                    <h2>Zadanie 9</h2>
                     <div class="container9">
-                        <div class="nav-ex">
-                            zad 9
+                        <div class="nav">
+                            999
                         </div>
-                        <div class="nav-ex">
-                            zad 9
+                        <div class="nav">
+                            999
                         </div>
                     </div>
-                    <h1>Zadanie 10</h1>
+                    <h2>Zadanie 10</h2>
                     <div class="container10">
-                        <div class="nav-ex">
-                            zad 10
+                        <div class="nav">
+                            101010
                         </div>
-                        <div class="nav-ex">
-                            zad 10
+                        <div class="nav">
+                            101010
                         </div>
                     </div>
-                    <h1>Zadanie 11</h1>
+                    <h2>Zadanie 11</h2>
                     <div class="container11">
-                        <div class="nav-ex">
-                            zad 11
+                        <div class="nav">
+                            111111
                         </div>
-                        <div class="nav-ex">
-                            zad 11
+                        <div class="nav">
+                            111111
                         </div>
                     </div>
-                    <h1>Zadanie 12</h1>
+                    <h2>Zadanie 12</h2>
                     <div class="container12">
-                        <div class="nav-ex">
-                            zad 12
+                        <div class="nav">
+                            121212
                         </div>
-                        <div class="nav-ex">
-                            zad 12
+                        <div class="nav">
+                            121212
                         </div>
+                    </div>
                 </div>
     </div>
 </body>

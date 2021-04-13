@@ -11,17 +11,15 @@ audio /*used as styling to hide audio playblack*/
     display: none;
 }
 
-.container 
-{
-    background-color: rgba(56, 45, 45, 0.5);
+.container {
+    background-color: rgba(192, 24, 24, 0.5);
     width: 1200px;
     height: 600px;
     margin: 20px;
 }
 
-.nav 
-{
-    background-color: rgba(37, 53, 122, 0.7);
+.nav {
+    background-color: rgba(66, 40, 185, 0.7);
     width: 200px;
     height: 200px;
     margin: 20px;
@@ -31,9 +29,8 @@ audio /*used as styling to hide audio playblack*/
     align-items: center;
 }
 
-.container2 
-{
-    background-color: rgba(255, 255, 255, 0.5);
+.container2 {
+    background-color: rgba(58, 153, 66, 0.5);
     width: 1200px;
     height: 600px;
     margin: 20px;
@@ -41,9 +38,8 @@ audio /*used as styling to hide audio playblack*/
     justify-content: flex-end;
 }
 
-.container3 
-{
-    background-color: rgba(75, 13, 13, 0.5);
+.container3 {
+    background-color: rgba(96, 43, 219, 0.5);
     width: 1200px;
     height: 600px;
     margin: 20px;
@@ -51,9 +47,8 @@ audio /*used as styling to hide audio playblack*/
     align-items: flex-end;
 }
 
-.container4 
-{
-    background-color: rgba(24, 214, 40, 0.5);
+.container4 {
+    background-color: rgba(25, 25, 25, 0.5);
     width: 1200px;
     height: 600px;
     margin: 20px;
@@ -62,9 +57,8 @@ audio /*used as styling to hide audio playblack*/
     justify-content: flex-end;
 }
 
-.container5 
-{
-    background-color: rgba(46, 110, 161, 0.5);
+.container5 {
+    background-color: rgb(235, 235, 245, 0.5);
     width: 1200px;
     height: 600px;
     margin: 20px;
@@ -72,9 +66,8 @@ audio /*used as styling to hide audio playblack*/
     justify-content: center;
 }
 
-.container6 
-{
-    background-color: rgb(255, 255, 255, 0.5);
+.container6 {
+    background-color: rgb(200, 200, 200, 0.5);
     width: 1200px;
     height: 600px;
     margin: 20px;
@@ -83,9 +76,8 @@ audio /*used as styling to hide audio playblack*/
     align-items: center;
 }
 
-.container7 
-{
-    background-color: rgb(255, 255, 255, 0.5);
+.container7 {
+    background-color: rgb(155, 155, 155, 0.5);
     width: 1200px;
     height: 600px;
     margin: 20px;
@@ -94,18 +86,16 @@ audio /*used as styling to hide audio playblack*/
     align-items: flex-end;
 }
 
-.container8 
-{
-    background-color: rgb(255, 255, 255, 0.5);
+.container8 {
+    background-color: rgb(5, 55, 25, 0.5);
     width: 1200px;
     height: 600px;
     margin: 20px;
     display: flex;
 }
 
-.container9 
-{
-    background-color: rgb(255, 255, 255, 0.5);
+.container9 {
+    background-color: rgb(10, 100, 110, 0.5);
     width: 1200px;
     height: 600px;
     margin: 20px;
@@ -113,9 +103,8 @@ audio /*used as styling to hide audio playblack*/
     justify-content: center;
 }
 
-.container10 
-{
-    background-color: rgb(255, 255, 255, 0.5);
+.container10 {
+    background-color: rgb(5, 20, 25, 0.5);
     width: 1200px;
     height: 600px;
     margin: 20px;
@@ -124,9 +113,8 @@ audio /*used as styling to hide audio playblack*/
     align-items: center;
 }
 
-.container11 
-{
-    background-color: rgb(255, 255, 255, 0.5);
+.container11 {
+    background-color: rgb(80, 90, 100, 0.5);
     width: 1200px;
     height: 600px;
     margin: 20px;
@@ -135,9 +123,8 @@ audio /*used as styling to hide audio playblack*/
     align-items: flex-end;
 }
 
-.container12 
-{
-    background-color: rgba(199, 58, 164, 0.5);
+.container12 {
+    background-color: rgb(255, 255, 255, 0.5);
     width: 1200px;
     height: 600px;
     margin: 20px;
@@ -151,71 +138,30 @@ h1
     text-shadow: 0px 5px 5px rgba(167, 167, 167, 0.5);
 }
 
-.container 
-{
-    display: flex;
-    flex-wrap: wrap;
-}
-  
-.item 
-{
-    width: 200px;
-    height: 100px;
-    margin: 10px;
-}
-  
-.colorRed 
-{
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-  
-.colorBlue
-{
-    width: auto;
-    max-width: 20%;
-    height: fit-content;
-    overflow: hidden;
-    display: flex;
-    align-items: column;
-    flex-direction: column;
-}
-  
-.colorGreen 
-{
-    width: auto;
-    max-width: 70%;
-    height: auto;
-    overflow: hidden;  
-}
-
 .link 
 {
-background-color: rgb(255, 255, 255, 0.5);
-color: white;
-text-decoration: none;
-padding: 15px;
-border-radius: 1px;
-transition: 0.2s;
-margin: 2px
+    background-color: rgb(255, 255, 255, 0.5);
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 1px;
+    transition: 0.2s;
+    margin: 2px
 }
 
 .link:hover 
 {
-color: rgb(255,255,255);
-background-color: rgb(128, 15, 15,0.5);
-padding-bottom: 30px;
-padding-right: 20px;
-padding-top: 40px;
-padding-left: 10px;
-border-bottom-right-radius: 20px;
-border-bottom-left-radius: 30px;
-border-top-right-radius: 5px;
-border-top-left-radius: 50px;
-margin: 25px
+    color: rgb(255,255,255);
+    background-color: rgb(128, 15, 15,0.5);
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin: 2px
 }
 
 .link2 
@@ -256,8 +202,7 @@ margin: 25px
     display: block;
 }
 
-.link3:hover 
-{
+.link3:hover {
     color: rgb(0, 0, 0);
     background-color: rgb(0, 255, 0);
     padding-bottom: 10px;
@@ -276,10 +221,10 @@ margin: 25px
     background-color: rgb(255, 255, 255, 0.5);
     color: white;
     text-decoration: none;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     transition: 0.1s;
-    margin: 3px;
+    margin: 1px;
     display: block;
 }
     
@@ -287,10 +232,10 @@ margin: 25px
 {
     color: rgb(0, 0, 0);
     background-color: rgb(0, 200, 255, 0.25);
-    padding-bottom: 5px;
-    padding-right: 5px;
-    padding-top: 30px;
-    padding-left: 30px;
+    padding-bottom: 2px;
+    padding-right: 3px;
+    padding-top: 10px;
+    padding-left: 20px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
     border-top-right-radius: 15px;
