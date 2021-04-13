@@ -51,17 +51,17 @@
                     <h1>Zadanie 1</h1>
                     <div class="container">
                         <div class="nav-ex">
-                            <a class="nav_link" href="https://www.rpcs3.net/">nav_link</a>
-                            <a class="nav_link" href="https://www.rpcs3.net/">nav_link</a>
-                            <a class="nav_link" href="https://www.rpcs3.net/">nav_link</a>
+                            <a class="link" href="https://www.rpcs3.net/">nav_link</a>
+                            <a class="link" href="https://www.rpcs3.net/">nav_link</a>
+                            <a class="link" href="https://www.rpcs3.net/">nav_link</a>
                         </div>
                     </div>
                     <h1>Zadanie 2</h1>
                     <div class="container2">
                         <div class="nav-ex">
-                            <a class="nav_link" href="https://www.pcsx2.net/">nav_link</a>
-                            <a class="nav_link" href="https://www.pcsx2.net/">nav_link</a>
-                            <a class="nav_link" href="https://www.pcsx2.net/">nav_link</a>
+                            <a class="link" href="https://www.pcsx2.net/">link</a>
+                            <a class="link" href="https://www.pcsx2.net/">link</a>
+                            <a class="link" href="https://www.pcsx2.net/">link</a>
                         </div>
                     </div>
                     <h1>Zadanie 3</h1>
