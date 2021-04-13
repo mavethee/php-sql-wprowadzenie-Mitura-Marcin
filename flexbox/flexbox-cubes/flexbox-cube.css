@@ -21,6 +21,18 @@ audio /*used as styling to hide audio playblack*/
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.nav14 
+{
+    background-color: rgba(66, 40, 185, 0.7);
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    color: rgb(255,255,255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: fit-content;
 }
 

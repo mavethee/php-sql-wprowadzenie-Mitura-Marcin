@@ -50,7 +50,7 @@
                 <div class="item colorGreen">
                     <h1>Zadanie 1</h1>
                     <div class="container1">
-                        <div class="nav">
+                        <div class="nav14">
                             <a class="link" href="https://pcsx2.net/">LINK</a>
                             <a class="link" href="https://pcsx2.net/">LINK</a>
                             <a class="link" href="https://pcsx2.net/">LINK</a>
@@ -58,7 +58,7 @@
                     </div>
                     <h1>Zadanie 2</h1>
                     <div class="container2">
-                        <div class="nav">
+                        <div class="nav14">
                             <a class="link2" href="https://rpcs3.net/">LINK2</a>
                             <a class="link2" href="https://rpcs3.net/">LINK2</a>
                             <a class="link2" href="https://rpcs3.net/">LINK2</a>
@@ -66,7 +66,7 @@
                     </div>
                     <h1>Zadanie 3</h1>
                     <div class="container3">
-                        <div class="nav">
+                        <div class="nav14">
                             <a class="link3" href="https://phi.nz/orbital/">LINK3</a>
                             <a class="link3" href="https://phi.nz/orbital/">LINK3</a>
                             <a class="link3" href="https://phi.nz/orbital/">LINK3</a>
@@ -74,7 +74,7 @@
                     </div>
                     <h1>Zadanie 4</h1>
                     <div class="container4">
-                        <div class="nav">
+                        <div class="nav14">
                             <a class="link4" href="https://vita3k.org/">LINK4</a>
                             <a class="link4" href="https://vita3k.org/">LINK4</a>
                             <a class="link4" href="https://vita3k.org/">LINK4</a>
