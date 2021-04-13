@@ -21,6 +21,7 @@ audio /*used as styling to hide audio playblack*/
     display: flex;
     justify-content: center;
     align-items: center;
+    width: fit-content;
 }
 
 .container 
@@ -35,7 +36,7 @@ audio /*used as styling to hide audio playblack*/
     width: 1440px;
     height: 900px;
     margin: 20px;
-    width: fit-content;
+    
 }
 
 .container2 
@@ -45,8 +46,7 @@ audio /*used as styling to hide audio playblack*/
     height: 900px;
     margin: 20px;
     display: flex;
-    justify-content: flex-end;
-    width: fit-content;
+    justify-content: flex-end;   
 }
 
 .container3 
@@ -56,8 +56,7 @@ audio /*used as styling to hide audio playblack*/
     height: 900px;
     margin: 20px;
     display: flex;
-    align-items: flex-end;
-    width: fit-content;
+    align-items: flex-end;  
 }
 
 .container4 
@@ -69,7 +68,6 @@ audio /*used as styling to hide audio playblack*/
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    width: fit-content;
 }
 
 .container5 
@@ -80,7 +78,6 @@ audio /*used as styling to hide audio playblack*/
     margin: 20px;
     display: flex;
     justify-content: center;
-    width: fit-content;
 }
 
 .container6 
@@ -92,7 +89,6 @@ audio /*used as styling to hide audio playblack*/
     display: flex;
     justify-content: center;
     align-items: center;
-    width: fit-content;
 }
 
 .container7 
@@ -104,7 +100,6 @@ audio /*used as styling to hide audio playblack*/
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    width: fit-content;
 }
 
 .container8 
@@ -114,7 +109,6 @@ audio /*used as styling to hide audio playblack*/
     height: 900px;
     margin: 20px;
     display: flex;
-    width: fit-content;
 }
 
 .container9 
@@ -125,7 +119,6 @@ audio /*used as styling to hide audio playblack*/
     margin: 20px;
     display: flex;
     justify-content: center;
-    width: fit-content;
 }
 
 .container10 
@@ -137,7 +130,6 @@ audio /*used as styling to hide audio playblack*/
     display: flex;
     justify-content: center;
     align-items: center;
-    width: fit-content;
 }
 
 .container11 
@@ -149,7 +141,6 @@ audio /*used as styling to hide audio playblack*/
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    width: fit-content;
 }
 
 .container12 
@@ -159,7 +150,6 @@ audio /*used as styling to hide audio playblack*/
     height: 900px;
     margin: 20px;
     display: flex;
-    width: fit-content;
 }
 
 h1 
@@ -179,7 +169,6 @@ h1
     border-radius: 1px;
     transition: 0.5s;
     margin: 2px;
-    width: fit-content;
 }
 
 .link:hover 
@@ -191,7 +180,6 @@ h1
     padding-top: 15px;
     padding-left: 15px;
     margin: 2px;
-    width: fit-content;
 }
 
 .link2 
@@ -203,7 +191,6 @@ h1
     border-radius: 1px;
     transition: 0.4s;
     margin: 3px;
-    width: fit-content;
 }
 
 .link2:hover 
@@ -215,7 +202,6 @@ h1
     padding-top: 10px;
     padding-left: 10px;
     margin: 5px;
-    width: fit-content;
 }
 
 .link3 
@@ -228,7 +214,6 @@ h1
     transition: 0.1s;
     margin: 1px;
     display: block;
-    width: fit-content;
 }
 
 .link3:hover {
@@ -239,7 +224,7 @@ h1
     padding-top: 20px;
     padding-left: 50px;
     margin: 5px;
-    width: fit-content;
+    display: block;
 }
 
 .link4 
@@ -252,7 +237,6 @@ h1
     transition: 0.1s;
     margin: 1px;
     display: block;
-    width: fit-content;
 }
     
 .link4:hover 
@@ -264,5 +248,5 @@ h1
     padding-top: 10px;
     padding-left: 20px;
     margin: 5px;
-    width: fit-content;
+    display: block;
 }
