@@ -119,15 +119,15 @@
                     <h1>Zadanie 1</h1>
                     <div class="container">
                         <div class="nav">
-                            <a class="link" href="/index.php">Index</a>
-                            <a class="link" href="https://github.com/SK-2019/php-sql-wprowadzenie-Chrosnik-Jakub">GITHUB</a>
+                            <a class="link" href="https://www.rpcs3.net/">LINK</a>
+                            <a class="link" href="https://www.rpcs3.net/">LINK</a>
                         </div>
                     </div>
                     <h1>Zadanie 2</h1>
                     <div class="container2">
                         <div class="nav">
-                            <a class="link2" href="/index.php">Index</a>
-                            <a class="link2" href="https://github.com/SK-2019/php-sql-wprowadzenie-Chrosnik-Jakub">GITHUB</a>
+                        <a class="link" href="https://www.pcsx2.net/">LINK</a>
+                            <a class="link" href="https://www.pcsx2.net/">LINK</a>
                         </div>
                     </div>
                     <h1>Zadanie 3</h1>
