@@ -3,8 +3,8 @@
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
-        <title>Flexbox CSS - Zadanie 1</title>
-        <link rel="stylesheet" href="style1.css">
+        <title>Flexbox CSS - Cube</title>
+        <link rel="stylesheet" href="flexbox-cube.css">
         <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/favicons/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/favicons/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/favicons/apple-icon-72x72.png">
@@ -23,7 +23,7 @@
         <meta name="msapplication-TileImage" content="/assets/icons/favicons/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
     </head>
-<body>
+<body class="flex">
     <div class="container">
         <!--Tytuł strony-->
         <div class="item colorRed">
