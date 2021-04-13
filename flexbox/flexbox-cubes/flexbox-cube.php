@@ -3,7 +3,7 @@
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
-        <title>Flexbox CSS - Cube</title>
+        <title>Flexbox CSS - Zadanie 1</title>
         <link rel="stylesheet" href="style1.css">
         <link rel="apple-touch-icon" sizes="57x57" href="/assets/icons/favicons/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/assets/icons/favicons/apple-icon-60x60.png">
@@ -29,7 +29,7 @@
         <div class="item colorRed">
             <?php
                 //Informacja o stronie:
-                echo("<h1 class='page_info'><br>Flexbox CSS - Cube</h1></br>");
+                echo("<h1 class='page_info'><br>Flexbox CSS - Zadanie 1</h1></br>");
             ?>
         </div>
             <!--Menu boczne-->
@@ -116,9 +116,94 @@
 
                 <!--Treść strony w flexbox:-->
                 <div class="item colorGreen">
-                    <?php
-                    echo("<h1 class='page_info'><br>Jesteś w Flexbox CSS - Zadanie 1</h1></br>");
-                    ?>
+                    <h1>Zadanie 1</h1>
+                    <div class="container">
+                        <div class="nav">
+                            <a class="link" href="/index.php">Index</a>
+                            <a class="link" href="https://github.com/SK-2019/php-sql-wprowadzenie-Chrosnik-Jakub">GITHUB</a>
+                        </div>
+                    </div>
+                    <h1>Zadanie 2</h1>
+                    <div class="container2">
+                        <div class="nav">
+                            <a class="link2" href="/index.php">Index</a>
+                            <a class="link2" href="https://github.com/SK-2019/php-sql-wprowadzenie-Chrosnik-Jakub">GITHUB</a>
+                        </div>
+                    </div>
+                    <h1>Zadanie 3</h1>
+                    <div class="container3">
+                        <div class="nav">
+                            zad 3
+                        </div>
+                    </div>
+                    <h1>Zadanie 4</h1>
+                    <div class="container4">
+                        <div class="nav">
+                            zad 4
+                        </div>
+                    </div>
+                    <h1>Zadanie 5</h1>
+                    <div class="container5">
+                        <div class="nav">
+                            zad 5
+                        </div>
+                    </div>
+                    <h1>Zadanie 6</h1>
+                    <div class="container6">
+                        <div class="nav">
+                            zad 6
+                        </div>
+                    </div>
+                    <h1>Zadanie 7</h1>
+                    <div class="container7">
+                        <div class="nav">
+                            zad 7
+                        </div>
+                    </div>
+                    <h1>Zadanie 8</h1>
+                    <div class="container8">
+                        <div class="nav">
+                            zad 8
+                        </div>
+                        <div class="nav">
+                            zad 8
+                        </div>
+                    </div>
+                    <h1>Zadanie 9</h1>
+                    <div class="container9">
+                        <div class="nav">
+                            zad 9
+                        </div>
+                        <div class="nav">
+                            zad 9
+                        </div>
+                    </div>
+                    <h1>Zadanie 10</h1>
+                    <div class="container10">
+                        <div class="nav">
+                            zad 10
+                        </div>
+                        <div class="nav">
+                            zad 10
+                        </div>
+                    </div>
+                    <h1>Zadanie 11</h1>
+                    <div class="container11">
+                        <div class="nav">
+                            zad 11
+                        </div>
+                        <div class="nav">
+                            zad 11
+                        </div>
+                    </div>
+                    <h1>Zadanie 12</h1>
+                    <div class="container12">
+                        <div class="nav">
+                            zad 12
+                        </div>
+                        <div class="nav">
+                            zad 12
+                        </div>
                 </div>
     </div>
 </body>

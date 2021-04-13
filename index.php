@@ -96,17 +96,22 @@
                             Biblioteka
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                     </a>
-                    <a class="link l" href="https://projekt-testowy-mavethee.herokuapp.com/">
+                    <a class="link l" href="/flexbox/flexbox-cubes/flexbox-cube.php">
+                        <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
+                            Biblioteka
+                        <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
+                    </a>
+                    <a class="link m" href="https://projekt-testowy-mavethee.herokuapp.com/">
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                             Testowanko
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                     </a>
-                    <a class="link m" href="https://github.com/SK-2019/php-sql-wprowadzenie-Mitura-Marcin">
+                    <a class="link n" href="https://github.com/SK-2019/php-sql-wprowadzenie-Mitura-Marcin">
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                             GitHub - PHP
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                     </a>
-                    <a class="link n" href="https://github.com/mavethee/projekt_testowy">
+                    <a class="link o" href="https://github.com/mavethee/projekt_testowy">
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                             GitHub - Testowanko
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
