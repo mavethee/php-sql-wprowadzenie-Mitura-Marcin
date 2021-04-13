@@ -53,11 +53,13 @@
                         <div class="nav">
                             <a class="link" href="https://pcsx2.net/">LINK</a>
                             <a class="link" href="https://pcsx2.net/">LINK</a>
+                            <a class="link" href="https://pcsx2.net/">LINK</a>
                         </div>
                     </div>
                     <h1>Zadanie 2</h1>
                     <div class="container2">
                         <div class="nav">
+                            <a class="link2" href="https://rpcs3.net/">LINK2</a>
                             <a class="link2" href="https://rpcs3.net/">LINK2</a>
                             <a class="link2" href="https://rpcs3.net/">LINK2</a>
                         </div>
@@ -67,11 +69,13 @@
                         <div class="nav">
                             <a class="link3" href="https://phi.nz/orbital/">LINK3</a>
                             <a class="link3" href="https://phi.nz/orbital/">LINK3</a>
+                            <a class="link3" href="https://phi.nz/orbital/">LINK3</a>
                         </div>
                     </div>
                     <h1>Zadanie 4</h1>
                     <div class="container4">
                         <div class="nav">
+                            <a class="link4" href="https://vita3k.org/">LINK4</a>
                             <a class="link4" href="https://vita3k.org/">LINK4</a>
                             <a class="link4" href="https://vita3k.org/">LINK4</a>
                         </div>
