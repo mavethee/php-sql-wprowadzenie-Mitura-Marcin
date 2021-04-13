@@ -157,16 +157,12 @@ h1
     padding-right: 15px;
     padding-top: 15px;
     padding-left: 15px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
     margin: 2px
 }
 
 .link2 
 {
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: rgb(132, 251, 12, 0.5);
     color: white;
     text-decoration: none;
     padding: 15px;
@@ -177,48 +173,40 @@ h1
 
 .link2:hover 
 {
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 0);
+    color: rgb(10, 110, 90);
+    background-color: rgb(30, 25, 10);
     padding-bottom: 30px;
     padding-right: 10px;
     padding-top: 10px;
     padding-left: 10px;
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 30px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
     margin: 5px
 }
 
 .link3 
 {
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: rgb(210, 230, 220, 0.5);
     color: white;
     text-decoration: none;
-    padding: 15px;
+    padding: 20px;
     border-radius: 1px;
-    transition: 0.2s;
-    margin: 2px;
+    transition: 0.1s;
+    margin: 1px;
     display: block;
 }
 
 .link3:hover {
-    color: rgb(0, 0, 0);
-    background-color: rgb(0, 255, 0);
+    color: rgb(100, 100, 110);
+    background-color: rgb(10, 25, 100);
     padding-bottom: 10px;
     padding-right: 10px;
     padding-top: 10px;
     padding-left: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
     margin: 5px
 }
 
 .link4 
 {
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: rgb(125, 103, 210, 0.5);
     color: white;
     text-decoration: none;
     padding: 30px;
@@ -230,15 +218,11 @@ h1
     
 .link4:hover 
 {
-    color: rgb(0, 0, 0);
-    background-color: rgb(0, 200, 255, 0.25);
+    color: rgb(10, 10, 100);
+    background-color: rgb(100, 30, 25, 0.25);
     padding-bottom: 2px;
     padding-right: 3px;
     padding-top: 10px;
     padding-left: 20px;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 30px;
     margin: 5px
 }
