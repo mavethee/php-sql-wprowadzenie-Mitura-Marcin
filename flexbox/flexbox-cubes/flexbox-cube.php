@@ -126,12 +126,14 @@
                         <div class="nav">
                             <a class="link" href="https://www.rpcs3.net/">LINK</a>
                             <a class="link" href="https://www.rpcs3.net/">LINK</a>
+                            <a class="link" href="https://www.rpcs3.net/">LINK</a>
                         </div>
                     </div>
                     <h1>Zadanie 2</h1>
                     <div class="container2">
                         <div class="nav">
-                        <a class="link" href="https://www.pcsx2.net/">LINK</a>
+                            <a class="link" href="https://www.pcsx2.net/">LINK</a>
+                            <a class="link" href="https://www.pcsx2.net/">LINK</a>
                             <a class="link" href="https://www.pcsx2.net/">LINK</a>
                         </div>
                     </div>
