@@ -29,7 +29,7 @@
         <div class="item colorRed">
             <?php
                 //Informacja o stronie:
-                echo("<h1 class='page_info'><br>Flexbox CSS - Kostka</h1></br>");
+                echo("<h1><br>Flexbox CSS - Kostka</h1></br>");
             ?>
         </div>
 
