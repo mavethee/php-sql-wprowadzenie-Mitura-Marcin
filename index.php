@@ -98,7 +98,7 @@
                     </a>
                     <a class="link l" href="/flexbox/flexbox-cubes/flexbox-cube.php">
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
-                            Biblioteka
+                            Flexbox
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                     </a>
                     <a class="link m" href="https://projekt-testowy-mavethee.herokuapp.com/">
