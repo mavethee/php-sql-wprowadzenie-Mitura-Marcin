@@ -191,36 +191,6 @@ h1
     height: auto;
     overflow: hidden;  
 }
-  
-.nav /*used as nav styling*/ 
-{
-    display: flex;
-    justify-content: space-around;
-}
-  
-.nav_icon /*used for nav icons*/ 
-{
-    height: 30px;
-    width: 30px;
-}
-  
-.nav_link /*used as nav links styling*/ 
-{
-    text-decoration: none;
-    height: 50px;
-    width: 220px;
-    background-color: rgb(0, 0, 0, 0.4);
-    color: white;
-    align-items: center;
-    justify-content: space-around;
-    display: flex;
-    border-radius: 11px;
-}
-  
-.nav_link:hover /*used as nav links hover styling*/
-{
-    background-color: rgb(255, 255, 255, 0.3);
-}
 
 .link 
 {
