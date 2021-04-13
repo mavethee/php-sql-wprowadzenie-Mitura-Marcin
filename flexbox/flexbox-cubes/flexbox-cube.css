@@ -68,7 +68,9 @@ audio /*used as styling to hide audio playblack*/
     height: 900px;
     margin: 20px;
     display: block;
-    align-items: flex-end;  
+    list-style: none;
+    align-items: center;  
+    justify-content: flex-start;
 }
 
 .container4 
