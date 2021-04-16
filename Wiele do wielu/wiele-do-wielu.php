@@ -40,9 +40,10 @@
             <!--Podpisanie pracy w flexbox:-->
             <div class="container">
                 <div class="item colorRed">
-                    <h1 class='Student_name'>Marcin Mitura</h1>
-                    <h1 class='Student_class_and_group'>Klasa 2Ti, grupa 1</h1>
-                    <h1 class='Student_number'>Numer 22</h1>
+                    <?php
+                        //Informacje o stronie:
+                        echo("<h1 class='page_info'><br>Relacje wiele do wielu</br></h1>");    
+                    ?>
                 </div>
                 <!--Menu boczne w flexbox:-->
                 <div class="item colorBlue">
