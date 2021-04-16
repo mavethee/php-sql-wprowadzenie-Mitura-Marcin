@@ -99,6 +99,14 @@ audio /*used as styling to hide audio playblack*/
     background-size: cover;
 }
 
+.body_lib /*used as styling for body in wiele-do-wielu.php*/ 
+{
+    background-image: url("https://gamingsociety.pl/wp-content/uploads/2019/05/detroit-become-human-pc.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .container 
 {
     display: flex;
