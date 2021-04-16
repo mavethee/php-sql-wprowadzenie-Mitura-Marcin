@@ -54,8 +54,6 @@
                     <!--Treść strony w flexbox:-->
                     <div class="item colorGreen">
                         <?php
-                            //Informacje o stronie:
-                            echo("<h1 class='page_info'><br>Jesteś w głównym indexie!</br></h1>");
             
                             //Logowanie do serwera mySQL:
                             require_once($_SERVER['DOCUMENT_ROOT'] . '/assets/connect.php');
