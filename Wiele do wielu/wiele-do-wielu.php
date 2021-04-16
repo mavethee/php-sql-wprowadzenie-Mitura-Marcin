@@ -54,7 +54,6 @@
                     <!--Treść strony w flexbox:-->
                     <div class="item colorGreen">
                         <?php
-            
                             //Logowanie do serwera mySQL:
                             require_once($_SERVER['DOCUMENT_ROOT'] . '/assets/connect.php');
                             
