@@ -130,8 +130,8 @@
                             require($_SERVER['DOCUMENT_ROOT'] . '/assets/connect.php');
                             
                             $sql=("SELECT * FROM autor");
-                            echo("<h3>Autorzy</h3>");
-                            echo("<li>".$sql);
+                            echo("<h1 class=SQL_excercise>Autorzy</h1>");
+                            echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
                             $result = $conn->query($sql);
                             echo("<table border=1>");
                             echo("<th>id_autor</th>");
@@ -145,28 +145,28 @@
                             echo("</table>");
                             
                             $sql=("SELECT * FROM tytul");
-                            echo("<h3>Tytuły</h3>");
-                            echo("<li>".$sql);
+                            echo("<h1 class=SQL_excercise>Tytuły</h1>");
+                            echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
                             $result = $conn->query($sql);
-                            echo("<table border=1>");
-                            echo("<th>id_tytul</th>");
-                            echo("<th>tytul</th>");
-                            while($row=$result->fetch_assoc())
-                            {
-                                echo("<tr>");
-                                echo("<td>".$row['id_tytul']."</td><td>".$row['tytul']."</td>");
-                                echo("</tr>");
-                            }
-                            echo("</table>");
+                                    echo("<table border=1>");
+                                    echo("<th>id_tytul</th>");
+                                    echo("<th>tytul</th>");
+                                        while($row=$result->fetch_assoc())
+                                        {
+                                            echo("<tr>");
+                                            echo("<td>".$row['id_tytul']."</td><td>".$row['tytul']."</td>");
+                                            echo("</tr>");
+                                        }
+                                echo("</table>");
                             
                             $sql=("SELECT * FROM autor_tytul, autor, tytul where autor_id = id_autor and tytul_id = id_tytul");
-                            echo("<h3>Autorzy i Tytuły</h3>");
-                            echo("<li>".$sql);
+                            echo("<h1 class=SQL_excercise>Autorzy i Tytuły</h1>");
+                            echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
                             $result = $conn->query($sql);
                                 echo("<table border=1>");
                                     echo("<th>id</th>");
-                                    echo("<th>autor_id</th>");
-                                    echo("<th>tytul_id</th>");
+                                    echo("<th>Nazwisko autora</th>");
+                                    echo("<th>Tytuł książki</th>");
                                         while($row=$result->fetch_assoc())
                                         {
                                             echo("<tr>");
