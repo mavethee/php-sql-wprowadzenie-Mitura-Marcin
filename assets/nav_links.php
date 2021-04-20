@@ -73,3 +73,8 @@
                             GitHub - Testowanko
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                     </a>
+                    <a class="link r" href="https://www.notion.so/SQL-3ccfadeab4b84d7794d7a13966de2547">
+                        <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
+                            Notion
+                        <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
+                    </a>
