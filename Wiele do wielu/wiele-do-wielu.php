@@ -170,7 +170,7 @@
                                         while($row=$result->fetch_assoc())
                                         {
                                             echo("<tr>");
-                                            echo("<td>".$row['id']."</td><td>".$row['autor_id']."</td><td>".$row['tytul_id']."</td>");
+                                            echo("<td>".$row['id']."</td><td>".$row['nazwisko']."</td><td>".$row['tytul']."</td>");
                                             echo("</tr>");
                                         }
                                 echo("</table>");
