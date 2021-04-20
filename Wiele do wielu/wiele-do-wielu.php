@@ -133,16 +133,16 @@
                             echo("<h1 class=SQL_excercise>Autorzy</h1>");
                             echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
                             $result = $conn->query($sql);
-                            echo("<table border=1>");
-                            echo("<th>id_autor</th>");
-                            echo("<th>nazwisko</th>");
-                            while($row=$result->fetch_assoc())
-                            {
-                                echo("<tr>");
-                                echo("<td>".$row['id_autor']."</td><td>".$row['nazwisko']."</td>");
-                                echo("</tr>");
-                            }
-                            echo("</table>");
+                                echo("<table border=1>");
+                                    echo("<th>id_autor</th>");
+                                    echo("<th>nazwisko</th>");
+                                        while($row=$result->fetch_assoc())
+                                        {
+                                            echo("<tr>");
+                                            echo("<td>".$row['id_autor']."</td><td>".$row['nazwisko']."</td>");
+                                            echo("</tr>");
+                                        }
+                                echo("</table>");
                             
                             $sql=("SELECT * FROM tytul");
                             echo("<h1 class=SQL_excercise>Tytuły</h1>");
@@ -160,7 +160,7 @@
                                 echo("</table>");
                             
                             $sql=("SELECT * FROM autor_tytul, autor, tytul where autor_id = id_autor and tytul_id = id_tytul");
-                            echo("<h1 class=SQL_excercise>Autorzy i Tytuły</h1>");
+                            echo("<h1 class=SQL_excercise>Autorzy oraz tytuły</h1>");
                             echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
                             $result = $conn->query($sql);
                                 echo("<table border=1>");
