@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <title>Główny Index</title>
     <link rel="stylesheet" href="assets/style.css">
-    <?php include('assets/icons/favicons/favlinks.php'); ?>
+    <object type="text/html" data="assets/icons/favicons/favlinks.html"></object>
 </head>
 <body>
 
