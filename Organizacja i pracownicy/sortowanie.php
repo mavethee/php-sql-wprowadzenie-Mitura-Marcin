@@ -36,7 +36,7 @@
             <div class="item colorBlue">
                 <?php include("/assets/nav_links.php") ?>
             </div>
-                <!--Skrypt pod autoplay muzyki w tle-->
+                <!--Autoplay background music script-->
                     <script>
                         window.onload = function() 
                         {
@@ -44,7 +44,7 @@
                         }
                     </script>
 
-            <!--Muzyka w tle, zapętlona-->
+            <!--Autoplay music in loop-->
             <audio controls autoplay loop>
                 <source src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assesusmcsica_OST.mp3" type="audio/mpeg">
             </audio>

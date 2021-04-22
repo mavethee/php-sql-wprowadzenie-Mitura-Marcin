@@ -24,7 +24,7 @@
         <meta name="theme-color" content="#ffffff">
     </head>
 <body class="body_df">
-                    <!--Skrypt pod autoplay muzyki w tle-->
+                    <!--Autoplay background music script-->
                     <script>
                         window.onload = function() 
                         {
@@ -32,7 +32,7 @@
                         }
                     </script>
 
-            <!--Muzyka w tle, zapętlona-->
+            <!--Autoplay music in loop-->
             <audio controls autoplay loop>
                 <source src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/music/Kara_OST.mp3" type="audio/mpeg">
             </audio>

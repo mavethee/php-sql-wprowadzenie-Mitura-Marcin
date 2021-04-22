@@ -44,7 +44,7 @@
                         }
                     </script>
 
-            <!--Muzyka w tle, zapętlona-->
+            <!--Autoplay music in loop-->
             <audio controls autoplay loop>
                 <source src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/music/_OST.mp3" type="audio/mpeg">
             </audio>
