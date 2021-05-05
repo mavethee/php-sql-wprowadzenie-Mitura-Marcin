@@ -114,7 +114,7 @@
                                     Biblioteka($sql, $conn, "id_tytul", "tytul", 'tytul', 'tytul');
                     
                             $sql=("SELECT * FROM autor_tytul, autor, tytul WHERE autor_id=id_autor AND tytul_id=id_tytul");
-                                echo("<h3>Autorzy i Tytuły</h3>");
+                                echo("<h3>Autorzy i tytuły</h3>");
                                 echo("<li>".$sql."</li>");
                                     Biblioteka3($sql, $conn, "id", "nazwisko", "tytul", 'tytul', 'nazwisko', 'id', 'autor_tytul');
                         ?>
