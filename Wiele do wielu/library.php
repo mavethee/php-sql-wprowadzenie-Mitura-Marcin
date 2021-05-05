@@ -27,7 +27,7 @@
         <audio controls autoplay loop>
             <source src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/music/Kara_OST.mp3" type="audio/mpeg">
         </audio>
-            <!--Podpisanie pracy w flexbox:-->
+`            <!--Podpisanie pracy w flexbox:-->
             <div class="container">
                 <div class="item colorRed">
                     <?php
@@ -48,52 +48,47 @@
                             //Powrót do głównego indexu relacji:
                             include("returnToIndex.php");
 
-                            //Tabela, bez funkcji bo zrzynka z pliku z Biblioteką:
+                            //Funkcja:
+                            function Biblioteka($sql, $conn, $columnID, $columnNames, $columnRow, $tables)
+                            {
+                                $result = $conn->query($sql);
+                                    echo("<table border=0>");
+                                        echo("<th>$columnID</th>");
+                                        echo("<th>$columnNames</th>");
+                                            while($row=$result->fetch_assoc())
+                                            {
+                                            echo("<tr>");
+                                            echo("<td>".$row[$columnID]."</td><td>".$row[$columnRow]."</td><td>
+                                        
+                                        
+                                            <form action='delete.php' method='POST'>
+                                            <input type='number' name='row' value='".$row[$columnID]."' hidden>
+                                            <input type='text' name='table' value='".$tables."' hidden>
+                                            <input type='text' name='column' value='".$columnID."' hidden>
+                                            <input type='submit' value='Usuń'>
+                                            </form>
+                                            
+                                            </td>");
+                                            echo("</tr>");
+                                        }
+                                    echo("</table>");
+                            }
+                    
+                    
                             $sql=("SELECT * FROM autor");
-                                echo("<h1 class=SQL_excercise>Autorzy</h1>");
-                                echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
-                                    $result = $conn->query($sql);
-                                        echo("<table border=1>");
-                                            echo("<th>id_autor</th>");
-                                            echo("<th>nazwisko</th>");
-                                                while($row=$result->fetch_assoc())
-                                                {
-                                                    echo("<tr>");
-                                                    echo("<td>".$row['id_autor']."</td><td>".$row['nazwisko']."</td>");
-                                                    echo("</tr>");
-                                                }
-                                        echo("</table>");
-                            
+                                echo("<h3>Autorzy</h3>");
+                                echo("<li>".$sql."</li>");
+                                    Biblioteka($sql, $conn, "id_autor", "autor", 'nazwisko', 'autor');
+                    
                             $sql=("SELECT * FROM tytul");
-                                echo("<h1 class=SQL_excercise>Tytuły</h1>");
-                                echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
-                                    $result = $conn->query($sql);
-                                        echo("<table border=1>");
-                                            echo("<th>id_tytul</th>");
-                                            echo("<th>tytul</th>");
-                                                while($row=$result->fetch_assoc())
-                                                {
-                                                    echo("<tr>");
-                                                    echo("<td>".$row['id_tytul']."</td><td>".$row['tytul']."</td>");
-                                                    echo("</tr>");
-                                                }
-                                        echo("</table>");
-                            
+                                echo("<h3>Tytuły</h3>");
+                                echo("<li>".$sql."</li>");
+                                    Biblioteka($sql, $conn, "id_tytul", "tytul", 'tytul', 'tytul');
+                    
                             $sql=("SELECT * FROM autor_tytul, autor, tytul WHERE autor_id=id_autor AND tytul_id=id_tytul");
-                                echo("<h1 class=SQL_excercise>Autorzy oraz tytuły</h1>");
-                                echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
-                                    $result = $conn->query($sql);
-                                        echo("<table border=1>");
-                                            echo("<th>id</th>");
-                                            echo("<th>Nazwisko autora</th>");
-                                            echo("<th>Tytuł książki</th>");
-                                                while($row=$result->fetch_assoc())
-                                                {
-                                                    echo("<tr>");
-                                                    echo("<td>".$row['id']."</td><td>".$row['nazwisko']."</td><td>".$row['tytul']."</td>");
-                                                    echo("</tr>");
-                                                }
-                                        echo("</table>");
+                                echo("<h3>Autorzy i Tytuły</h3>");
+                                echo("<li>".$sql."</li>");
+                                    Biblioteka($sql, $conn, "nazwisko", "tytul", 'tytul', 'autor_tytul');
                         ?>
                     </div>
             </div>

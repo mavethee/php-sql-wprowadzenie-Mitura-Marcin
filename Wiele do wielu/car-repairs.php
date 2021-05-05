@@ -59,13 +59,13 @@
                                             {
                                                 echo("<tr>");
                                                 echo("<td>".$row[$columnRow2]."</td><td>".$row[$columnRow]."</td><td>
-                                            
-                                            <form action='delete.php' method='POST'>
-                                            <input type='number' name='row' value='".$row[$columnRow2]."' hidden>
-                                            <input type='number' name='table' value='".$tables."' hidden>
-                                            <input type='number' name='column' value='".$columnID."' hidden>
-                                            <input type='submit' value='Usuń'>
-                                            </form>
+
+                                                    <form action='delete.php' method='POST'>
+                                                        <input type='number' name='row' value='".$row[$columnRow2]."' hidden>
+                                                        <input type='text' name='table' value='".$tables."' hidden>
+                                                        <input type='text' name='column' value='".$columnID."' hidden>
+                                                        <input type='submit' value='Usuń'>
+                                                    </form>
 
                                             </td>");
                                             echo("</tr>");
