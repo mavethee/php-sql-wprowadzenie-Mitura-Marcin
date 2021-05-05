@@ -44,7 +44,11 @@
                         <?php
                             //Logowanie do serwera mySQL:
                             require($_SERVER['DOCUMENT_ROOT'] . '/assets/connect.php');
-                            
+
+                            //Powrót do głównego indexu relacji:
+                            include("returnToIndex.php");
+
+                            //Tabela, bez funkcji bo zrzynka z pliku z Biblioteką:
                             $sql=("SELECT * FROM autor");
                                 echo("<h1 class=SQL_excercise>Autorzy</h1>");
                                 echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");

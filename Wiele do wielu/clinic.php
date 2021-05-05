@@ -45,6 +45,10 @@
                             //Logowanie do serwera mySQL:
                             require($_SERVER['DOCUMENT_ROOT'] . '/assets/connect.php');
 
+                            //Powrót do głównego indexu relacji:
+                            include("returnToIndex.php");
+
+                            //Funkcja z gotową tabelą:
                             function Przychodnia($sql, $conn, $columnID, $columnNames, $columnRow, $columnRow2, $tables)
                             {
                                 $result = $conn->query($sql);
@@ -69,6 +73,7 @@
                                     echo("</table>");
                             }
                             
+                            //Polecenia do tabel:
                             $sql=("SELECT * FROM lekarze");
                                 echo("<h1 class=SQL_excercise>Lekarze</h1>");
                                 echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
