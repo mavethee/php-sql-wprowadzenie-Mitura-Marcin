@@ -29,18 +29,18 @@
         </audio>
             <!--Podpisanie pracy w flexbox:-->
             <div class="container">
-                <div class="item header">
+                <div class="item colorRed">
                     <?php
                         //Informacje o stronie:
                         echo("<h1 class='page_info'><br>Relacje wiele do wielu</br></h1>");    
                     ?>
                 </div>
                 <!--Menu boczne w flexbox:-->
-                <div class="item mainMBar">
+                <div class="item colorGreen">
                     <?php include("../assets/mainMenuBar.php") ?>
                 </div>
                     <!--Treść strony w flexbox:-->
-                    <div class="item webpageContent">
+                    <div class="item colorBlue">
                         <?php
                             //Logowanie do serwera mySQL:
                             require($_SERVER['DOCUMENT_ROOT'] . '/assets/connect.php');

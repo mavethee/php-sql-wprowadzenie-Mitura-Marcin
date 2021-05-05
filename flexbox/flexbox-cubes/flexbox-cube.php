@@ -26,7 +26,7 @@
 <body class="flex">
     <div class="container">
         <!--Tytuł strony-->
-        <div class="item header">
+        <div class="item colorRed">
             <?php
                 //Informacja o stronie:
                 echo("<h1><br>Flexbox CSS - Kostka</h1></br>");
@@ -47,7 +47,7 @@
             </audio>
 
                 <!--Treść strony w flexbox:-->
-                <div class="item webpageContent">
+                <div class="item colorBlue">
                     <h1>Zadanie 1</h1>
                     <div class="container1">
                         <div class="nav14">

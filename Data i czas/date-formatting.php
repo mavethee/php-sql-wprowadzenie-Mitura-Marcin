@@ -28,18 +28,18 @@
             </audio>
         <!--Tytuł strony w flexbox:-->
         <div class="container">
-            <div class="item header">
+            <div class="item colorRed">
                 <?php
                     //Informacja o stronie:
                     echo("<h1 class='page_info'><br>Jesteś w Formatowanie_dat.php<h1 class=SQL_excercise></br>");
                 ?>
             </div>
         <!--Menu boczne w flexbox:-->
-        <div class="item mainMBar">
+        <div class="item colorGreen">
             <?php include("../assets/mainMenuBar.php") ?>
         </div>
         <!--Treść strony w flexbox:-->
-        <div class="item webpageContent">
+        <div class="item colorBlue">
             <?php
 
                 //Informacja o stronie:

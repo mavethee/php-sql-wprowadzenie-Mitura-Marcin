@@ -17,14 +17,14 @@
     <div class="nav">
     <!--Tytuł strony w flexbox:-->
     <div class="container">
-        <div class="item header">
+        <div class="item colorRed">
             <?php
                 //Informacja o stronie:
                 echo("<h1 class='page_info'><br>Jesteś w organizacja_i_pracownicy.php</h1></br>");
             ?>
         </div>
         <!--Menu boczne w flexbox:-->
-        <div class="item mainMBar">
+        <div class="item colorGreen">
             <?php include("../assets/mainMenuBar.php") ?>
         </div>
                     <!--Autoplay background music script-->
@@ -41,7 +41,7 @@
             </audio>
         
         <!--Treść strony w flexbox:-->
-        <div class="item webpageContent">
+        <div class="item colorBlue">
         <?php
             //Logowanie do serwera mySQL:
             require_once($_SERVER['DOCUMENT_ROOT'] . '/assets/connect.php');

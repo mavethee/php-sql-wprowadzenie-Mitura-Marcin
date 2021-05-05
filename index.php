@@ -29,15 +29,15 @@
         </audio>
             <!--Podpisanie pracy w flexbox:-->
             <div class="container">
-                <div class="item header">
-                    <?php include("assets/headerIndex.php") ?>
+                <div class="item colorRed">
+                    <?php include("assets/colorRedIndex.php") ?>
                 </div>
                 <!--Menu boczne w flexbox:-->
-                <div class="item mainMBar">
+                <div class="item colorGreen">
                     <?php include("assets/mainMenuBar.php") ?>
                 </div>
                     <!--Treść strony w flexbox:-->
-                    <div class="item webpageContent">
+                    <div class="item colorBlue">
                         <?php
                             //Informacje o stronie:
                             echo("<h1 class='page_info'><br>Jesteś w głównym indexie!</br></h1>");

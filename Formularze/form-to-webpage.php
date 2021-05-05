@@ -17,11 +17,11 @@
 <body class="body_form">
     <!--Tytuł strony w flexbox:-->
     <div class="container">
-        <div class="item header">
+        <div class="item colorRed">
             <h1 class=page_info><br>Jesteś w formularz.html</h1></br>
         </div>
     <!--Menu boczne w flexbox:-->
-    <div class="item mainMBar">
+    <div class="item colorGreen">
         <?php include("../assets/mainMenuBar.php") ?>
     </div>
 
@@ -39,7 +39,7 @@
             </audio>
     
 <!--Treść strony w flexbox:-->
-<div class="item webpageContent">
+<div class="item colorBlue">
     <form action="Formularze/webpage.php" method="POST">
         <input type="text" name="firstname" placeholder="Imię"></br>
         <input type="number" name="shift" placeholder="Dział"></br>

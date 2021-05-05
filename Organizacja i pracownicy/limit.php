@@ -15,14 +15,14 @@
     </head>
 <body class="body_limit">
     <div class="container">
-        <div class="item header">
+        <div class="item colorRed">
             <?php
                 //Informacja o stronie:
                 echo("<h1 class='page_info'><br>Jesteś w limit.php</h1></br>");
             ?>
         </div>
         <!--Menu boczne w flexbox:-->
-        <div class="item mainMBar">
+        <div class="item colorGreen">
             <?php include("../assets/mainMenuBar.php") ?>
         </div>
 
@@ -39,7 +39,7 @@
                 <source src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/music/Kara_OST.mp3" type="audio/mpeg">
             </audio>
         <!--Treść strony w flexbox:-->
-        <div class="item webpageContent">        
+        <div class="item colorBlue">        
         <?php
             //Logowanie do serwera mySQL:
             require_once($_SERVER['DOCUMENT_ROOT'] . '/assets/connect.php');

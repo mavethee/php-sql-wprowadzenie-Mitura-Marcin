@@ -15,14 +15,14 @@
     </head>
 <body class="body_aggrefunc">
     <div class="container">
-        <div class="item header">
+        <div class="item colorRed">
             <?php
                 //Informacja o stronie:
                 echo("<h1 class='page_info'><br>Jesteś w funkcje_agregujace.php</h1></br>");
             ?>
         </div>
         <!--Menu boczne w flexbox:-->
-        <div class="item mainMBar">
+        <div class="item colorGreen">
             <?php include("../assets/mainMenuBar.php") ?>
         </div>
                     <!--Autoplay background music script-->
@@ -38,7 +38,7 @@
                 <source src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/music/Kara_OST.mp3" type="audio/mpeg">
             </audio>
     <!--Treść w flexbox:-->
-    <div class="item webpageContent">
+    <div class="item colorBlue">
         <?php
 
             //Logowanie do serwera mySQL:

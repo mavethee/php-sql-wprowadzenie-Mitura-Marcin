@@ -16,7 +16,7 @@
 <body class="body_lib">
     <!--Tytuł strony w flexbox:-->
     <div class="container">
-        <div class="item header">
+        <div class="item colorRed">
             <?php
                 //Informacja o stronie:
                 echo("<h1 class=page_info><br>Jesteś w wypozyczalnia.php</h1></br>");
@@ -24,7 +24,7 @@
             ?>
         </div>
             <!--Menu boczne w flexbox:-->
-            <div class="item mainMBar">
+            <div class="item colorGreen">
                 <?php include("../assets/mainMenuBar.php") ?>
             </div>
                     <script>
@@ -39,7 +39,7 @@
                 <source src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/music/Kara_OST.mp3" type="audio/mpeg">
             </audio>
             <!--Treść strony w flexbox:-->
-            <div class="item webpageContent">
+            <div class="item colorBlue">
                 <?php
                     //Wyświetlenie informacji wprowadzonej przez użytkownika:
                         echo("<h4 class='renting_form'>Autor: ".$_POST['Autor']."</h4>");
