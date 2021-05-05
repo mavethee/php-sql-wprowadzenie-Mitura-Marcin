@@ -48,7 +48,7 @@
                             function Szkoła($sql, $conn, $columnID, $columnNames, $columnRow, $columnRow2, $tables)
                             {
                                 $result = $conn->query($sql);
-                                    echo("<table border=0>");
+                                    echo("<table border=1>");
                                         echo("<th>$columnID</th>");
                                         echo("<th>$columnNames</th>");
                                             while($row=$result->fetch_assoc())
