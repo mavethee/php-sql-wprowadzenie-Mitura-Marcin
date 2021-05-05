@@ -16,7 +16,7 @@
     </head>
 <body class="body_insert">
     <div class="nav">
-        <?php include("/assets/nav_links.php") ?>
+        <?php include("../assets/nav_links.php") ?>
     </div>
 
                     <!--Autoplay background music script-->

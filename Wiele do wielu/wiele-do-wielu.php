@@ -37,7 +37,7 @@
                 </div>
                 <!--Menu boczne w flexbox:-->
                 <div class="item colorBlue">
-                    <?php include("/assets/nav_links.php") ?>
+                    <?php include("../assets/nav_links.php") ?>
                 </div>
                     <!--Treść strony w flexbox:-->
                     <div class="item colorGreen">
