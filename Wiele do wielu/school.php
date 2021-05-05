@@ -32,7 +32,7 @@
                 <div class="item colorRed">
                     <?php
                         //Informacje o stronie:
-                        echo("<h1 class='page_info'><br>Biblioteka (Autor-Tytuł)</br></h1>");    
+                        echo("<h1 class='page_info'><br>Szkoła (Nauczyciel-Klasa)</br></h1>");    
                     ?>
                 </div>
                 <!--Menu boczne w flexbox:-->
@@ -70,18 +70,18 @@
                             }
 
                             $sql=("SELECT * FROM nauczyciele");
-                                echo("<h3>Nauczyciele</h3>");
-                                echo("<li>".$sql."</li>");
+                                echo("<h1 class=SQL_excercise>Nauczyciele</h1>");
+                                echo("<h4 class=SQL_excercise>".$sql."</h4>");
                                     Szkoła($sql, $conn, "id_Nauczyciela", "nazwisko", 'nazwisko', 'id_Nauczyciela', 'nauczyciele');
                   
                             $sql=("SELECT * FROM klasy");
-                                echo("<h3>Klasy</h3>");
-                                echo("<li>".$sql."</li>");
+                                echo("<h1 class=SQL_excercise>Klasy</h1>");
+                                echo("<h4 class=SQL_excercise>".$sql."</h4>");
                                     Szkoła($sql, $conn, "id_klasy", "klasa", 'klasa', 'id_klasy', 'klasy');
                   
                             $sql=("SELECT * FROM nauczyciele, klasy, naucz_klasa WHERE nazwa_nauczyciel = id_Nauczyciela AND nazwa_klasa = id_klasy ");
-                                echo("<h3>Nauczyciele i Klasy</h3>");
-                                echo("<li>".$sql."</li>");
+                                echo("<h1 class=SQL_excercise>Nauczyciele i Klasy</h1>");
+                                echo("<h4 class=SQL_excercise>".$sql."</h4>");
                                     Szkoła($sql, $conn, "nauczyciel", "klasa", 'klasa', 'nazwisko', 'naucz_klasa');
 
                         ?>
