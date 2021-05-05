@@ -128,6 +128,12 @@ audio /*used as styling to hide audio playblack*/
     display: flex;
     flex-wrap: wrap;
 }
+
+.containerWDW 
+{
+    justify-content: center;
+    display: flex;
+}
   
 .item 
 {
@@ -162,8 +168,6 @@ audio /*used as styling to hide audio playblack*/
     max-width: 70%;
     height: auto;
     overflow: hidden;
-    justify-content: center;
-    display: flex;  
 }
   
 .nav /*used as nav styling*/ 
