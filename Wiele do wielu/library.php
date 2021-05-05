@@ -116,8 +116,8 @@
                             $sql=("SELECT * FROM autor_tytul, autor, tytul WHERE autor_id=id_autor AND tytul_id=id_tytul");
                                 echo("<h3>Autorzy i Tytuły</h3>");
                                 echo("<li>".$sql."</li>");
-                                    Biblioteka3($sql, $conn, "id", "nazwisko", "tytul", 'tytul', `nazwisko`, `id`, 'autor_tytul');
-                        ?>````
+                                    Biblioteka3($sql, $conn, "id", "nazwisko", "tytul", 'tytul', 'nazwisko', 'id', 'autor_tytul');
+                        ?>
                     </div>
             </div>
 </body>
