@@ -44,52 +44,45 @@
                         <?php
                             //Logowanie do serwera mySQL:
                             require($_SERVER['DOCUMENT_ROOT'] . '/assets/connect.php');
+
+                            function Przychodnia($sql, $conn, $columnID, $columnNames, $columnRow, $columnRow2, $tables)
+                            {
+                                $result = $conn->query($sql);
+                                    echo("<table border=1>");
+                                        echo("<th>$columnID</th>");
+                                        echo("<th>$columnNames</th>");
+                                            while($row=$result->fetch_assoc())
+                                            {
+                                                echo("<tr>");
+                                                echo("<td>".$row[$columnRow2]."</td><td>".$row[$columnRow]."</td><td>
+                                            
+                                            <form action='delete.php' method='POST'>
+                                            <input type='number' name='row' value='".$row[$columnRow2]."' hidden>
+                                            <input type='number' name='table' value='".$tables."' hidden>
+                                            <input type='number' name='column' value='".$columnID."' hidden>
+                                            <input type='submit' value='Usuń'>
+                                            </form>
+
+                                            </td>");
+                                            echo("</tr>");
+                                            }
+                                    echo("</table>");
+                            }
                             
-                            $sql=("SELECT * FROM autor");
-                                echo("<h1 class=SQL_excercise>Autorzy</h1>");
-                                echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
-                                    $result = $conn->query($sql);
-                                        echo("<table border=1>");
-                                            echo("<th>id_autor</th>");
-                                            echo("<th>nazwisko</th>");
-                                                while($row=$result->fetch_assoc())
-                                                {
-                                                    echo("<tr>");
-                                                    echo("<td>".$row['id_autor']."</td><td>".$row['nazwisko']."</td>");
-                                                    echo("</tr>");
-                                                }
-                                        echo("</table>");
-                            
-                            $sql=("SELECT * FROM tytul");
-                                echo("<h1 class=SQL_excercise>Tytuły</h1>");
-                                echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
-                                    $result = $conn->query($sql);
-                                            echo("<table border=1>");
-                                            echo("<th>id_tytul</th>");
-                                            echo("<th>tytul</th>");
-                                                while($row=$result->fetch_assoc())
-                                                {
-                                                    echo("<tr>");
-                                                    echo("<td>".$row['id_tytul']."</td><td>".$row['tytul']."</td>");
-                                                    echo("</tr>");
-                                                }
-                                        echo("</table>");
-                            
-                            $sql=("SELECT * FROM autor_tytul, autor, tytul WHERE autor_id=id_autor AND tytul_id=id_tytul");
-                                echo("<h1 class=SQL_excercise>Autorzy oraz tytuły</h1>");
-                                echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
-                                    $result = $conn->query($sql);
-                                        echo("<table border=1>");
-                                            echo("<th>id</th>");
-                                            echo("<th>Nazwisko autora</th>");
-                                            echo("<th>Tytuł książki</th>");
-                                                while($row=$result->fetch_assoc())
-                                                {
-                                                    echo("<tr>");
-                                                    echo("<td>".$row['id']."</td><td>".$row['nazwisko']."</td><td>".$row['tytul']."</td>");
-                                                    echo("</tr>");
-                                                }
-                                        echo("</table>");
+                            $sql=("SELECT * FROM lekarze");
+                                echo("<h1 class=SQL_excercise>Lekarze</h1>");
+                                echo("<h4 class=SQL_excercise>".$sql."</h4>");
+                                    Przychodnia($sql, $conn, "id_lekarza", "nazwisko", 'nazwisko', 'id_lekarza', 'lekarze');
+                  
+                            $sql=("SELECT * FROM pacjenci");
+                                echo("<h1 class=SQL_excercise>Pacjenci</h1>");
+                                echo("<h4 class=SQL_excercise>".$sql."</h4>");
+                                    Przychodnia($sql, $conn, "id_pacjenta", "imie", 'imie', 'id_pacjenta', 'pacjenci');
+                  
+                            $sql=("SELECT * FROM lekarze, pacjenci, lek_pac where lekarz = id_lekarza and pacjent = id_pacjenta");
+                                echo("<h1>Lekarze I Pacjenci</h1>");
+                                echo("<h4 class=SQL_excercise>".$sql."</h4>");
+                                    Przychodnia($sql, $conn, "lekarz", "pacjent", 'imie', 'nazwisko', 'lek_pac');
                         ?>
                     </div>
             </div>
