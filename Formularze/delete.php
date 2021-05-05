@@ -1,4 +1,4 @@
-<!DOCTYPE html'">
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -14,9 +14,15 @@
             <meta name="theme-color" content="#ffffff">
     </head>
 <body class="body_del">
-    <div class="nav">
-        <?php include("../assets/mainMenuBar.php") ?>
-    </div>
+    <div class="container">
+        <!--Tytuł strony w flexbox:-->
+        <div class="item colorRed">
+            <h1 class=page_info><br>Jesteś w delete.php</h1></br>
+        </div>
+        <!--Menu boczne w flexbox:-->
+        <div class="item colorGreen">
+            <?php include("../assets/mainMenuBar.php") ?>
+        </div>
 
                     <!--Autoplay background music script-->
                     <script>
@@ -30,55 +36,60 @@
             <audio controls autoplay loop>
                 <source src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/music/Kara_OST.mp3" type="audio/mpeg">
             </audio>
-        <?php
 
-            //Informacja o stronie:
-            echo("<h4><br>Jesteś w delete.php</h1></br>");
+        <!--Treść strony w flexbox:-->
+        <div class="item colorBlue">
+            <?php
 
-            //Wyświetlenie wysłanych danych przez użytkownika:           
-            echo("<h1 class=SQL_excercise> ID: ".$_POST["id_employee"]."</h1>");
+                //Informacja o stronie:
+                echo("<h4><br>Jesteś w delete.php</h1></br>");
 
-            //Logowanie do serwera mySQL:
-            require_once($_SERVER['DOCUMENT_ROOT'] . '/assets/connect.php');
+                //Wyświetlenie wysłanych danych przez użytkownika:           
+                echo("<h1 class=SQL_excercise> ID: ".$_POST["id_employee"]."</h1>");
 
-            //Zapytanie DELETE w $SQL z próbą uzyskania danych od użytkownika:
-            $sql = ("DELETE FROM pracownicy where id_pracownicy='".$_POST['id_employee']."'");
-            
-            //Wyświetlenie tabeli:
-            echo "<h1 class=SQL_excercise>". $sql;
+                //Logowanie do serwera mySQL:
+                require_once($_SERVER['DOCUMENT_ROOT'] . '/assets/connect.php');
 
-            //Informacja o sukcesie:
-            if ($conn->query($sql) === TRUE)
-            {
-                echo "<br>Record deleted successfully<br>";
-            }
-                        
-            //Informacja o ewentualnych błędach:
-            else 
-            {
-                echo "Error: " . $sql . "<br>" . $conn->error;
-            }
+                //Zapytanie DELETE w $SQL z próbą uzyskania danych od użytkownika:
+                $sql = ("DELETE FROM pracownicy where id_pracownicy='".$_POST['id_employee']."'");
+                
+                //Wyświetlenie tabeli:
+                echo "<h1 class=SQL_excercise>". $sql;
 
-            //Wyświetlenie tabelki jako podgląd przy usuwaniu pracowników:
-            $sql=("SELECT * FROM pracownicy");
-            echo("<h1 class=SQL_excercise>Wyświetlenie tabelki jako podgląd przy usuwaniu pracowników:</h1>");
-            echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
-            $result=$conn->query("$sql");
-            echo("<table border=1>");
-            echo("<th>id_pracownicy</th>");
-            echo("<th>imie</th>");
-            echo("<th>data_urodzenia</th>");
-            echo("<th>dzial</th>");
-            echo("<th>zarobki</th>");
-            while($row=$result->fetch_assoc())
-            {
-                echo("<tr>");
-                echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
-                echo("</tr>");
-            }
-            echo("</table>");
+                //Informacja o sukcesie:
+                if ($conn->query($sql) === TRUE)
+                {
+                    echo "<br>Record deleted successfully<br>";
+                }
+                            
+                //Informacja o ewentualnych błędach:
+                else 
+                {
+                    echo "Error: " . $sql . "<br>" . $conn->error;
+                }
 
-            $conn->close();
-        ?>
+                //Wyświetlenie tabelki jako podgląd przy usuwaniu pracowników:
+                $sql=("SELECT * FROM pracownicy");
+                echo("<h1 class=SQL_excercise>Wyświetlenie tabelki jako podgląd przy usuwaniu pracowników:</h1>");
+                echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
+                $result=$conn->query("$sql");
+                echo("<table border=1>");
+                echo("<th>id_pracownicy</th>");
+                echo("<th>imie</th>");
+                echo("<th>data_urodzenia</th>");
+                echo("<th>dzial</th>");
+                echo("<th>zarobki</th>");
+                while($row=$result->fetch_assoc())
+                {
+                    echo("<tr>");
+                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
+                    echo("</tr>");
+                }
+                echo("</table>");
+
+                $conn->close();
+            ?>
+        </div>
+    </div>
 </body>
 </html>

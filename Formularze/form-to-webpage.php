@@ -18,7 +18,7 @@
     <!--Tytuł strony w flexbox:-->
     <div class="container">
         <div class="item colorRed">
-            <h1 class=page_info><br>Jesteś w formularz.html</h1></br>
+            <h1 class=page_info><br>Jesteś w formularz.php</h1></br>
         </div>
     <!--Menu boczne w flexbox:-->
     <div class="item colorGreen">
