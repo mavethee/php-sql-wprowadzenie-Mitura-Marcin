@@ -71,17 +71,17 @@
                             
                             $sql=("SELECT * FROM lekarze");
                                 echo("<h1 class=SQL_excercise>Lekarze</h1>");
-                                echo("<h4 class=SQL_excercise>".$sql."</h4>");
+                                echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
                                     Przychodnia($sql, $conn, "id_lekarza", "nazwisko", 'nazwisko', 'id_lekarza', 'lekarze');
                   
                             $sql=("SELECT * FROM pacjenci");
                                 echo("<h1 class=SQL_excercise>Pacjenci</h1>");
-                                echo("<h4 class=SQL_excercise>".$sql."</h4>");
+                                echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
                                     Przychodnia($sql, $conn, "id_pacjenta", "imie", 'imie', 'id_pacjenta', 'pacjenci');
                   
                             $sql=("SELECT * FROM lekarze, pacjenci, lek_pac where lekarz = id_lekarza and pacjent = id_pacjenta");
-                                echo("<h1>Lekarze I Pacjenci</h1>");
-                                echo("<h4 class=SQL_excercise>".$sql."</h4>");
+                                echo("<h1 class=SQL_excercise>Lekarze i pacjenci</h1>");
+                                echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
                                     Przychodnia($sql, $conn, "lekarz", "pacjent", 'imie', 'nazwisko', 'lek_pac');
                         ?>
                     </div>

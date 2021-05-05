@@ -71,17 +71,17 @@
                             
                             $sql = "SELECT * FROM mechanicy";
                                 echo("<h1 class=SQL_excercise>Mechanicy</h1>");
-                                echo("<h4 class=SQL_excercise>".$sql."</h4>");
+                                echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
                                     Serwis_samochodowy($sql, $conn, "id_mechanika", "nazwisko", 'nazwisko', 'id_mechanika', 'mechanicy');
                 
                             $sql = "SELECT * FROM samochody";
                                 echo("<h1 class=SQL_excercise>Samochody</h1>");
-                                echo("<h4 class=SQL_excercise>".$sql."</h4>");
+                                echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
                                     Serwis_samochodowy($sql, $conn, "id_auta", "model", 'model', 'id_auta', 'samochody');
                 
                             $sql = "SELECT * FROM mechanicy, samochody, auto_mech where mechanik = id_mechanika and auto = id_auta";
                                 echo("<h1 class=SQL_excercise>Mechanicy i Samochody</h1>");
-                                echo("<h4 class=SQL_excercise>".$sql."</h4>");
+                                echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
                                     Serwis_samochodowy($sql, $conn, "mechanik", "auto", 'model', 'nazwisko', 'auto_mech');
                         ?>
                     </div>
