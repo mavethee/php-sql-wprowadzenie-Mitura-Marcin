@@ -28,18 +28,18 @@
         </audio>
             <div class="container">
                 <!--Tytuł strony w flexbox:-->
-                    <div class="item colorRed">
+                    <div class="item header">
                         <?php
                             //Informacja o stronie:
                             echo("<h1 class=page_info><br>Jesteś w biblioteka.php</h1></br>");
                         ?>
                     </div>
                 <!--Menu boczne w flexbox:-->
-                    <div class="item colorBlue">
-                        <?php include("../assets/nav_links.php") ?>
+                    <div class="item mainMBar">
+                        <?php include("../assets/mainMenuBar.php") ?>
                     </div>
                 <!--Treść strony w flexbox:-->
-                    <div class="item colorGreen">
+                    <div class="item webpageContent">
                         <?php
                             //Logowanie do serwera mySQL:
                                 require_once($_SERVER['DOCUMENT_ROOT'] . '/assets/connect.php');

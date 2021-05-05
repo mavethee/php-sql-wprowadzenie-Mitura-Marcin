@@ -17,15 +17,15 @@
 <body class="body_dDB">
     <!--Tytuł strony w flexbox:-->
     <div class="container">
-        <div class="item colorRed">
+        <div class="item header">
             <?php
                 //Informacja o stronie:
                 echo("<h1 class=page_info><br>Jesteś w daneDoBazy.php</h1></br>");
             ?>
         </div>
         <!--Menu boczne w flexbox:-->
-        <div class="item colorBlue">
-            <?php include("../assets/nav_links.php") ?>
+        <div class="item mainMBar">
+            <?php include("../assets/mainMenuBar.php") ?>
         </div>
 
                     <!--Autoplay background music script-->
@@ -42,7 +42,7 @@
             </audio>
 
 <!--Treść strony w flexbox:-->
-<div class="item colorGreen">
+<div class="item webpageContent">
     <h1 class=SQL_excercise>Dodanie pracownika:</h1>
 
     <form action="/Formularze/insert.php" method="POST">

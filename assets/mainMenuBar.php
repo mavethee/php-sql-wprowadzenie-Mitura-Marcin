@@ -3,12 +3,12 @@
                             Główny index
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                     </a>
-                    <a class="link b" href="/Organizacja%20i%20pracownicy/organizacja_i_pracownicy.php">
+                    <a class="link b" href="/Organizacja%20i%20pracownicy/organization-and-employees.php">
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>  
                             Organizacja i pracownicy
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                     </a>
-                    <a class="link c" href="/Organizacja%20i%20pracownicy/sortowanie.php">
+                    <a class="link c" href="/Organizacja%20i%20pracownicy/sorting.php">
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                             Sortowanie
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
@@ -18,32 +18,32 @@
                             Limit
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                     </a>
-                    <a class="link e" href="/Organizacja%20i%20pracownicy/funkcje_agregujace.php">
+                    <a class="link e" href="/Organizacja%20i%20pracownicy/aggregate-functions.php">
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                             Funkcje agregujące
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                     </a>
-                    <a class="link f" href="/Data%20i%20czas/data_i_czas.php">
+                    <a class="link f" href="/Data%20i%20czas/date-and-time.php">
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                             Data i czas
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                     </a>
-                    <a class="link g" href="/Data%20i%20czas/formatowanie_dat.php">
+                    <a class="link g" href="/Data%20i%20czas/date-formatting.php">
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                               Formatowanie dat
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                     </a>
-                    <a class="link h" href="/Formularze/formularz.html">
+                    <a class="link h" href="/Formularze/form-to-webpage.php">
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
-                            Formularz - Strona.php
+                            Formularz (Strona.php)
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                     </a>
-                    <a class="link j" href="/Formularze/daneDoBazy.php">
+                    <a class="link j" href="/Formularze/database.php">
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                             Formularz - daneDoBazy.php
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                     </a>
-                    <a class="link k" href="/Biblioteka/biblioteka.php">
+                    <a class="link k" href="/Biblioteka/library.php">
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                             Biblioteka
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
@@ -53,7 +53,7 @@
                             Flexbox
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                     </a>
-                    <a class="link m" href="/Wiele%20do%20wielu/wiele-do-wielu.php">
+                    <a class="link m" href="/Wiele%20do%20wielu/index.php">
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                             Wiele do wielu
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>

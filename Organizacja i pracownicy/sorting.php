@@ -16,15 +16,15 @@
 <body class="body_sort">
         <!--Tytuł strony w flexbox:-->
         <div class="container">
-            <div class="item colorRed">
+            <div class="item header">
                 <?php
                     //Informacja o stronie:
                     echo("<h1 class=page_info><br>Jesteś w sortowanie.php</h1></br>");
                 ?>
             </div>
             <!--Menu boczne w flexbox:-->
-            <div class="item colorBlue">
-                <?php include("../assets/nav_links.php") ?>
+            <div class="item mainMBar">
+                <?php include("../assets/mainMenuBar.php") ?>
             </div>
                 <!--Autoplay background music script-->
                     <script>
@@ -39,7 +39,7 @@
                 <source src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assesusmcsica_OST.mp3" type="audio/mpeg">
             </audio>
         <!--Treść w flexbox:-->
-        <div class="item colorGreen">
+        <div class="item webpageContent">
             <?php
 
                 //Logowanie do serwera mySQL:
