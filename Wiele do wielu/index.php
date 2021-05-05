@@ -28,7 +28,7 @@
             <source src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/music/Kara_OST.mp3" type="audio/mpeg">
         </audio>
             <!--Podpisanie pracy w flexbox:-->
-            <div class="containerWDW">
+            <div class="container">
                 <div class="item colorRed">
                     <?php
                         //Informacje o stronie:
@@ -44,10 +44,11 @@
                         <?php
                             //Logowanie do serwera mySQL:
                             require($_SERVER['DOCUMENT_ROOT'] . '/assets/connect.php');
-
-                            //Menu nawigacyjne po Relacjach wiele do wielu:
-                            include("indexMenuBar.php");
                         ?>
+                            <!--Menu nawigacyjne po Relacjach wiele do wielu:-->
+                            <div class="containerWDW">
+                                <?php include("indexMenuBar.php"); ?>
+                            </div>
                     </div>
             </div>
 </body>

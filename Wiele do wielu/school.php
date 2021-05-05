@@ -73,6 +73,34 @@
                                     echo("</table>");
                             }
 
+                            //Do 3 tabeli, aby można było usunąć rekordy:
+                            function Szkoła3($sql, $conn, $columnID, $columnNames, $column3, $columnRow, $columnRow2, $columnRow3, $table)
+                            {
+      
+                                $result = $conn->query($sql);
+                                echo("<table border=1>");
+                                    echo("<th>$columnID</th>");
+                                    echo("<th>$columnNames</th>");
+                                    echo("<th>$column3</th>");
+                                        while($row=$result->fetch_assoc())
+                                        {
+                                            echo("<tr>");
+                                                echo("<td>".$row[$columnRow3]."</td><td>".$row[$columnRow2]."</td><td>".$row[$columnRow]."</td><td>
+                                        
+                                        
+                                                    <form action='delete.php' method='POST'>
+                                                    <input type='number' name='row' value='".$row[$columnRow3]."' hidden>
+                                                    <input type='text' name='table' value='".$table."' hidden>
+                                                    <input type='text' name='column' value='".$columnID."' hidden>
+                                                    <input type='submit' value='Usuń'>
+                                                    </form>
+                                            
+                                                </td>");
+                                            echo("</tr>");
+                                        }
+                                echo("</table>");
+                            }
+
                             //Polecenia do tabel:
                             $sql=("SELECT * FROM nauczyciele");
                                 echo("<h1 class=SQL_excercise>Nauczyciele</h1>");
@@ -87,7 +115,7 @@
                             $sql=("SELECT * FROM nauczyciele, klasy, naucz_klasa WHERE nazwa_nauczyciel = id_Nauczyciela AND nazwa_klasa = id_klasy ");
                                 echo("<h1 class=SQL_excercise>Nauczyciele i Klasy</h1>");
                                 echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
-                                    Szkoła($sql, $conn, "nauczyciel", "klasa", 'klasa', 'nazwisko', 'naucz_klasa');
+                                    Szkoła3($sql, $conn, "id", "nauczyciel", "klasa", 'nazwisko', 'klasa', 'id', 'naucz_klasa');
 
                         ?>
                     </div>

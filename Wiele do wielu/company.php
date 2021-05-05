@@ -73,21 +73,49 @@
                                     echo("</table>");
                             }
 
+                            //Do 3 tabeli, aby można było usunąć rekordy:
+                            function Firma3($sql, $conn, $columnID, $columnNames, $column3, $columnRow, $columnRow2, $columnRow3, $table)
+                            {
+      
+                                $result = $conn->query($sql);
+                                echo("<table border=1>");
+                                    echo("<th>$columnID</th>");
+                                    echo("<th>$columnNames</th>");
+                                    echo("<th>$column3</th>");
+                                        while($row=$result->fetch_assoc())
+                                        {
+                                            echo("<tr>");
+                                                echo("<td>".$row[$columnRow3]."</td><td>".$row[$columnRow2]."</td><td>".$row[$columnRow]."</td><td>
+                                        
+                                        
+                                                    <form action='delete.php' method='POST'>
+                                                    <input type='number' name='row' value='".$row[$columnRow3]."' hidden>
+                                                    <input type='text' name='table' value='".$table."' hidden>
+                                                    <input type='text' name='column' value='".$columnID."' hidden>
+                                                    <input type='submit' value='Usuń'>
+                                                    </form>
+                                            
+                                                </td>");
+                                            echo("</tr>");
+                                        }
+                                echo("</table>");
+                            }
+
                             //Polecenia do tabel:
-                            $sql = "SELECT * FROM pracownik";
+                            $sql=("SELECT * FROM pracownik");
                                 echo("<h1 class=SQL_excercise>Pracownicy</h1>");
                                 echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
                                     Firma($sql, $conn, "id", "imie", 'imie', 'id_pracownika', 'pracownik');
                 
-                            $sql = "SELECT * FROM projekt";
+                            $sql=("SELECT * FROM projekt");
                                 echo("<h1 class=SQL_excercise>Projekty</h1>");
                                 echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
                                     Firma($sql, $conn, "id_projektu", "projekt", 'nazwa', 'id_projektu', 'projekt');
                 
-                            $sql = "SELECT * FROM pracownik, projekt, prac_proj where pracownik = id_pracownika and projekt = id_projektu";
+                            $sql=("SELECT * FROM pracownik, projekt, prac_proj where pracownik = id_pracownika and projekt = id_projektu");
                                 echo("<h1 class=SQL_excercise>Pracownicy i projekty</h1>");
                                 echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
-                                    Firma($sql, $conn, "pracownik", "projekt", 'nazwa', 'imie', 'prac_proj');
+                                    Firma3($sql, $conn, "id", "pracownik", "projekt", 'nazwa', 'imie', 'id', 'prac_proj');
 
                         ?>
                     </div>

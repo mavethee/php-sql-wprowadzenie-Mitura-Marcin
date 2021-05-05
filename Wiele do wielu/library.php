@@ -73,6 +73,34 @@
                                         }
                                     echo("</table>");
                             }
+
+                            //Do 3 tabeli, aby można było usunąć rekordy:
+                            function Biblioteka3($sql, $conn, $columnID, $columnNames, $column3, $columnRow, $columnRow2, $columnRow3, $table)
+                            {
+      
+                                $result = $conn->query($sql);
+                                echo("<table border=1>");
+                                    echo("<th>$columnID</th>");
+                                    echo("<th>$columnNames</th>");
+                                    echo("<th>$column3</th>");
+                                        while($row=$result->fetch_assoc())
+                                        {
+                                            echo("<tr>");
+                                                echo("<td>".$row[$columnRow3]."</td><td>".$row[$columnRow2]."</td><td>".$row[$columnRow]."</td><td>
+                                        
+                                        
+                                                    <form action='delete.php' method='POST'>
+                                                    <input type='number' name='row' value='".$row[$columnRow3]."' hidden>
+                                                    <input type='text' name='table' value='".$table."' hidden>
+                                                    <input type='text' name='column' value='".$columnID."' hidden>
+                                                    <input type='submit' value='Usuń'>
+                                                    </form>
+                                            
+                                                </td>");
+                                            echo("</tr>");
+                                        }
+                                echo("</table>");
+                            }
                     
                     
                             $sql=("SELECT * FROM autor");
@@ -88,8 +116,8 @@
                             $sql=("SELECT * FROM autor_tytul, autor, tytul WHERE autor_id=id_autor AND tytul_id=id_tytul");
                                 echo("<h3>Autorzy i Tytuły</h3>");
                                 echo("<li>".$sql."</li>");
-                                    Biblioteka($sql, $conn, "nazwisko", "tytul", 'tytul', 'autor_tytul');
-                        ?>
+                                    Biblioteka3($sql, $conn, "id", "nazwisko", "tytul", 'tytul', `nazwisko`, `id`, 'autor_tytul');
+                        ?>````
                     </div>
             </div>
 </body>

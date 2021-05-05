@@ -72,6 +72,34 @@
                                             }
                                     echo("</table>");
                             }
+
+                            //Do 3 tabeli, aby można było usunąć rekordy:
+                            function Przychodnia3($sql, $conn, $columnID, $columnNames, $column3, $columnRow, $columnRow2, $columnRow3, $table)
+                            {
+      
+                                $result = $conn->query($sql);
+                                echo("<table border=1>");
+                                    echo("<th>$columnID</th>");
+                                    echo("<th>$columnNames</th>");
+                                    echo("<th>$column3</th>");
+                                        while($row=$result->fetch_assoc())
+                                        {
+                                            echo("<tr>");
+                                                echo("<td>".$row[$columnRow3]."</td><td>".$row[$columnRow2]."</td><td>".$row[$columnRow]."</td><td>
+                                        
+                                        
+                                                    <form action='delete.php' method='POST'>
+                                                    <input type='number' name='row' value='".$row[$columnRow3]."' hidden>
+                                                    <input type='text' name='table' value='".$table."' hidden>
+                                                    <input type='text' name='column' value='".$columnID."' hidden>
+                                                    <input type='submit' value='Usuń'>
+                                                    </form>
+                                            
+                                                </td>");
+                                            echo("</tr>");
+                                        }
+                                echo("</table>");
+                            }
                             
                             //Polecenia do tabel:
                             $sql=("SELECT * FROM lekarze");
@@ -87,7 +115,7 @@
                             $sql=("SELECT * FROM lekarze, pacjenci, lek_pac where lekarz = id_lekarza and pacjent = id_pacjenta");
                                 echo("<h1 class=SQL_excercise>Lekarze i pacjenci</h1>");
                                 echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
-                                    Przychodnia($sql, $conn, "lekarz", "pacjent", 'imie', 'nazwisko', 'lek_pac');
+                                    Przychodnia3($sql, $conn, "id", "lekarz", "pacjent", 'imie', 'nazwisko', 'id', 'lek_pac');
                         ?>
                     </div>
             </div>
