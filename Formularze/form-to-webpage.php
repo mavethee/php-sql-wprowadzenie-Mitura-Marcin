@@ -40,7 +40,7 @@
     
 <!--Treść strony w flexbox:-->
 <div class="item colorBlue">
-    <form action="Formularze/webpage.php" method="POST">
+    <form action="webpage.php" method="POST">
         <input type="text" name="firstname" placeholder="Imię"></br>
         <input type="number" name="shift" placeholder="Dział"></br>
         <input type="number" name="salary" placeholder="Zarobki"></br>
