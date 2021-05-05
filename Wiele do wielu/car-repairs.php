@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
-            <title>Biblioteka (Relacje)</title>
+            <title>Serwis samochodowy (Relacje)</title>
                 <link rel="stylesheet" href="../assets/style.css">
                     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
                     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
@@ -64,7 +64,7 @@
                                 echo("<h1 class=SQL_excercise>Tytuły</h1>");
                                 echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
                                     $result = $conn->query($sql);
-                                        echo("<table border=1>");
+                                            echo("<table border=1>");
                                             echo("<th>id_tytul</th>");
                                             echo("<th>tytul</th>");
                                                 while($row=$result->fetch_assoc())

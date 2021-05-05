@@ -47,8 +47,6 @@
 
                             //Menu nawigacyjne po Relacjach wiele do wielu:
                             include("indexMenuBar.php");
-                            
-                           
                         ?>
                     </div>
             </div>
