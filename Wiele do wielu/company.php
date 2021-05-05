@@ -32,7 +32,7 @@
                 <div class="item colorRed">
                     <?php
                         //Informacje o stronie:
-                        echo("<h1 class='page_info'><br>Biblioteka (Autor-Tytuł)</br></h1>");    
+                        echo("<h1 class='page_info'><br>Firma (Pracownik-projekt)</br></h1>");    
                     ?>
                 </div>
                 <!--Menu boczne w flexbox:-->
@@ -44,52 +44,46 @@
                         <?php
                             //Logowanie do serwera mySQL:
                             require($_SERVER['DOCUMENT_ROOT'] . '/assets/connect.php');
+
+                            function Firma($sql, $conn, $columnID, $columnNames, $columnRow, $columnRow2, $tables)
+                            {
+                                $result = $conn->query($sql);
+                                    echo("<table border=1>");
+                                        echo("<th>$columnID</th>");
+                                        echo("<th>$columnNames</th>");
+                                            while($row=$result->fetch_assoc())
+                                            {
+                                                echo("<tr>");
+                                                echo("<td>".$row[$columnRow2]."</td><td>".$row[$columnRow]."</td><td>
+                                            
+                                            <form action='delete.php' method='POST'>
+                                            <input type='number' name='row' value='".$row[$columnRow2]."' hidden>
+                                            <input type='number' name='table' value='".$tables."' hidden>
+                                            <input type='number' name='column' value='".$columnID."' hidden>
+                                            <input type='submit' value='Usuń'>
+                                            </form>
+
+                                            </td>");
+                                            echo("</tr>");
+                                            }
+                                    echo("</table>");
+                            }
                             
-                            $sql=("SELECT * FROM autor");
-                                echo("<h1 class=SQL_excercise>Autorzy</h1>");
+                            $sql = "SELECT * FROM pracownik";
+                                echo("<h1 class=SQL_excercise>Pracownicy</h1>");
                                 echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
-                                    $result = $conn->query($sql);
-                                        echo("<table border=1>");
-                                            echo("<th>id_autor</th>");
-                                            echo("<th>nazwisko</th>");
-                                                while($row=$result->fetch_assoc())
-                                                {
-                                                    echo("<tr>");
-                                                    echo("<td>".$row['id_autor']."</td><td>".$row['nazwisko']."</td>");
-                                                    echo("</tr>");
-                                                }
-                                        echo("</table>");
-                            
-                            $sql=("SELECT * FROM tytul");
-                                echo("<h1 class=SQL_excercise>Tytuły</h1>");
+                                    Firma($sql, $conn, "id", "imie", 'imie', 'id_pracownika', 'pracownik');
+                
+                            $sql = "SELECT * FROM projekt";
+                                echo("<h1 class=SQL_excercise>Projekty</h1>");
                                 echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
-                                    $result = $conn->query($sql);
-                                            echo("<table border=1>");
-                                            echo("<th>id_tytul</th>");
-                                            echo("<th>tytul</th>");
-                                                while($row=$result->fetch_assoc())
-                                                {
-                                                    echo("<tr>");
-                                                    echo("<td>".$row['id_tytul']."</td><td>".$row['tytul']."</td>");
-                                                    echo("</tr>");
-                                                }
-                                        echo("</table>");
-                            
-                            $sql=("SELECT * FROM autor_tytul, autor, tytul WHERE autor_id=id_autor AND tytul_id=id_tytul");
-                                echo("<h1 class=SQL_excercise>Autorzy oraz tytuły</h1>");
+                                    Firma($sql, $conn, "id_projektu", "projekt", 'nazwa', 'id_projektu', 'projekt');
+                
+                            $sql = "SELECT * FROM pracownik, projekt, prac_proj where pracownik = id_pracownika and projekt = id_projektu";
+                                echo("<h1 class=SQL_excercise>Pracownicy i projekty</h1>");
                                 echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
-                                    $result = $conn->query($sql);
-                                        echo("<table border=1>");
-                                            echo("<th>id</th>");
-                                            echo("<th>Nazwisko autora</th>");
-                                            echo("<th>Tytuł książki</th>");
-                                                while($row=$result->fetch_assoc())
-                                                {
-                                                    echo("<tr>");
-                                                    echo("<td>".$row['id']."</td><td>".$row['nazwisko']."</td><td>".$row['tytul']."</td>");
-                                                    echo("</tr>");
-                                                }
-                                        echo("</table>");
+                                    Firma($sql, $conn, "pracownik", "projekt", 'nazwa', 'imie', 'prac_proj');
+
                         ?>
                     </div>
             </div>

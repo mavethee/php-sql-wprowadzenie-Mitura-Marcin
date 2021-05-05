@@ -32,7 +32,7 @@
                 <div class="item colorRed">
                     <?php
                         //Informacje o stronie:
-                        echo("<h1 class='page_info'><br>Biblioteka (Autor-Tytuł)</br></h1>");    
+                        echo("<h1 class='page_info'><br>Biblioteka (Autor-tytuł)</br></h1>");    
                     ?>
                 </div>
                 <!--Menu boczne w flexbox:-->
