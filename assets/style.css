@@ -161,7 +161,9 @@ audio /*used as styling to hide audio playblack*/
     width: auto;
     max-width: 70%;
     height: auto;
-    overflow: hidden;  
+    overflow: hidden;
+    justify-content: center;
+    display: flex;  
 }
   
 .nav /*used as nav styling*/ 
