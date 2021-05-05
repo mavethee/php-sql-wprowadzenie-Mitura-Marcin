@@ -104,18 +104,18 @@
                     
                     
                             $sql=("SELECT * FROM autor");
-                                echo("<h3>Autorzy</h3>");
-                                echo("<li>".$sql."</li>");
+                                echo("<h1 class=SQL_excercise>Autorzy</h1>");
+                                echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
                                     Biblioteka($sql, $conn, "id_autor", "autor", 'nazwisko', 'autor');
                     
                             $sql=("SELECT * FROM tytul");
-                                echo("<h3>Tytuły</h3>");
-                                echo("<li>".$sql."</li>");
+                                echo("<h1 class=SQL_excercise>Tytuły</h1>");
+                                echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
                                     Biblioteka($sql, $conn, "id_tytul", "tytul", 'tytul', 'tytul');
                     
                             $sql=("SELECT * FROM autor_tytul, autor, tytul WHERE autor_id=id_autor AND tytul_id=id_tytul");
-                                echo("<h3>Autorzy i tytuły</h3>");
-                                echo("<li>".$sql."</li>");
+                                echo("<h1 class=SQL_excercise>Autorzy i tytuły</h1>");
+                                echo("<h4 class=SQL_excercise>Użyte zapytanie SQL: ".$sql."</h4>");
                                     Biblioteka3($sql, $conn, "id", "nazwisko", "tytul", 'tytul', 'nazwisko', 'id', 'autor_tytul');
                         ?>
                     </div>
