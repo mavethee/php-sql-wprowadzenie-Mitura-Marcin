@@ -187,6 +187,7 @@ audio /*used as styling to hide audio playblack*/
     justify-content: space-around;
     display: flex;
     border-radius: 11px;
+    margin: 5px;
 }
   
 .link:hover /*used as nav links hover styling*/
