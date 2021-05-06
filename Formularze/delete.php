@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
-        <title>Usuwanie pracownika</title>
+        <title>Usuwanie rekordów</title>
         <link rel="stylesheet" href="../assets/style.css">
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
@@ -17,7 +17,7 @@
     <div class="container">
         <!--Tytuł strony w flexbox:-->
         <div class="item colorRed">
-            <h1 class=page_info><br>Jesteś w delete.php</h1></br>
+            <h1 class=page_info><br>Usuwanie rekordów</h1></br>
         </div>
         <!--Menu boczne w flexbox:-->
         <div class="item colorGreen">
