@@ -49,6 +49,8 @@
                             <div class="containerWDW">
                                 <?php include("indexMenuBar.php"); ?>
                             </div>
+                            
+                            <!--Note if there any askers lol: columnID: Displays id column, columnNames: Displays name column, columnRow: displays ID in rows, columnRow2: displays names in rows, columnRow3 - displays ID for third table-->
                     </div>
             </div>
 </body>
