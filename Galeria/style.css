@@ -18,6 +18,7 @@ h1
   
 .row 
 {
+    display: flex;
     background-color: lightsalmon;
 }
   
