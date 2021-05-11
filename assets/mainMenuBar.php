@@ -48,7 +48,7 @@
                             Biblioteka
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                     </a>
-                    <a class="link l" href="/flexbox/flexbox-cubes/flexbox-cube.php">
+                    <a class="link l" href="/Flexbox/flexbox-cubes/flexbox-cube.php">
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                             Flexbox
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
@@ -58,22 +58,27 @@
                             Wiele do wielu
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                     </a>
-                    <a class="link n" href="https://projekt-testowy-mavethee.herokuapp.com/">
+                    <a class="link n" href="/Galeria/index.html">
+                        <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
+                            Galeria
+                        <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
+                    </a>
+                    <a class="link o" href="https://projekt-testowy-mavethee.herokuapp.com/">
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                             Testowanko
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                     </a>
-                    <a class="link o" href="https://github.com/SK-2019/php-sql-wprowadzenie-Mitura-Marcin">
+                    <a class="link p" href="https://github.com/SK-2019/php-sql-wprowadzenie-Mitura-Marcin">
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                             GitHub - PHP
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                     </a>
-                    <a class="link p" href="https://github.com/mavethee/projekt_testowy">
+                    <a class="link r" href="https://github.com/mavethee/projekt_testowy">
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                             GitHub - Testowanko
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                     </a>
-                    <a class="link r" href="https://www.notion.so/SQL-3ccfadeab4b84d7794d7a13966de2547">
+                    <a class="link s" href="https://www.notion.so/SQL-3ccfadeab4b84d7794d7a13966de2547">
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>
                             Notion
                         <img class="nav_icon" src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/icons/navicons/nav_icon.png"/>

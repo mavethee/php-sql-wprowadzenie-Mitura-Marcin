@@ -1,0 +1,77 @@
+body
+{
+    background-image: url("https://i.pinimg.com/originals/a1/19/a9/a119a95d0275ce9666721f61d8cbacf2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 
+{
+    background-color: lightblue;
+}
+  
+.Gallery 
+{
+    display: flex;
+}
+  
+.row 
+{
+    background-color: lightsalmon;
+}
+  
+.image 
+{
+    background-color: lightblue;
+    margin: 5px;
+    padding: 0px;
+    width: 500px;
+    height: 300px;
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain, cover; */
+    background-position: center;
+    background-size: cover;
+    transition: 0.25s;
+}
+  
+.image:hover 
+{
+    transform: scale(0.99);
+    filter: saturate(3.5) brightness(2.0);
+}
+  
+.photoFirst 
+{
+    background-image: url("https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80");
+}
+
+.photoFirst:hover 
+{
+    background-image: url("https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80");
+}
+  
+.photoSecond 
+{
+    background-image: url("https://images.theconversation.com/files/79109/original/image-20150423-25578-10t7t3r.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop");
+}
+  
+.photoThird 
+{
+    background-image: url("https://interactive-examples.mdn.mozilla.net/media/cc0-images/painted-hand-298-332.jpg");
+}
+  
+.photo_desc1
+{
+    background-color: blueviolet;
+    padding: 1px;
+    display: block;
+}
+
+.photo_desc2
+{
+    background-color: blueviolet;
+    padding: 1px;
+    display: block;
+}
