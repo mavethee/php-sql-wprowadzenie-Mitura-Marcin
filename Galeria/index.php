@@ -35,7 +35,7 @@
     </div>
       <!--Menu boczne w flexbox:-->
         <div class="item colorGreen">
-          <?php include("assets/mainMenuBar.php") ?>
+          <?php include("../assets/mainMenuBar.php") ?>
         </div>
           <!--Treść strony w flexbox:-->
             <div class="item colorBlue">
@@ -61,12 +61,12 @@
                   </a>
                 </div>
                   <!--Third images row!-->
-                  <div class="Gallery row">
+                  <div class="gallery row">
                     <div class="image photoFirst">1</div>
                     <div class="image photoSecond">2</div>
                     <div class="image photoThird">3</div>
                   </div>
-              </div>
+            </div>
   </div>
 </body>
 </html>
