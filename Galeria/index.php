@@ -28,17 +28,8 @@
             <source src="https://raw.githubusercontent.com/sk-2019/php-sql-wprowadzenie-mitura-marcin/main/assets/music/Kara_OST.mp3" type="audio/mpeg">
         </audio>
 
-<!--Nagłówek w flexbox:-->
-  <div class="container">
-    <div class="item colorRed">
-      <h1 class="galleryHeader">Galeria</h1>
-    </div>
-      <!--Menu boczne w flexbox:-->
-        <div class="item colorGreen">
-          <?php include("../assets/mainMenuBar.php") ?>
-        </div>
-          <!--Treść strony w flexbox:-->
-            <div class="item colorBlue">
+          <!--Nagłówek-->
+            <h1 class="galleryHeader">Galeria</h1>
               <!--First images row!-->
               <div class="gallery row">
                 <div class="image photoFirst">1</div>
@@ -66,7 +57,5 @@
                     <div class="image photoSecond">2</div>
                     <div class="image photoThird">3</div>
                   </div>
-            </div>
-  </div>
 </body>
 </html>
