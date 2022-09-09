@@ -122,7 +122,7 @@ audio /*used as styling to hide audio playblack*/
   
 .image:hover 
 {
-    transform: scale(0.99);
+    transform: scale(2);
     filter: saturate(3.5) brightness(2.0);
 }
   
